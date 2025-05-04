@@ -5,7 +5,8 @@
         "LNavOpened": "true",
         "NavOpened": "true",
         "mediaWarningShown:Melissa - Sua parceira canina leal!.png": "true",
-        "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}"
+        "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}",
+        "SelectedNavTab": "rm_button_selected_ch"
     },
     "currentVersion": "1.12.14",
     "username": "User",
