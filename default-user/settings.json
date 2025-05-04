@@ -1643,7 +1643,42 @@
             "profiles": []
         },
         "dice": {},
-        "regex": [],
+        "regex": [
+            {
+                "id": "f66fc6b6-c206-40b7-bbc1-4967ebd2d205",
+                "scriptName": "【Kemini】添加tag",
+                "findRegex": "^([\\s\\S]*)$",
+                "replaceString": "<user_input>\n$1\n</user_input>",
+                "trimStrings": [],
+                "placement": [
+                    1
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": 1
+            },
+            {
+                "id": "a03f54a3-4a15-4955-8211-e5074c6fd22a",
+                "scriptName": "【Kemini】移除大小思维链和免责声明",
+                "findRegex": "/(<guifan>.*?</guifan>)|(<!-- State(.*?)d(.*?) -->(\\n)?)|(<!-- consider: (.*?) -->(\\n)?)|(.*?</think(ing)?>(\\n)?)|(<thinking?>[\\s\\S]*<\\/thinking?>(\\n)?)/gs",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            }
+        ],
         "character_allowed_regex": [],
         "tts": {
             "voiceMap": "",
