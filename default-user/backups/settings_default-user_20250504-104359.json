@@ -375,11 +375,7 @@
         "external_media_allowed_overrides": [],
         "external_media_forbidden_overrides": [],
         "ui_mode": 1,
-        "auto_sort_tags": false,
-        "selectSamplers": {
-            "forceHidden": [],
-            "forceShown": []
-        }
+        "auto_sort_tags": false
     },
     "extension_settings": {
         "apiUrl": "http://localhost:5100",
