@@ -9,7 +9,7 @@
         "SelectedNavTab": "rm_button_characters"
     },
     "currentVersion": "1.12.14",
-    "username": "User",
+    "username": "凯文",
     "active_character": "Nicole.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
@@ -327,7 +327,7 @@
             "max_additions": 1
         },
         "personas": {
-            "user-default.png": "User"
+            "user-default.png": "凯文"
         },
         "default_persona": null,
         "persona_descriptions": {
