@@ -1,0 +1,52 @@
+<div class="flex-container">
+  <div id="open-global-script-editor" class="menu_button menu_button_icon interactable">
+    <i class="fa-solid fa-pen-to-square"></i>
+    <small>+ 全局</small>
+  </div>
+  <div id="open-scoped-script-editor" class="menu_button menu_button_icon interactable">
+    <i class="fa-solid fa-address-card"></i>
+    <small>+ 局部</small>
+  </div>
+  <div id="scope-variable" class="menu_button menu_button_icon interactable">
+    <i class="fa-solid fa-book-open"></i>
+    <small>变量</small>
+  </div>
+  <div id="import-script" class="menu_button menu_button_icon interactable">
+    <i class="fa-solid fa-file-import"></i>
+    <small>导入</small>
+  </div>
+  <input multiple accept="*.json" hidden id="import-script-file" type="file" />
+  <div id="default-script" class="menu_button menu_button_icon interactable">
+    <i class="fa-solid fa-archive"></i>
+    <small>内置库</small>
+  </div>
+</div>
+<div id="script-repository-content" class="flex-container flexFlowColumn">
+  <div class="extension-content-item">
+    <div class="flex flexFlowColumn">
+      <div class="settings-title-text">全局脚本库</div>
+      <div class="settings-title-description">应用于酒馆所有聊天</div>
+    </div>
+    <div class="toggle-switch">
+      <input type="checkbox" id="global-script-enable-toggle" class="toggle-input" checked />
+      <label for="global-script-enable-toggle" class="toggle-label">
+        <span class="toggle-handle"></span>
+      </label>
+    </div>
+  </div>
+  <div id="global-script-list" class="flex-container flexFlowColumn alignItemsCenter"></div>
+  <div class="divider marginTop10 marginBot10"></div>
+  <div class="extension-content-item">
+    <div class="flex flexFlowColumn">
+      <div class="settings-title-text">局部脚本库</div>
+      <div class="settings-title-description">应用于当前角色卡</div>
+    </div>
+    <div class="toggle-switch">
+      <input type="checkbox" id="scoped-script-enable-toggle" class="toggle-input" checked />
+      <label for="scoped-script-enable-toggle" class="toggle-label">
+        <span class="toggle-handle"></span>
+      </label>
+    </div>
+  </div>
+  <div id="scoped-script-list" class="flex-container flexFlowColumn alignItemsCenter"></div>
+</div>

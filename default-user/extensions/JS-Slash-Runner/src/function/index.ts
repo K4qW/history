@@ -1,0 +1,147 @@
+import {
+  Character,
+  getCharAvatarPath,
+  getCharData,
+  getChatHistoryBrief,
+  getChatHistoryDetail,
+} from '@/function/character';
+import { getChatMessages, setChatMessage, setChatMessages } from '@/function/chat_message';
+import { formatAsDisplayedMessage, retrieveDisplayedMessage } from '@/function/displayed_message';
+import { builtin_prompt_default_order, generate, generateRaw } from '@/function/generate';
+import {
+  createLorebook,
+  deleteLorebook,
+  getCharLorebooks,
+  getCurrentCharPrimaryLorebook,
+  getLorebooks,
+  getLorebookSettings,
+  getOrCreateChatLorebook,
+  setCurrentCharLorebooks,
+  setLorebookSettings,
+} from '@/function/lorebook';
+import {
+  createLorebookEntries,
+  createLorebookEntry,
+  deleteLorebookEntries,
+  deleteLorebookEntry,
+  getLorebookEntries,
+  replaceLorebookEntries,
+  setLorebookEntries,
+  updateLorebookEntriesWith,
+} from '@/function/lorebook_entry';
+import { triggerSlash } from '@/function/slash';
+import {
+  getTavernRegexes,
+  isCharacterTavernRegexesEnabled,
+  replaceTavernRegexes,
+  updateTavernRegexesWith,
+} from '@/function/tavern_regex';
+import { errorCatched, getLastMessageId, substitudeMacros } from '@/function/util';
+import {
+  deleteVariable,
+  getVariables,
+  insertOrAssignVariables,
+  insertVariables,
+  replaceVariables,
+  updateVariablesWith,
+} from '@/function/variables';
+import { getTavernHelperVersion, updateTavernHelper } from '@/function/version';
+import { audioEnable, audioImport, audioMode, audioPlay, audioSelect } from '@/slash_command/audio';
+import { builtin } from './builtin';
+
+function getTavernHelper() {
+  return {
+    // audio
+    audioEnable,
+    audioImport,
+    audioMode,
+    audioPlay,
+    audioSelect,
+
+    // builtin
+    builtin,
+
+    // character
+    Character,
+    getCharData,
+    getCharAvatarPath,
+    getChatHistoryBrief,
+    getChatHistoryDetail,
+
+    // chat_message
+    getChatMessages,
+    setChatMessages,
+    setChatMessage,
+
+    // displayed_message
+    formatAsDisplayedMessage,
+    retrieveDisplayedMessage,
+
+    // generate
+    builtin_prompt_default_order,
+    generate,
+    generateRaw,
+
+    // lorebook_entry
+    getLorebookEntries,
+    replaceLorebookEntries,
+    updateLorebookEntriesWith,
+    setLorebookEntries,
+    createLorebookEntries,
+    createLorebookEntry,
+    deleteLorebookEntries,
+    deleteLorebookEntry,
+
+    // lorebook
+    getLorebookSettings,
+    setLorebookSettings,
+    getCharLorebooks,
+    setCurrentCharLorebooks,
+    getLorebooks,
+    deleteLorebook,
+    createLorebook,
+    getCurrentCharPrimaryLorebook,
+    getOrCreateChatLorebook,
+
+    // slash
+    triggerSlash,
+    triggerSlashWithResult: triggerSlash,
+
+    // tavern_regex
+    isCharacterTavernRegexesEnabled,
+    getTavernRegexes,
+    replaceTavernRegexes,
+    updateTavernRegexesWith,
+
+    // util
+    substitudeMacros,
+    getLastMessageId,
+    errorCatched,
+
+    // variables
+    getVariables,
+    replaceVariables,
+    updateVariablesWith,
+    insertOrAssignVariables,
+    deleteVariable,
+    insertVariables,
+
+    // version
+    getTavernHelperVersion,
+    updateTavernHelper,
+    getFrontendVersion: getTavernHelperVersion,
+    updateFrontendVersion: updateTavernHelper,
+  };
+}
+
+declare namespace globalThis {
+  let TavernHelper: ReturnType<typeof getTavernHelper>;
+}
+
+/**
+ * 初始化TavernHelper全局对象
+ * 将各种功能函数暴露到全局作用域
+ */
+export function initTavernHelperObject() {
+  globalThis.TavernHelper = getTavernHelper();
+}

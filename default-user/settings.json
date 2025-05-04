@@ -682,6 +682,42 @@
                     }
                 ]
             }
+        },
+        "TavernHelper": {
+            "enabled_extension": true,
+            "render": {
+                "render_enabled": true,
+                "tampermonkey_compatibility": false,
+                "render_depth": 0,
+                "render_optimize": false
+            },
+            "script": {
+                "global_script_enabled": true,
+                "scriptsRepository": [],
+                "characters_with_scripts": []
+            },
+            "audio": {
+                "audio_enabled": true,
+                "bgm_enabled": true,
+                "ambient_enabled": true,
+                "bgm_mode": "repeat",
+                "bgm_muted": false,
+                "bgm_volume": 50,
+                "bgm_selected": null,
+                "bgm_current_time": 0,
+                "ambient_mode": "stop",
+                "ambient_muted": false,
+                "ambient_volume": 50,
+                "ambient_selected": null,
+                "ambient_current_time": 0,
+                "audio_cooldown": 0
+            },
+            "listener": {
+                "enabled": false,
+                "enable_echo": true,
+                "url": "http://localhost:6621",
+                "duration": 1000
+            }
         }
     },
     "tags": [
