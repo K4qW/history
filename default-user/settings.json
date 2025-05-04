@@ -3787,7 +3787,7 @@
         "deepseek_model": "deepseek-chat",
         "xai_model": "grok-3-beta",
         "custom_model": "gemini-2.5-pro-exp-03-25",
-        "custom_url": "",
+        "custom_url": "url:https://new.api-kk.shop/v1",
         "custom_include_body": "",
         "custom_exclude_body": "",
         "custom_include_headers": "",
