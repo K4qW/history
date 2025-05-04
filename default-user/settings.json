@@ -1936,13 +1936,180 @@
             "id": "1345561466591",
             "name": "ST Default",
             "color": "rgba(108, 32, 32, 1)"
+        },
+        {
+            "id": "322e79c9-a9bd-4045-997f-b8a543aa3993",
+            "name": "Adventure",
+            "folder_type": "NONE",
+            "filter_state": "UNDEFINED",
+            "sort_order": null,
+            "color": "",
+            "color2": "",
+            "create_date": 1746358320244
+        },
+        {
+            "id": "4346624d-5d3a-40bb-b978-291320897d3d",
+            "name": "Anthro",
+            "folder_type": "NONE",
+            "filter_state": "UNDEFINED",
+            "sort_order": null,
+            "color": "",
+            "color2": "",
+            "create_date": 1746358320245
+        },
+        {
+            "id": "6bfb47aa-ad5b-46b9-b216-84bf67896fde",
+            "name": "Any POV",
+            "folder_type": "NONE",
+            "filter_state": "UNDEFINED",
+            "sort_order": null,
+            "color": "",
+            "color2": "",
+            "create_date": 1746358320245
+        },
+        {
+            "id": "53a17217-affb-446c-b63a-4d986506cd5b",
+            "name": "Brat",
+            "folder_type": "NONE",
+            "filter_state": "UNDEFINED",
+            "sort_order": null,
+            "color": "",
+            "color2": "",
+            "create_date": 1746358320245
+        },
+        {
+            "id": "ea4ca0f4-2b94-4daf-a533-285a3de5e2a0",
+            "name": "Cute",
+            "folder_type": "NONE",
+            "filter_state": "UNDEFINED",
+            "sort_order": null,
+            "color": "",
+            "color2": "",
+            "create_date": 1746358320245
+        },
+        {
+            "id": "61a6bef5-979c-45f2-a17c-cf46fe7cf117",
+            "name": "Demihuman",
+            "folder_type": "NONE",
+            "filter_state": "UNDEFINED",
+            "sort_order": null,
+            "color": "",
+            "color2": "",
+            "create_date": 1746358320245
+        },
+        {
+            "id": "dfe93dab-7a1c-4241-8692-ebe86476e013",
+            "name": "Fantasy",
+            "folder_type": "NONE",
+            "filter_state": "UNDEFINED",
+            "sort_order": null,
+            "color": "",
+            "color2": "",
+            "create_date": 1746358320245
+        },
+        {
+            "id": "dca0cd91-7d2b-4f15-9aab-3d5894e53cb6",
+            "name": "Female",
+            "folder_type": "NONE",
+            "filter_state": "UNDEFINED",
+            "sort_order": null,
+            "color": "",
+            "color2": "",
+            "create_date": 1746358320245
+        },
+        {
+            "id": "df868ac5-7214-4f49-966f-375cea7e5fdd",
+            "name": "Fempov",
+            "folder_type": "NONE",
+            "filter_state": "UNDEFINED",
+            "sort_order": null,
+            "color": "",
+            "color2": "",
+            "create_date": 1746358320245
+        },
+        {
+            "id": "38ba3926-4fd5-42ca-bf6e-53211e19f439",
+            "name": "Fictional Character",
+            "folder_type": "NONE",
+            "filter_state": "UNDEFINED",
+            "sort_order": null,
+            "color": "",
+            "color2": "",
+            "create_date": 1746358320246
+        },
+        {
+            "id": "2332d950-c78c-46be-b596-51da20ff07e8",
+            "name": "Flirty",
+            "folder_type": "NONE",
+            "filter_state": "UNDEFINED",
+            "sort_order": null,
+            "color": "",
+            "color2": "",
+            "create_date": 1746358320246
+        },
+        {
+            "id": "1c47cb29-9d8d-473d-99b6-fe146579c559",
+            "name": "kemonomimi",
+            "folder_type": "NONE",
+            "filter_state": "UNDEFINED",
+            "sort_order": null,
+            "color": "",
+            "color2": "",
+            "create_date": 1746358320246
+        },
+        {
+            "id": "628a9e5e-6e5a-49d9-9553-a1f9c8047657",
+            "name": "Love",
+            "folder_type": "NONE",
+            "filter_state": "UNDEFINED",
+            "sort_order": null,
+            "color": "",
+            "color2": "",
+            "create_date": 1746358320246
+        },
+        {
+            "id": "8d677576-12d5-4e72-ae94-26dec41b6a67",
+            "name": "Loyal",
+            "folder_type": "NONE",
+            "filter_state": "UNDEFINED",
+            "sort_order": null,
+            "color": "",
+            "color2": "",
+            "create_date": 1746358320246
+        },
+        {
+            "id": "479b8f8b-f69e-408a-b684-102852b88dfd",
+            "name": "Magic",
+            "folder_type": "NONE",
+            "filter_state": "UNDEFINED",
+            "sort_order": null,
+            "color": "",
+            "color2": "",
+            "create_date": 1746358320246
         }
     ],
     "tag_map": {
         "default_Seraphina.png": [
             "1345561466591"
         ],
-        "null": []
+        "null": [],
+        "Melissa - Sua parceira canina leal!.png": [
+            "322e79c9-a9bd-4045-997f-b8a543aa3993",
+            "4346624d-5d3a-40bb-b978-291320897d3d",
+            "6bfb47aa-ad5b-46b9-b216-84bf67896fde",
+            "53a17217-affb-446c-b63a-4d986506cd5b",
+            "ea4ca0f4-2b94-4daf-a533-285a3de5e2a0",
+            "61a6bef5-979c-45f2-a17c-cf46fe7cf117",
+            "dfe93dab-7a1c-4241-8692-ebe86476e013",
+            "dca0cd91-7d2b-4f15-9aab-3d5894e53cb6",
+            "df868ac5-7214-4f49-966f-375cea7e5fdd",
+            "38ba3926-4fd5-42ca-bf6e-53211e19f439",
+            "2332d950-c78c-46be-b596-51da20ff07e8",
+            "1c47cb29-9d8d-473d-99b6-fe146579c559",
+            "628a9e5e-6e5a-49d9-9553-a1f9c8047657",
+            "8d677576-12d5-4e72-ae94-26dec41b6a67",
+            "479b8f8b-f69e-408a-b684-102852b88dfd"
+        ]
     },
     "nai_settings": {
         "temperature": 1.5,
