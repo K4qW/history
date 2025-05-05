@@ -2,6 +2,7 @@
     "id": "1746455179287",
     "name": "Group: 卡莲",
     "members": [
+        "约书娅.png",
         "卡莲.png"
     ],
     "avatar_url": "/thumbnail?type=avatar&file=%E5%8D%A1%E8%8E%B2.png",
@@ -1208,5 +1209,10 @@
     ],
     "auto_mode_delay": 5,
     "generation_mode_join_prefix": "",
-    "generation_mode_join_suffix": ""
+    "generation_mode_join_suffix": "",
+    "date_added": 1746455179285.27,
+    "create_date": "2025-5-5 @14h 26m 19s 285ms",
+    "date_last_chat": 0,
+    "chat_size": 0,
+    "past_metadata": {}
 }
