@@ -1200,7 +1200,8 @@
         "timedWorldInfo": {
             "sticky": {},
             "cooldown": {}
-        }
+        },
+        "tainted": true
     },
     "fav": false,
     "chat_id": "2025-05-05@22h26m18s",
@@ -1212,7 +1213,7 @@
     "generation_mode_join_suffix": "",
     "date_added": 1746455179285.27,
     "create_date": "2025-5-5 @14h 26m 19s 285ms",
-    "date_last_chat": 0,
+    "date_last_chat": 1746455224486,
     "chat_size": 0,
     "past_metadata": {}
 }
