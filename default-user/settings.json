@@ -1565,7 +1565,8 @@
         ],
         "muyoo_dataTable": {
             "updateIndex": 4
-        }
+        },
+        "wi_key_input_plaintext": true
     },
     "extension_settings": {
         "apiUrl": "http://localhost:5100",
