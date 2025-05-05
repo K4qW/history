@@ -10,7 +10,7 @@
     },
     "currentVersion": "1.12.14",
     "username": "凯文",
-    "active_character": "Nicole.png",
+    "active_character": "卡莲.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "kemini 4.0 正式版 3",
@@ -2120,7 +2120,8 @@
             "479b8f8b-f69e-408a-b684-102852b88dfd"
         ],
         "娜娜.png": [],
-        "Nicole.png": []
+        "Nicole.png": [],
+        "卡莲.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
