@@ -332,11 +332,11 @@
         "default_persona": null,
         "persona_descriptions": {
             "user-default.png": {
-                "description": "凯文是一个",
+                "description": "凯文是一个16岁的",
                 "position": 0
             }
         },
-        "persona_description": "凯文是一个",
+        "persona_description": "凯文是一个16岁的",
         "persona_description_position": 0,
         "persona_description_role": 0,
         "persona_description_depth": 2,
