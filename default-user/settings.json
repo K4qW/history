@@ -2208,7 +2208,7 @@
         "top_a_openai": 0,
         "repetition_penalty_openai": 1,
         "stream_openai": false,
-        "openai_max_context": "1002255",
+        "openai_max_context": 1002255,
         "openai_max_tokens": 65535,
         "wrap_in_quotes": false,
         "prompts": [
@@ -3804,7 +3804,7 @@
         "zerooneai_model": "yi-large",
         "deepseek_model": "deepseek-chat",
         "xai_model": "grok-3-beta",
-        "custom_model": "gemini-2.5-pro-exp-03-25",
+        "custom_model": "gemini-2.5-pro-exp-03-25-search",
         "custom_url": "https://new.api-kk.shop/v1",
         "custom_include_body": "",
         "custom_exclude_body": "",
