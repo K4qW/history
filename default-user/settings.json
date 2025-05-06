@@ -15,7 +15,7 @@
     },
     "currentVersion": "1.12.14",
     "username": "凯文",
-    "active_character": "我的美艳数学老师是手天使.png",
+    "active_character": "约书娅.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "kemini 4.0 正式版 3",
@@ -26,7 +26,7 @@
     "world_info_settings": {
         "world_info": {
             "globalSelect": [
-                "我的美艳数学老师是手天使"
+                "Eldoria"
             ]
         },
         "world_info_depth": 2,
