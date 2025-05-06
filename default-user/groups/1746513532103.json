@@ -1,0 +1,1040 @@
+{
+    "id": "1746513532103",
+    "name": "Group: 约书娅",
+    "members": [
+        "约书娅.png"
+    ],
+    "avatar_url": "/thumbnail?type=avatar&file=%E7%BA%A6%E4%B9%A6%E5%A8%85.png",
+    "allow_self_responses": false,
+    "activation_strategy": false,
+    "generation_mode": 0,
+    "disabled_members": [],
+    "chat_metadata": {
+        "integrity": "3dfc0189-e130-412b-a6c9-548a241c5f80",
+        "chat_id_hash": 6502467676467502,
+        "sheets": [
+            {
+                "uid": "sheet_qgFr32w1",
+                "name": "Spacetime Table",
+                "domain": "",
+                "type": "dynamic",
+                "enable": true,
+                "required": true,
+                "tochat": true,
+                "hashSheet": [
+                    [
+                        "cell_undefined_h2uhveaufIvazdRU",
+                        "cell_undefined_5f91zhiaKteCXegP",
+                        "cell_undefined_KyFEfhAyeRxkwwSo",
+                        "cell_undefined_Hju0u2UcONwjDrQi",
+                        "cell_undefined_32l9A8hmBwiGoVrn"
+                    ]
+                ],
+                "cellHistory": [
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_h2uhveaufIvazdRU",
+                        "type": "sheet_origin",
+                        "status": "",
+                        "coordUid": "coo_dap18Cezz9zEDCF",
+                        "data": {
+                            "note": "Table for recording spacetime information, should be kept to one row",
+                            "initNode": "This round needs to record current time, location, character information using the insertRow function",
+                            "deleteNode": "If this table has more than one row, excess rows should be deleted",
+                            "updateNode": "When the described scene, time, or characters change"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_5f91zhiaKteCXegP",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_eceZY5ViGjvO3Dy",
+                        "data": {
+                            "value": "Date"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_KyFEfhAyeRxkwwSo",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_4g5UEUCWYwgKgKj",
+                        "data": {
+                            "value": "Time"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_Hju0u2UcONwjDrQi",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_PyBZanu11WT4f0O",
+                        "data": {
+                            "value": "Location (Current Description)"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_32l9A8hmBwiGoVrn",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_pqNbEhrlF817PLY",
+                        "data": {
+                            "value": "Characters Here"
+                        },
+                        "targetUid": ""
+                    }
+                ],
+                "config": {
+                    "toChat": true,
+                    "useCustomStyle": false,
+                    "selectedCustomStyleKey": "",
+                    "customStyles": {
+                        "自定义样式": {
+                            "mode": "regex",
+                            "basedOn": "html",
+                            "regex": "/(^[\\s\\S]*$)/g",
+                            "replace": "$1"
+                        }
+                    }
+                }
+            },
+            {
+                "uid": "sheet_9kXdN8jj",
+                "name": "Character Feature Table",
+                "domain": "",
+                "type": "dynamic",
+                "enable": true,
+                "required": true,
+                "tochat": true,
+                "hashSheet": [
+                    [
+                        "cell_undefined_8YwsplWsWceXqaWe",
+                        "cell_undefined_PnykvyBZd5MDpXj1",
+                        "cell_undefined_JhopoSWoy7ozWIKm",
+                        "cell_undefined_6uDzluiThjeDfWiz",
+                        "cell_undefined_c9sslq7rpsPQk8Yx",
+                        "cell_undefined_3muB3V8PCZcy8fZL",
+                        "cell_undefined_mROgR9gEo2tU3QiJ",
+                        "cell_undefined_O3wSmJBJbJ42pvqT",
+                        "cell_undefined_aNvet8co7x6zTxyD"
+                    ]
+                ],
+                "cellHistory": [
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_8YwsplWsWceXqaWe",
+                        "type": "sheet_origin",
+                        "status": "",
+                        "coordUid": "coo_UO48I2ep4ngxvUC",
+                        "data": {
+                            "note": "CSV table for innate or hard-to-change character traits. Consider if any characters from this table are present this round and how they should react.",
+                            "initNode": "This round must find all known characters from the context and insert them using insertRow. Character name cannot be empty.",
+                            "deleteNode": "",
+                            "updateNode": "When a character's body undergoes a persistent change, e.g., scars / When a character develops new hobbies, occupations, liked things / When a character changes residence / When a character mentions important information.",
+                            "insertNode": "When a new character not present in the table appears this round, they should be inserted."
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_PnykvyBZd5MDpXj1",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_1rqwyNZorQd1RCx",
+                        "data": {
+                            "value": "Character Name"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_JhopoSWoy7ozWIKm",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_nynZr3T1a7nzyz6",
+                        "data": {
+                            "value": "Physical Features"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_6uDzluiThjeDfWiz",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_r2HkudgyQxEOGC7",
+                        "data": {
+                            "value": "Personality"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_c9sslq7rpsPQk8Yx",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_UTYk1OYg3T1avpc",
+                        "data": {
+                            "value": "Occupation"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_3muB3V8PCZcy8fZL",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_702x1istVzEMNGV",
+                        "data": {
+                            "value": "Hobbies"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_mROgR9gEo2tU3QiJ",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_LHM3XrUgDf93BSg",
+                        "data": {
+                            "value": "Liked Things (Works, Characters, Items, etc.)"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_O3wSmJBJbJ42pvqT",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_Ltjbe8Lhkst0NX9",
+                        "data": {
+                            "value": "Residence"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_aNvet8co7x6zTxyD",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_OvPUU6j5dhmyAje",
+                        "data": {
+                            "value": "Other Important Info"
+                        },
+                        "targetUid": ""
+                    }
+                ],
+                "config": {
+                    "toChat": true,
+                    "useCustomStyle": false,
+                    "selectedCustomStyleKey": "",
+                    "customStyles": {
+                        "自定义样式": {
+                            "mode": "regex",
+                            "basedOn": "html",
+                            "regex": "/(^[\\s\\S]*$)/g",
+                            "replace": "$1"
+                        }
+                    }
+                }
+            },
+            {
+                "uid": "sheet_x1lIDCaO",
+                "name": "Character & <user> Social Table",
+                "domain": "",
+                "type": "dynamic",
+                "enable": true,
+                "required": true,
+                "tochat": true,
+                "hashSheet": [
+                    [
+                        "cell_undefined_5abcIQEGYjmCYFEh",
+                        "cell_undefined_0IxTjQamWxRXSTHs",
+                        "cell_undefined_y4fcTmoFo8n1Sktn",
+                        "cell_undefined_Mq48R1xPlIAFby4d",
+                        "cell_undefined_Moi1A3lGSJUsh0IN"
+                    ]
+                ],
+                "cellHistory": [
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_5abcIQEGYjmCYFEh",
+                        "type": "sheet_origin",
+                        "status": "",
+                        "coordUid": "coo_FSoyApkuAG5Z9kt",
+                        "data": {
+                            "note": "Consider the attitude if a character interacts with <user>.",
+                            "initNode": "This round must find all known characters from the context and insert them using insertRow. Character name cannot be empty.",
+                            "deleteNode": "",
+                            "updateNode": "When a character's interaction with <user> no longer matches the existing record / When the relationship between a character and <user> changes.",
+                            "insertNode": "When a new character not present in the table appears this round, they should be inserted."
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_0IxTjQamWxRXSTHs",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_CZqnfsl2k5pbUVm",
+                        "data": {
+                            "value": "Character Name"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_y4fcTmoFo8n1Sktn",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_X85wABFgeyvM3Xl",
+                        "data": {
+                            "value": "Relationship with <user>"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_Mq48R1xPlIAFby4d",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_ffW5R0E2eo47nHO",
+                        "data": {
+                            "value": "Attitude towards <user>"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_Moi1A3lGSJUsh0IN",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_Zn0C903A8phPBaW",
+                        "data": {
+                            "value": "Affinity towards <user>"
+                        },
+                        "targetUid": ""
+                    }
+                ],
+                "config": {
+                    "toChat": true,
+                    "useCustomStyle": false,
+                    "selectedCustomStyleKey": "",
+                    "customStyles": {
+                        "自定义样式": {
+                            "mode": "regex",
+                            "basedOn": "html",
+                            "regex": "/(^[\\s\\S]*$)/g",
+                            "replace": "$1"
+                        }
+                    }
+                }
+            },
+            {
+                "uid": "sheet_TuolqRi9",
+                "name": "Tasks, Orders, or Appointments Table",
+                "domain": "",
+                "type": "dynamic",
+                "enable": true,
+                "required": false,
+                "tochat": true,
+                "hashSheet": [
+                    [
+                        "cell_undefined_1SWMJLWKKbeOCAjc",
+                        "cell_undefined_sBdVaPG5PKTVCFxq",
+                        "cell_undefined_L3gU4RUHqQw1cQjB",
+                        "cell_undefined_gYuaYXspqBaqgupv",
+                        "cell_undefined_hFLPVXrBVnbm2WcG"
+                    ]
+                ],
+                "cellHistory": [
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_1SWMJLWKKbeOCAjc",
+                        "type": "sheet_origin",
+                        "status": "",
+                        "coordUid": "coo_HVmGw5EvAL70oNq",
+                        "data": {
+                            "note": "Consider if a task should be performed or an appointment kept this round.",
+                            "deleteNode": "When everyone meets the appointment / When the task or order is completed / When the task, order, or appointment is cancelled.",
+                            "updateNode": "",
+                            "insertNode": "When an appointment is made to do something together at a specific time / When a character receives an order or task to do something."
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_sBdVaPG5PKTVCFxq",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_QFdTb5EIJdoOnKA",
+                        "data": {
+                            "value": "Character"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_L3gU4RUHqQw1cQjB",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_WAQk2LoTUHjGMQa",
+                        "data": {
+                            "value": "Task"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_gYuaYXspqBaqgupv",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_MfShGfVNRBMMYXf",
+                        "data": {
+                            "value": "Location"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_hFLPVXrBVnbm2WcG",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_PsD5VKKPaTK6qYW",
+                        "data": {
+                            "value": "Duration"
+                        },
+                        "targetUid": ""
+                    }
+                ],
+                "config": {
+                    "toChat": true,
+                    "useCustomStyle": false,
+                    "selectedCustomStyleKey": "",
+                    "customStyles": {
+                        "自定义样式": {
+                            "mode": "regex",
+                            "basedOn": "html",
+                            "regex": "/(^[\\s\\S]*$)/g",
+                            "replace": "$1"
+                        }
+                    }
+                }
+            },
+            {
+                "uid": "sheet_QukOh7fV",
+                "name": "Important Event History Table",
+                "domain": "",
+                "type": "dynamic",
+                "enable": true,
+                "required": true,
+                "tochat": true,
+                "hashSheet": [
+                    [
+                        "cell_undefined_o5bSQ8M6x3LN9KtX",
+                        "cell_undefined_PhFIFYZdrTUNDKK9",
+                        "cell_undefined_LeK4szBn20LWUFUC",
+                        "cell_undefined_LA5Jyg2aQucGw3vK",
+                        "cell_undefined_9JpiFnanPkDK59Xf",
+                        "cell_undefined_X9vUP50GaSqkT4ye"
+                    ]
+                ],
+                "cellHistory": [
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_o5bSQ8M6x3LN9KtX",
+                        "type": "sheet_origin",
+                        "status": "",
+                        "coordUid": "coo_69umgyEcQXyU8AV",
+                        "data": {
+                            "note": "Records important events experienced by <user> or characters.",
+                            "initNode": "This round must find insertable events from the context and insert them using insertRow.",
+                            "deleteNode": "",
+                            "updateNode": "",
+                            "insertNode": "When a character experiences a memorable event, such as a confession, breakup, etc."
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_PhFIFYZdrTUNDKK9",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_5G3zDNGvovGFGkM",
+                        "data": {
+                            "value": "Character"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_LeK4szBn20LWUFUC",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_hfB6Og91LKokNeV",
+                        "data": {
+                            "value": "Event Summary"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_LA5Jyg2aQucGw3vK",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_bb1KCWlQfw2xJV5",
+                        "data": {
+                            "value": "Date"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_9JpiFnanPkDK59Xf",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_wrU0Unog2sFbDji",
+                        "data": {
+                            "value": "Location"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_undefined_X9vUP50GaSqkT4ye",
+                        "type": "column_header",
+                        "status": "",
+                        "coordUid": "coo_UGk8w6twGKVFSiV",
+                        "data": {
+                            "value": "Emotion"
+                        },
+                        "targetUid": ""
+                    }
+                ],
+                "config": {
+                    "toChat": true,
+                    "useCustomStyle": false,
+                    "selectedCustomStyleKey": "",
+                    "customStyles": {
+                        "自定义样式": {
+                            "mode": "regex",
+                            "basedOn": "html",
+                            "regex": "/(^[\\s\\S]*$)/g",
+                            "replace": "$1"
+                        }
+                    }
+                }
+            }
+        ],
+        "selected_sheets": [
+            "sheet_qgFr32w1",
+            "sheet_9kXdN8jj",
+            "sheet_x1lIDCaO",
+            "sheet_TuolqRi9",
+            "sheet_QukOh7fV"
+        ],
+        "note_prompt": "",
+        "note_interval": 1,
+        "note_position": 1,
+        "note_depth": 4,
+        "note_role": 0,
+        "timedWorldInfo": {
+            "sticky": {},
+            "cooldown": {}
+        }
+    },
+    "fav": false,
+    "chat_id": "2025-05-06@14h38m51s",
+    "chats": [
+        "2025-05-06@14h38m51s"
+    ],
+    "auto_mode_delay": 5,
+    "generation_mode_join_prefix": "",
+    "generation_mode_join_suffix": ""
+}
