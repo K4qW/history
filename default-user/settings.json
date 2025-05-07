@@ -25,7 +25,9 @@
     "main_api": "openai",
     "world_info_settings": {
         "world_info": {
-            "globalSelect": []
+            "globalSelect": [
+                "我的美艳数学老师是手天使"
+            ]
         },
         "world_info_depth": 2,
         "world_info_min_activations": 0,
