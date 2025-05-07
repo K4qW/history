@@ -9,9 +9,7 @@
     "allow_self_responses": false,
     "activation_strategy": false,
     "generation_mode": 0,
-    "disabled_members": [
-        "卡莲.png"
-    ],
+    "disabled_members": [],
     "chat_metadata": {
         "integrity": "3dfc0189-e130-412b-a6c9-548a241c5f80",
         "chat_id_hash": 6502467676467502,
