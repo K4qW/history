@@ -32,10 +32,10 @@
                     ],
                     [
                         "cell_qgFr32w1_7dBb4LeBzEEJT7yG",
-                        "cell_qgFr32w1_fvvzZ9OvyBPFtQIS",
-                        "cell_qgFr32w1_GImku0ROiNRoCRwS",
-                        "cell_qgFr32w1_1foKLYJ6rptTdwxk",
-                        "cell_qgFr32w1_5cSG9jOCpMtQ32qB"
+                        "cell_qgFr32w1_WSLvrHtkU9hpHf9O",
+                        "cell_qgFr32w1_HizlTj4L3LGczxKd",
+                        "cell_qgFr32w1_fkooMyS7v0cqYpWr",
+                        "cell_qgFr32w1_1myDWGSQ0eC5sHCY"
                     ]
                 ],
                 "cellHistory": [
@@ -383,6 +383,114 @@
                         },
                         "bridge": {},
                         "uid": "cell_qgFr32w1_5cSG9jOCpMtQ32qB",
+                        "type": "cell",
+                        "status": "",
+                        "coordUid": "coo_B1WqlOXIX4VBNRy",
+                        "data": {
+                            "value": "卡莲/约书娅/凯文"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_qgFr32w1_WSLvrHtkU9hpHf9O",
+                        "type": "cell",
+                        "status": "",
+                        "coordUid": "coo_75jNDqI5Z2W5XOe",
+                        "data": {
+                            "value": "今日"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_qgFr32w1_HizlTj4L3LGczxKd",
+                        "type": "cell",
+                        "status": "",
+                        "coordUid": "coo_hwYeZlDIlDv6BWN",
+                        "data": {
+                            "value": "下午"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_qgFr32w1_fkooMyS7v0cqYpWr",
+                        "type": "cell",
+                        "status": "",
+                        "coordUid": "coo_qW2nTxpALXEecFw",
+                        "data": {
+                            "value": "回家路上"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_qgFr32w1_1myDWGSQ0eC5sHCY",
                         "type": "cell",
                         "status": "",
                         "coordUid": "coo_B1WqlOXIX4VBNRy",
@@ -2664,6 +2772,14 @@
                         "cell_QukOh7fV_6LAQzbayfQTupNSl",
                         "cell_QukOh7fV_IEVj37fCur9IjzsR",
                         "cell_QukOh7fV_ZhbNhXT7lts42uMW"
+                    ],
+                    [
+                        "cell_QukOh7fV_lzTw82ZsQTKzZN5f",
+                        "cell_QukOh7fV_lJsfZrqEtU5LUA7I",
+                        "cell_QukOh7fV_OaMaWBkRstj2DJvv",
+                        "cell_QukOh7fV_Q4HMwJoDCtYxyvNv",
+                        "cell_QukOh7fV_7hJgwGniYHk25p1j",
+                        "cell_QukOh7fV_oUpG6KQDAd2ZkgcU"
                     ]
                 ],
                 "cellHistory": [
@@ -9188,6 +9304,166 @@
                             "value": "凯文(疲惫/期待)/卡莲(期待/理解)/约书娅(满足/掌控/计划)"
                         },
                         "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_QukOh7fV_lzTw82ZsQTKzZN5f",
+                        "type": "row_header",
+                        "status": "",
+                        "coordUid": "coo_grnypnNqzgo7RTL",
+                        "data": {},
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_QukOh7fV_lJsfZrqEtU5LUA7I",
+                        "type": "cell",
+                        "status": "",
+                        "coordUid": "coo_GRj9LU8z8y5ij1T",
+                        "data": {
+                            "value": "凯文/卡莲"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_QukOh7fV_OaMaWBkRstj2DJvv",
+                        "type": "cell",
+                        "status": "",
+                        "coordUid": "coo_h4vJrQ5C607XfgQ",
+                        "data": {
+                            "value": "凯文提议晚上一起洗澡，透露曾偷看姐姐和妈妈洗澡"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_QukOh7fV_Q4HMwJoDCtYxyvNv",
+                        "type": "cell",
+                        "status": "",
+                        "coordUid": "coo_mBYLAUsVW7kXj06",
+                        "data": {
+                            "value": "今日下午"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_QukOh7fV_7hJgwGniYHk25p1j",
+                        "type": "cell",
+                        "status": "",
+                        "coordUid": "coo_gfDFq4L3KOFpFEh",
+                        "data": {
+                            "value": "回家路上"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_QukOh7fV_oUpG6KQDAd2ZkgcU",
+                        "type": "cell",
+                        "status": "",
+                        "coordUid": "coo_Lsd779swMUTJVES",
+                        "data": {
+                            "value": "凯文(期待/紧张)/卡莲(兴奋/期待/羞涩)/约书娅(玩味/期待)"
+                        },
+                        "targetUid": ""
                     }
                 ],
                 "config": {
@@ -9234,7 +9510,7 @@
     "generation_mode_join_suffix": "",
     "date_added": 1746600340885.2532,
     "create_date": "2025-5-7 @06h 45m 40s 885ms",
-    "date_last_chat": 1746698307499,
+    "date_last_chat": 1746698351544,
     "chat_size": 496974,
     "past_metadata": {}
 }
