@@ -6,7 +6,7 @@
         "约书娅.png"
     ],
     "avatar_url": "/thumbnail?type=avatar&file=%E7%BA%A6%E4%B9%A6%E5%A8%85.png",
-    "allow_self_responses": false,
+    "allow_self_responses": true,
     "activation_strategy": false,
     "generation_mode": 0,
     "disabled_members": [],
