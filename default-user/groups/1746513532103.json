@@ -9,7 +9,9 @@
     "allow_self_responses": false,
     "activation_strategy": false,
     "generation_mode": 0,
-    "disabled_members": [],
+    "disabled_members": [
+        "约书娅.png"
+    ],
     "chat_metadata": {
         "integrity": "3dfc0189-e130-412b-a6c9-548a241c5f80",
         "chat_id_hash": 6502467676467502,
@@ -6276,9 +6278,9 @@
     "auto_mode_delay": 5,
     "generation_mode_join_prefix": "",
     "generation_mode_join_suffix": "",
-    "date_added": 1746596748970.783,
-    "create_date": "2025-5-7 @05h 45m 48s 970ms",
-    "date_last_chat": 1746600335150,
-    "chat_size": 367606,
+    "date_added": 1746600340885.2532,
+    "create_date": "2025-5-7 @06h 45m 40s 885ms",
+    "date_last_chat": 1746600337733.3127,
+    "chat_size": 496974,
     "past_metadata": {}
 }
