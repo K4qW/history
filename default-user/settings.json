@@ -13,11 +13,12 @@
         "WINavOpened": "true",
         "AlertWI_我的美艳数学老师是手天使.png": "true",
         "mediaWarningShown:回答问题的ai.png": "true",
-        "mediaWarningShown:时间啊停止吧！.png": "true"
+        "mediaWarningShown:时间啊停止吧！.png": "true",
+        "AlertWI_Makio Kodai.png": "true"
     },
     "currentVersion": "1.12.14",
     "username": "凯文",
-    "active_character": "时间啊停止吧！.png",
+    "active_character": "Makio Kodai.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "kemini 4.0 正式版 3",
@@ -2137,7 +2138,8 @@
         "我的美艳数学老师是手天使.png": [],
         "1746513532103": [],
         "回答问题的ai.png": [],
-        "时间啊停止吧！.png": []
+        "时间啊停止吧！.png": [],
+        "Makio Kodai.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
