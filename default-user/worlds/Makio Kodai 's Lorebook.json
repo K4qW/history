@@ -1,0 +1,14 @@
+{
+    "entries": {},
+    "originalData": {
+        "name": "",
+        "description": "",
+        "scan_depth": 50,
+        "token_budget": 500,
+        "recursive_scanning": false,
+        "extensions": {
+            "risu_fullWordMatching": false
+        },
+        "entries": []
+    }
+}
