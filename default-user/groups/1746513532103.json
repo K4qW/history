@@ -3002,6 +3002,22 @@
                         "cell_QukOh7fV_pnDE6ZruBB0G8OQN",
                         "cell_QukOh7fV_nTdvPQpxtQh4aSl7",
                         "cell_QukOh7fV_RE1vuB0NGrwgpbfr"
+                    ],
+                    [
+                        "cell_QukOh7fV_NTbsLFXdmfKj5vnC",
+                        "cell_QukOh7fV_9szlxY1JXGvQvXlV",
+                        "cell_QukOh7fV_EWO1dyTnuChKwDvl",
+                        "cell_QukOh7fV_2pIPX3u2boNigwwB",
+                        "cell_QukOh7fV_xwCe5HdfjNPJQtY7",
+                        "cell_QukOh7fV_4Af1tmMEsHO2SCRb"
+                    ],
+                    [
+                        "cell_QukOh7fV_9t8Z20qIGnOyLQPf",
+                        "cell_QukOh7fV_bE5Oip9tj6NRJTcF",
+                        "cell_QukOh7fV_qQPqAoG4rRyQGx12",
+                        "cell_QukOh7fV_DGgnRDYHrIJ19Ji3",
+                        "cell_QukOh7fV_6bjYY2W23CkFxa9K",
+                        "cell_QukOh7fV_RoxbfaxBMLwXplPr"
                     ]
                 ],
                 "cellHistory": [
@@ -11953,6 +11969,326 @@
                             "value": "凯文(惊讶/好奇/探索)/约书娅(引导/享受/调教)/卡莲(期待/羡慕/好奇)"
                         },
                         "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_QukOh7fV_NTbsLFXdmfKj5vnC",
+                        "type": "row_header",
+                        "status": "",
+                        "coordUid": "coo_w7BXvvEpKJ5HaLA",
+                        "data": {},
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_QukOh7fV_9szlxY1JXGvQvXlV",
+                        "type": "cell",
+                        "status": "",
+                        "coordUid": "coo_8Hq0756vEFzVj6i",
+                        "data": {
+                            "value": "卡莲/约书娅"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_QukOh7fV_EWO1dyTnuChKwDvl",
+                        "type": "cell",
+                        "status": "",
+                        "coordUid": "coo_s0V4L3D5ij87i9Q",
+                        "data": {
+                            "value": "凯文要求卡莲为约书娅剃除阴毛"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_QukOh7fV_2pIPX3u2boNigwwB",
+                        "type": "cell",
+                        "status": "",
+                        "coordUid": "coo_4AYPG3bL4OPxsSB",
+                        "data": {
+                            "value": "今日晚上"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_QukOh7fV_xwCe5HdfjNPJQtY7",
+                        "type": "cell",
+                        "status": "",
+                        "coordUid": "coo_LCIo6EVaMC6lPf0",
+                        "data": {
+                            "value": "约书娅家中浴室"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_QukOh7fV_4Af1tmMEsHO2SCRb",
+                        "type": "cell",
+                        "status": "",
+                        "coordUid": "coo_gwF6Bf9fn4DWuHX",
+                        "data": {
+                            "value": "凯文(期待/挑逗)/卡莲(紧张/期待)/约书娅(引导/期待/挑逗)"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_QukOh7fV_9t8Z20qIGnOyLQPf",
+                        "type": "row_header",
+                        "status": "",
+                        "coordUid": "coo_dcSt26gSTyWDLyg",
+                        "data": {},
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_QukOh7fV_bE5Oip9tj6NRJTcF",
+                        "type": "cell",
+                        "status": "",
+                        "coordUid": "coo_u12to4pgMCUUTTW",
+                        "data": {
+                            "value": "卡莲/约书娅"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_QukOh7fV_qQPqAoG4rRyQGx12",
+                        "type": "cell",
+                        "status": "",
+                        "coordUid": "coo_8MTfDYFVDxvdmKo",
+                        "data": {
+                            "value": "凯文要求卡莲为约书娅剃除阴毛"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_QukOh7fV_DGgnRDYHrIJ19Ji3",
+                        "type": "cell",
+                        "status": "",
+                        "coordUid": "coo_fV12CZ6HHkRiaHp",
+                        "data": {
+                            "value": "今日晚上"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_QukOh7fV_6bjYY2W23CkFxa9K",
+                        "type": "cell",
+                        "status": "",
+                        "coordUid": "coo_ok0AUhyqcdGFieN",
+                        "data": {
+                            "value": "约书娅家中浴室"
+                        },
+                        "targetUid": ""
+                    },
+                    {
+                        "CellType": {
+                            "sheet_origin": "sheet_origin",
+                            "column_header": "column_header",
+                            "row_header": "row_header",
+                            "cell": "cell"
+                        },
+                        "CellAction": {
+                            "editCell": "editCell",
+                            "insertLeftColumn": "insertLeftColumn",
+                            "insertRightColumn": "insertRightColumn",
+                            "insertUpRow": "insertUpRow",
+                            "insertDownRow": "insertDownRow",
+                            "deleteSelfColumn": "deleteSelfColumn",
+                            "deleteSelfRow": "deleteSelfRow",
+                            "clearSheet": "clearSheet"
+                        },
+                        "bridge": {},
+                        "uid": "cell_QukOh7fV_RoxbfaxBMLwXplPr",
+                        "type": "cell",
+                        "status": "",
+                        "coordUid": "coo_wv06f457geqh07q",
+                        "data": {
+                            "value": "凯文(期待/挑逗)/卡莲(紧张/期待)/约书娅(引导/期待/挑逗)"
+                        },
+                        "targetUid": ""
                     }
                 ],
                 "config": {
@@ -11999,7 +12335,7 @@
     "generation_mode_join_suffix": "",
     "date_added": 1746700000708.0464,
     "create_date": "2025-5-8 @10h 26m 40s 708ms",
-    "date_last_chat": 1746899393350,
+    "date_last_chat": 1746899448805,
     "chat_size": 1039947,
     "past_metadata": {}
 }
