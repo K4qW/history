@@ -1695,6 +1695,23 @@
                 "substituteRegex": 0,
                 "minDepth": null,
                 "maxDepth": null
+            },
+            {
+                "id": "0989b4d0-8e89-4878-844e-4d3c27830e23",
+                "scriptName": "【DepressIon】cot隐藏 v2.5",
+                "findRegex": "/[\\s\\S]*(<\\/analysis>)/",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
             }
         ],
         "character_allowed_regex": [],
