@@ -1746,6 +1746,23 @@
                 "substituteRegex": 0,
                 "minDepth": null,
                 "maxDepth": null
+            },
+            {
+                "id": "5b2c21a5-12a2-4ac0-91cc-e2fa76a5eac1",
+                "scriptName": "删除多余内容",
+                "findRegex": "/The\\s+test\\s+was\\s+rejected|<\\/Assistant>/gi",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": false,
+                "runOnEdit": false,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
             }
         ],
         "character_allowed_regex": [],
