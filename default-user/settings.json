@@ -1763,6 +1763,23 @@
                 "substituteRegex": 0,
                 "minDepth": null,
                 "maxDepth": null
+            },
+            {
+                "id": "2fc36368-51ad-4b6f-81cf-1d9676980ed7",
+                "scriptName": "隐藏模型思维think",
+                "findRegex": "/<think>[\\s\\S]*?<\\/think>/gs",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": false,
+                "runOnEdit": false,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
             }
         ],
         "character_allowed_regex": [],
