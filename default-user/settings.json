@@ -1712,6 +1712,40 @@
                 "substituteRegex": 0,
                 "minDepth": null,
                 "maxDepth": null
+            },
+            {
+                "id": "601be60a-d41c-4e23-b445-f0a3bbe91aae",
+                "scriptName": "【DepressIon】防截断 v2.5",
+                "findRegex": "/<(guifan|safety_check)>(?:(?!<(guifan|safety_check)>)[\\s\\S])*?<\\/(guifan|safety_check)>/g",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "e92f8307-5549-41b2-bc22-dcf38eb938af",
+                "scriptName": "【DepressIon】正文思考v2.5",
+                "findRegex": "/<reminder>(?:[\\s\\S])*?<\\/reminder>/g",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
             }
         ],
         "character_allowed_regex": [],
