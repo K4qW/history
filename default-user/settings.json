@@ -1780,6 +1780,23 @@
                 "substituteRegex": 0,
                 "minDepth": null,
                 "maxDepth": null
+            },
+            {
+                "id": "71dedc4b-18d2-4354-911d-a5b1b3abc66e",
+                "scriptName": "隐藏正文的Thinking",
+                "findRegex": "/<Thinking>[\\s\\S]*?<\\/Thinking>/gs",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": false,
+                "runOnEdit": false,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
             }
         ],
         "character_allowed_regex": [],
