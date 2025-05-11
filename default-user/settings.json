@@ -18,8 +18,8 @@
     },
     "currentVersion": "1.12.14",
     "username": "凯文",
-    "active_character": null,
-    "active_group": "1746513532103",
+    "active_character": "Makio Kodai.png",
+    "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "kemini 4.0 正式版 3",
     "user_avatar": "user-default.png",
@@ -1671,7 +1671,7 @@
                 "placement": [
                     1
                 ],
-                "disabled": false,
+                "disabled": true,
                 "markdownOnly": true,
                 "promptOnly": true,
                 "runOnEdit": true,
