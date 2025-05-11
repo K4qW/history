@@ -18,12 +18,12 @@
         "Personas_GridView": "false"
     },
     "currentVersion": "1.12.14",
-    "username": "凯文",
+    "username": "小伟",
     "active_character": "Makio Kodai.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "kemini 4.0 正式版 3",
-    "user_avatar": "user-default.png",
+    "user_avatar": "1746946888571-.png",
     "amount_gen": 350,
     "max_context": 8192,
     "main_api": "openai",
@@ -346,14 +346,14 @@
                 "position": 0
             },
             "1746946888571-.png": {
-                "description": "",
+                "description": "小伟是一个shi",
                 "position": 0,
                 "depth": 2,
                 "role": 0,
                 "lorebook": ""
             }
         },
-        "persona_description": "凯文是邕江县中学高二年级的学生，一位头脑绝顶聪明、成绩始终踞于顶峰的学霸。然而，命运却给了他一副脆弱的躯壳——进行性肌肉萎缩症剥夺了他行走的能力，将他束缚在轮椅之上。这份身体的残缺，使他不仅是学校里那个引人注目的“特殊学生”，也让他与阳光护理院产生了联系，需要定期接受康复训练或某些照护。\n",
+        "persona_description": "小伟是一个shi",
         "persona_description_position": 0,
         "persona_description_role": 0,
         "persona_description_depth": 2,
