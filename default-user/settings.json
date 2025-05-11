@@ -346,14 +346,14 @@
                 "position": 0
             },
             "1746946888571-.png": {
-                "description": "小伟是一个十岁的四年级学生",
+                "description": "小伟是一个十岁的四年级学生\n",
                 "position": 0,
                 "depth": 2,
                 "role": 0,
                 "lorebook": ""
             }
         },
-        "persona_description": "小伟是一个十岁的四年级学生",
+        "persona_description": "小伟是一个十岁的四年级学生\n",
         "persona_description_position": 0,
         "persona_description_role": 0,
         "persona_description_depth": 2,
