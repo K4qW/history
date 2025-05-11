@@ -14,7 +14,8 @@
         "AlertWI_我的美艳数学老师是手天使.png": "true",
         "mediaWarningShown:回答问题的ai.png": "true",
         "mediaWarningShown:时间啊停止吧！.png": "true",
-        "AlertWI_Makio Kodai.png": "true"
+        "AlertWI_Makio Kodai.png": "true",
+        "Personas_GridView": "false"
     },
     "currentVersion": "1.12.14",
     "username": "凯文",
@@ -335,13 +336,21 @@
             "max_additions": 1
         },
         "personas": {
-            "user-default.png": "凯文"
+            "user-default.png": "凯文",
+            "1746946888571-.png": "小伟"
         },
         "default_persona": null,
         "persona_descriptions": {
             "user-default.png": {
                 "description": "凯文是邕江县中学高二年级的学生，一位头脑绝顶聪明、成绩始终踞于顶峰的学霸。然而，命运却给了他一副脆弱的躯壳——进行性肌肉萎缩症剥夺了他行走的能力，将他束缚在轮椅之上。这份身体的残缺，使他不仅是学校里那个引人注目的“特殊学生”，也让他与阳光护理院产生了联系，需要定期接受康复训练或某些照护。\n",
                 "position": 0
+            },
+            "1746946888571-.png": {
+                "description": "",
+                "position": 0,
+                "depth": 2,
+                "role": 0,
+                "lorebook": ""
             }
         },
         "persona_description": "凯文是邕江县中学高二年级的学生，一位头脑绝顶聪明、成绩始终踞于顶峰的学霸。然而，命运却给了他一副脆弱的躯壳——进行性肌肉萎缩症剥夺了他行走的能力，将他束缚在轮椅之上。这份身体的残缺，使他不仅是学校里那个引人注目的“特殊学生”，也让他与阳光护理院产生了联系，需要定期接受康复训练或某些照护。\n",
