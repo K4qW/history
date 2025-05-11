@@ -15,11 +15,13 @@
         "mediaWarningShown:回答问题的ai.png": "true",
         "mediaWarningShown:时间啊停止吧！.png": "true",
         "AlertWI_Makio Kodai.png": "true",
-        "Personas_GridView": "false"
+        "Personas_GridView": "false",
+        "AlertWI_关于正太弟弟上大学后成为滥交男这件事.png": "true",
+        "AlertRegex_关于正太弟弟上大学后成为滥交男这件事.png": "true"
     },
     "currentVersion": "1.12.14",
     "username": "小伟",
-    "active_character": "Makio Kodai.png",
+    "active_character": "关于正太弟弟上大学后成为滥交男这件事.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "kemini 4.0 正式版 3",
@@ -1808,7 +1810,9 @@
                 "maxDepth": null
             }
         ],
-        "character_allowed_regex": [],
+        "character_allowed_regex": [
+            "关于正太弟弟上大学后成为滥交男这件事.png"
+        ],
         "tts": {
             "voiceMap": "",
             "ttsEnabled": false,
@@ -2251,7 +2255,8 @@
         "1746513532103": [],
         "回答问题的ai.png": [],
         "时间啊停止吧！.png": [],
-        "Makio Kodai.png": []
+        "Makio Kodai.png": [],
+        "关于正太弟弟上大学后成为滥交男这件事.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
