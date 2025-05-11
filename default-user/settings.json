@@ -4054,7 +4054,7 @@
         "function_calling": false,
         "names_behavior": 0,
         "continue_postfix": " ",
-        "custom_prompt_post_processing": "merge",
+        "custom_prompt_post_processing": "strict",
         "show_thoughts": false,
         "reasoning_effort": "medium",
         "enable_web_search": false,
