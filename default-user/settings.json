@@ -2,7 +2,7 @@
     "firstRun": false,
     "accountStorage": {
         "__migrated": "1",
-        "LNavOpened": "true",
+        "LNavOpened": "false",
         "NavOpened": "true",
         "mediaWarningShown:Melissa - Sua parceira canina leal!.png": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}",
@@ -3894,7 +3894,7 @@
                     },
                     {
                         "identifier": "e72185e7-7fff-4826-9a6b-39899e6de552",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "74a428dd-1243-4106-9916-31ab6ead6a5f",
