@@ -4,7 +4,6 @@
         "__migrated": "1",
         "LNavOpened": "false",
         "NavOpened": "true",
-        "mediaWarningShown:Melissa - Sua parceira canina leal!.png": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}",
         "SelectedNavTab": "rm_button_characters",
         "NavLockOn": "false",
@@ -2225,29 +2224,8 @@
         }
     ],
     "tag_map": {
-        "default_Seraphina.png": [
-            "1345561466591"
-        ],
         "null": [],
-        "Melissa - Sua parceira canina leal!.png": [
-            "322e79c9-a9bd-4045-997f-b8a543aa3993",
-            "4346624d-5d3a-40bb-b978-291320897d3d",
-            "6bfb47aa-ad5b-46b9-b216-84bf67896fde",
-            "53a17217-affb-446c-b63a-4d986506cd5b",
-            "ea4ca0f4-2b94-4daf-a533-285a3de5e2a0",
-            "61a6bef5-979c-45f2-a17c-cf46fe7cf117",
-            "dfe93dab-7a1c-4241-8692-ebe86476e013",
-            "dca0cd91-7d2b-4f15-9aab-3d5894e53cb6",
-            "df868ac5-7214-4f49-966f-375cea7e5fdd",
-            "38ba3926-4fd5-42ca-bf6e-53211e19f439",
-            "2332d950-c78c-46be-b596-51da20ff07e8",
-            "1c47cb29-9d8d-473d-99b6-fe146579c559",
-            "628a9e5e-6e5a-49d9-9553-a1f9c8047657",
-            "8d677576-12d5-4e72-ae94-26dec41b6a67",
-            "479b8f8b-f69e-408a-b684-102852b88dfd"
-        ],
         "娜娜.png": [],
-        "Nicole.png": [],
         "卡莲.png": [],
         "约书娅.png": [],
         "1746455179287": [],
@@ -2258,7 +2236,6 @@
         "时间啊停止吧！.png": [],
         "Makio Kodai.png": [],
         "关于正太弟弟上大学后成为滥交男这件事.png": [],
-        "通用手机卡.png": [],
         "The Hypnosis App.png": []
     },
     "nai_settings": {
