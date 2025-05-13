@@ -4040,7 +4040,7 @@
         "deepseek_model": "deepseek-chat",
         "xai_model": "grok-3-beta",
         "custom_model": "gemini-2.5-pro-exp-03-25",
-        "custom_url": "https://iai.iisbo.com/v1",
+        "custom_url": "卡号：gemini5000次-FcZBW8  卡密：sk-izyoluJeNGHNvEY141IJCYHLa0hYzxVwOdYR3nXgDbXNwlHA 端点https://iai.iisbo.com/v1 查询网址https://api-quota.shigure.top/",
         "custom_include_body": "",
         "custom_exclude_body": "",
         "custom_include_headers": "",
