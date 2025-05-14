@@ -12,7 +12,7 @@
             "showLabel": false,
             "label": "角色",
             "title": "",
-            "message": "/send <Request: 本轮必须在dataTable中更新关于{{input}}角色的信息>",
+            "message": "/send <Request: 本轮必须更新{{input}}角色的信息>",
             "contextList": [],
             "preventAutoExecute": true,
             "isHidden": false,
@@ -29,7 +29,7 @@
             "showLabel": false,
             "label": "事件",
             "title": "",
-            "message": "/send <Request: 本轮需要把{{input}}事件根据上下文的信息使用insertRow函数完整的插入到重要事件表格(tableIndex:4)中>",
+            "message": "/send <Request: 本轮需要把{{input}}事情插入到重要事件表格>",
             "contextList": [],
             "preventAutoExecute": true,
             "isHidden": false,
@@ -44,26 +44,9 @@
         {
             "id": 6,
             "showLabel": false,
-            "label": "提示",
+            "label": "提示词",
             "title": "",
-            "message": "/send <Request: 本轮必须根据上下文完整填充dataTable表格，并按照要求正确使用insertRow，deleteRow，和updateRow函数>",
-            "contextList": [],
-            "preventAutoExecute": true,
-            "isHidden": false,
-            "executeOnStartup": false,
-            "executeOnUser": false,
-            "executeOnAi": false,
-            "executeOnChatChange": false,
-            "executeOnGroupMemberDraft": false,
-            "executeOnNewChat": false,
-            "automationId": ""
-        },
-        {
-            "id": 8,
-            "showLabel": false,
-            "label": "隐藏",
-            "title": "",
-            "message": "/hide {{input}}",
+            "message": "/send <Request: 本轮必须根据上下文完整填充表格，使用insertRow函数>",
             "contextList": [],
             "preventAutoExecute": true,
             "isHidden": false,
@@ -76,5 +59,5 @@
             "automationId": ""
         }
     ],
-    "idIndex": 8
+    "idIndex": 6
 }
