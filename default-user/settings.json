@@ -2048,7 +2048,9 @@
                         "enabled": false
                     }
                 ],
-                "characters_with_scripts": []
+                "characters_with_scripts": [
+                    "The Hypnosis App.png"
+                ]
             },
             "audio": {
                 "audio_enabled": true,
