@@ -2048,9 +2048,7 @@
                         "enabled": false
                     }
                 ],
-                "characters_with_scripts": [
-                    null
-                ]
+                "characters_with_scripts": []
             },
             "audio": {
                 "audio_enabled": true,
