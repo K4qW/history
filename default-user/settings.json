@@ -2038,7 +2038,16 @@
             },
             "script": {
                 "global_script_enabled": true,
-                "scriptsRepository": [],
+                "scriptsRepository": [
+                    {
+                        "id": "d1403fb5-a73f-45f5-b454-b3ba6899e9ac",
+                        "name": "男性向爱爱花式玩法",
+                        "content": "",
+                        "info": "",
+                        "buttons": [],
+                        "enabled": true
+                    }
+                ],
                 "characters_with_scripts": []
             },
             "audio": {
