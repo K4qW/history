@@ -31,7 +31,9 @@
     "main_api": "openai",
     "world_info_settings": {
         "world_info": {
-            "globalSelect": []
+            "globalSelect": [
+                "！！Table_v1.3.15"
+            ]
         },
         "world_info_depth": 2,
         "world_info_min_activations": 0,
@@ -1998,7 +2000,16 @@
         "hypebot": {},
         "vectors": {},
         "variables": {
-            "global": {}
+            "global": {
+                "tableConfigCoTBegin": "<think>",
+                "tableConfigCoTEnd": "</think>",
+                "tableConfigContentBegin": "<content>",
+                "tableConfigContentEnd": "</content>",
+                "tableConfigEventRows": "1-3",
+                "tableConfigEventLength": "30字以内",
+                "tableConfigGrandSummaryRows": "5",
+                "tableConfigGrandSummaryLength": "200字以内"
+            }
         },
         "attachments": [],
         "character_attachments": {},
