@@ -16431,7 +16431,7 @@
             "plot_speed": "推进主线剧情",
             "draft": " ",
             "status": " ",
-            "summary": "\n//don't forget\nsummarize()",
+            "summary": " ",
             "enhance_settings": " ",
             "enhance_grow": " ",
             "table": " ",
@@ -16445,8 +16445,8 @@
             "floor": "思考已结束，现在开始分析。\n</thinking>\n<analysis>\n分析过程：",
             "reader_expectation": "坚强与乐观",
             "parallel": "\n    .step(\"处理平行事件\")\n    .substep(\"现在有没有平行事件？如果没有，合理添加一些与主线有交叉可能的事件，不要加一些跟当前场景完全无关的事件。\")\n    .substep(\"根据本次剧情发展，以各自的合理视角和信息，以及合理的时间线，以现在进行时，用确定性的语言进行直接推进，描述完全基于“现在”，不进行推测和未来预测\")\n    .substep(\"对于每一个平行事件，考虑是否有角色过于敏捷地知道了一些不该知道的消息？避免从全知视角推测事件。\")\n    .substep(\"清除短期内无法交叉且不重要的平行事件\")\n    .substep(\"有没有可能与当前场景交叉的平行事件？有的话适当修改剧情发展（如果在性场景中，禁止交叉\")\n",
-            "length_min": "800",
-            "length_max": "1200",
+            "length_min": "500",
+            "length_max": "1000",
             "start_writing": "start_writing(writing_config)"
         }
     },
@@ -16458,9 +16458,9 @@
     "auto_mode_delay": 5,
     "generation_mode_join_prefix": "",
     "generation_mode_join_suffix": "",
-    "date_added": 1746941736595.98,
-    "create_date": "2025-5-11 @05h 35m 36s 595ms",
-    "date_last_chat": 1746942598303,
-    "chat_size": 1654785,
+    "date_added": 1746942605392.1196,
+    "create_date": "2025-5-11 @05h 50m 05s 392ms",
+    "date_last_chat": 1747195531601,
+    "chat_size": 1780474,
     "past_metadata": {}
 }
