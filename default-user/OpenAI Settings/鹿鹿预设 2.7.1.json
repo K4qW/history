@@ -16,7 +16,7 @@
     "perplexity_model": "llama-3-70b-instruct",
     "groq_model": "llama3-70b-8192",
     "zerooneai_model": "",
-    "custom_model": "claude-3-7-sonnet-20250219",
+    "custom_model": "gemini-2.5-flash-preview-04-17",
     "custom_url": "https://iai.iisbo.com/v1",
     "custom_include_body": "",
     "custom_exclude_body": "",
@@ -49,7 +49,7 @@
     "scenario_format": "[Circumstances and context of the dialogue: {{scenario}}]",
     "personality_format": "[{{char}}'s personality: {{personality}}]",
     "group_nudge_prompt": "[Write the next reply only as {{char}}.]",
-    "stream_openai": true,
+    "stream_openai": false,
     "prompts": [
         {
             "name": "Main Prompt",
