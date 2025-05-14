@@ -2045,7 +2045,7 @@
                         "content": "",
                         "info": "",
                         "buttons": [],
-                        "enabled": true
+                        "enabled": false
                     }
                 ],
                 "characters_with_scripts": []
