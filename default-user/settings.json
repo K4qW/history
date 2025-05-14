@@ -2,7 +2,7 @@
     "firstRun": false,
     "accountStorage": {
         "__migrated": "1",
-        "LNavOpened": "false",
+        "LNavOpened": "true",
         "NavOpened": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}",
         "SelectedNavTab": "rm_button_characters",
@@ -4040,7 +4040,7 @@
         "claude_use_sysprompt": false,
         "use_makersuite_sysprompt": false,
         "use_alt_scale": false,
-        "squash_system_messages": false,
+        "squash_system_messages": true,
         "image_inlining": false,
         "inline_image_quality": "low",
         "bypass_status_check": false,
