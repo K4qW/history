@@ -4016,7 +4016,7 @@
         "zerooneai_model": "yi-large",
         "deepseek_model": "deepseek-chat",
         "xai_model": "grok-3-beta",
-        "custom_model": "[伪流]gemini-2.5-pro-exp-03-25",
+        "custom_model": "[伪流]gemini-2.5-pro-preview-03-25",
         "custom_url": "https://iai.iisbo.com/v1",
         "custom_include_body": "",
         "custom_exclude_body": "",
