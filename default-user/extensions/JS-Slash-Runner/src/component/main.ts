@@ -6,8 +6,10 @@ import {
 } from '@/component/macro';
 import {
   addCodeToggleButtonsToAllMessages,
+  addRenderingHideStyleSettings,
   addRenderingOptimizeSettings,
   partialRenderEvents,
+  removeRenderingHideStyleSettings,
   removeRenderingOptimizeSettings,
   renderAllIframes,
   renderMessageAfterDelete,
@@ -26,7 +28,6 @@ import { checkVariablesEvents, clearTempVariables, shouldUpdateVariables } from 
 import { script_url } from '@/script_url';
 import { getSettingValue, saveSettingValue } from '@/util/extension_variables';
 import { initializeToastr } from '@/component/toastr';
-
 import { eventSource, event_types, reloadCurrentChat, saveSettingsDebounced, this_chid } from '@sillytavern/script';
 
 const handleChatChanged = async () => {
@@ -92,6 +93,9 @@ async function handleExtensionToggle(userAction: boolean = true, enable: boolean
     if (userAction && getSettingValue('render.rendering_optimize')) {
       addRenderingOptimizeSettings();
     }
+    if (userAction && getSettingValue('render.render_hide_style')) {
+      addRenderingHideStyleSettings();
+    }
 
     window.addEventListener('message', handleIframe);
 
@@ -125,6 +129,10 @@ async function handleExtensionToggle(userAction: boolean = true, enable: boolean
       removeRenderingOptimizeSettings();
     }
 
+    if (getSettingValue('render.render_hide_style')) {
+      removeRenderingHideStyleSettings();
+    }
+
     window.removeEventListener('message', handleIframe);
 
     eventSource.removeListener(event_types.CHAT_CHANGED, handleChatChanged);
@@ -140,6 +148,5 @@ async function handleExtensionToggle(userAction: boolean = true, enable: boolean
       await reloadCurrentChat();
     }
   }
-  $('#js_slash_runner_text').text(getSettingValue('enabled_extension') ? '关闭前端渲染' : '开启前端渲染');
   saveSettingsDebounced();
 }

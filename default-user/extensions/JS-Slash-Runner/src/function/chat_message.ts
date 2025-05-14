@@ -1,8 +1,11 @@
 import {
+  addOneMessage,
   chat,
   event_types,
   eventSource,
   messageFormatting,
+  name1,
+  name2,
   reloadCurrentChat,
   saveChatConditional,
   substituteParamsExtended,
@@ -16,6 +19,7 @@ interface ChatMessage {
   is_hidden: boolean;
   message: string;
   data: Record<string, any>;
+  extra: Record<string, any>;
 }
 
 interface ChatMessageSwiped {
@@ -26,6 +30,7 @@ interface ChatMessageSwiped {
   swipe_id: number;
   swipes: string[];
   swipes_data: Record<string, any>[];
+  swipes_info: Record<string, any>[];
 }
 
 interface GetChatMessagesOption {
@@ -117,8 +122,10 @@ export function getChatMessages(
 
     const swipe_id = message?.swipe_id ?? 0;
     const swipes = message?.swipes ?? [message.mes];
-    const swipes_data = message?.variables ?? [];
-    const data = swipes_data[swipe_id] ?? {};
+    const swipes_data = message?.variables ?? [{}];
+    const swipes_info = message?.swipes_info ?? [message?.extra ?? {}];
+    const extra = swipes_info[swipe_id];
+    const data = swipes_data[swipe_id];
 
     if (include_swipes) {
       return {
@@ -129,6 +136,7 @@ export function getChatMessages(
         swipe_id: swipe_id,
         swipes: swipes,
         swipes_data: swipes_data,
+        swipes_info: swipes_info,
       };
     }
     return {
@@ -138,6 +146,7 @@ export function getChatMessages(
       is_hidden: message.is_system,
       message: message.mes,
       data: data,
+      extra: extra,
 
       // for compatibility
       swipe_id: swipe_id,
@@ -203,23 +212,35 @@ export async function setChatMessages(
         }
         _.set(data, ['variables', data.swipe_id ?? 0], chat_message.data);
       }
+      if (chat_message?.extra !== undefined) {
+        if (data?.swipes_info === undefined) {
+          _.set(data, 'swipes_info', _.times(data.swipes?.length ?? 1, _.constant({})));
+        }
+        _.set(data, 'extra', chat_message?.extra);
+        _.set(data, ['swipes_info', data.swipe_id ?? 0], chat_message?.extra);
+      }
     } else if (
       chat_message?.swipe_id !== undefined ||
       chat_message?.swipes !== undefined ||
-      chat_message?.swipes_data !== undefined
+      chat_message?.swipes_data !== undefined ||
+      chat_message?.swipes_info !== undefined
     ) {
       _.set(chat_message, 'swipe_id', chat_message.swipe_id ?? data.swipe_id ?? 0);
       _.set(chat_message, 'swipes', chat_message.swipes ?? data.swipes ?? [data.mes]);
       _.set(chat_message, 'swipes_data', chat_message.swipes_data ?? data.variables ?? [{}]);
+      _.set(chat_message, 'swipes_info', chat_message.swipes_info ?? data.swipes_info ?? [{}]);
       const max_length =
-        _.max([chat_message.swipes?.length as number, chat_message.swipes_data?.length as number]) ?? 1;
+        _.max([chat_message.swipes?.length, chat_message.swipes_data?.length, chat_message.swipes_info?.length]) ?? 1;
       (chat_message.swipes as string[]).length = max_length;
       (chat_message.swipes_data as Record<string, any>[]).length = max_length;
+      (chat_message.swipes_info as Record<string, any>[]).length = max_length;
 
       _.set(data, 'swipes', chat_message.swipes);
       _.set(data, 'variables', chat_message.swipes_data);
+      _.set(data, 'swipes_info', chat_message.swipes_info);
       _.set(data, 'swipe_id', chat_message.swipe_id);
       _.set(data, 'mes', data.swipes[data.swipe_id]);
+      _.set(data, 'extra', data.swipes_info[data.swipe_id]);
     }
   };
 
@@ -265,6 +286,118 @@ export async function setChatMessages(
   );
 }
 
+interface ChatMessageCreating {
+  name?: string;
+  role: 'system' | 'assistant' | 'user';
+  is_hidden?: boolean;
+  message: string;
+  data?: Record<string, any>;
+}
+
+interface CreateChatMessagesOption {
+  insert_at?: number | 'end';
+  refresh?: 'none' | 'affected' | 'all';
+}
+
+export async function createChatMessages(
+  chat_messages: ChatMessageCreating[],
+  { insert_at = 'end', refresh = 'all' }: CreateChatMessagesOption = {},
+): Promise<void> {
+  if (insert_at !== 'end') {
+    insert_at = insert_at < 0 ? chat.length + insert_at : insert_at;
+    if (insert_at < 0 || insert_at > chat.length) {
+      throw Error(`提供的 insert_at 无效, 请提供一个在 '0' 到 '${chat.length}' 之间的整数, 你提供的是: '${insert_at}'`);
+    }
+  }
+
+  const convert = async (chat_message: ChatMessageCreating) => {
+    const result: Record<string, any> = {};
+
+    if (chat_message?.name !== undefined) {
+      _.set(result, 'name', chat_message.name);
+    } else if (chat_message.role === 'user') {
+      _.set(result, 'name', name1);
+    } else {
+      _.set(result, 'name', name2);
+    }
+
+    // TODO: avatar
+
+    _.set(result, 'is_user', chat_message.role === 'user');
+    _.set(result, 'is_system', chat_message.is_hidden ?? false);
+    _.set(result, 'mes', chat_message.message);
+    _.set(result, ['variables', 0], chat_message.data ?? {});
+    return result;
+  };
+
+  const converted = await Promise.all(chat_messages.map(convert));
+  if (insert_at === 'end') {
+    chat.push(...converted);
+  } else {
+    chat.splice(insert_at, 0, ...converted);
+  }
+  await saveChatConditional();
+  if (refresh === 'affected' && insert_at === 'end') {
+    converted.forEach(message => addOneMessage(message));
+  } else {
+    await reloadCurrentChat();
+  }
+  console.info(
+    `在${insert_at === 'end' ? '最后' : `第 ${insert_at} 楼前`}创建 ${
+      chat_messages.length
+    } 条消息, 选项: ${JSON.stringify({
+      insert_at,
+      refresh,
+    })}`,
+  );
+}
+
+interface DeleteChatMessagesOption {
+  refresh?: 'none' | 'all';
+}
+
+export async function deleteChatMessages(
+  message_ids: number[],
+  { refresh = 'all' }: DeleteChatMessagesOption = {},
+): Promise<void> {
+  message_ids = message_ids.map(id => (id < 0 ? chat.length + id : id)).filter(id => id >= 0 && id < chat.length);
+
+  _.pullAt(chat, message_ids);
+  await saveChatConditional();
+  if (refresh === 'all') {
+    await reloadCurrentChat();
+  }
+  console.info(
+    `删除第 '${message_ids.join(', ')}' 楼的消息, 选项: ${JSON.stringify({
+      refresh,
+    })}`,
+  );
+}
+
+interface RotateChatMessagesOption {
+  refresh?: 'none' | 'all';
+}
+
+export async function rotateChatMessages(
+  begin: number,
+  middle: number,
+  end: number,
+  { refresh = 'all' }: RotateChatMessagesOption = {},
+): Promise<void> {
+  const right_part = chat.splice(middle, end - middle);
+  chat.splice(begin, 0, ...right_part);
+  await saveChatConditional();
+  if (refresh === 'all') {
+    await reloadCurrentChat();
+  }
+  console.info(
+    `旋转第 '[${begin}, ${middle}) [${middle}, ${end})' 楼的消息, 选项: ${JSON.stringify({
+      refresh,
+    })}`,
+  );
+}
+
+//----------------------------------------------------------------------------------------------------------------------
 /** @deprecated 请使用 `setChatMessages` 代替 */
 export async function setChatMessage(
   field_values: { message?: string; data?: Record<string, any> },

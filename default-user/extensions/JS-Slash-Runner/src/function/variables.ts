@@ -1,7 +1,4 @@
-import {
-  getCharacterScriptVariables,
-  replaceCharacterScriptVariables,
-} from '@/component/script_repository/script_repository';
+import { getCharacterScriptVariables, replaceCharacterScriptVariables } from '@/component/script_repository/data';
 import { getChatMessages, setChatMessages } from '@/function/chat_message';
 
 import { chat, chat_metadata, saveMetadata, saveSettings } from '@sillytavern/script';
@@ -55,7 +52,7 @@ export async function replaceVariables(
         throw Error(`提供的 message_id(${message_id}) 超出了聊天消息楼层号范围`);
       }
       message_id = message_id === 'latest' ? -1 : message_id;
-      await setChatMessages([{ message_id, data: variables }]);
+      await setChatMessages([{ message_id, data: variables }], { refresh: 'none' });
       break;
     case 'chat':
       _.set(chat_metadata, 'variables', variables);
@@ -70,7 +67,11 @@ export async function replaceVariables(
       break;
   }
 
-  console.info(`将${type == 'chat' ? `聊天` : `全局`}变量表替换为:\n${JSON.stringify(variables)}`);
+  console.info(
+    `将${
+      type === 'message' ? '消息' : type === 'chat' ? '聊天' : type === 'character' ? '角色' : '全局'
+    }变量表替换为:\n${JSON.stringify(variables)}`,
+  );
 }
 
 type VariablesUpdater =
@@ -83,7 +84,11 @@ export async function updateVariablesWith(
 ): Promise<Record<string, any>> {
   let variables = getVariables({ type, message_id });
   variables = await updater(variables);
-  console.info(`对${type === 'chat' ? `聊天` : `全局`}变量表进行更新`);
+  console.info(
+    `对${
+      type === 'message' ? '消息' : type === 'chat' ? '聊天' : type === 'character' ? '角色' : '全局'
+    }变量表进行更新`,
+  );
   await replaceVariables(variables, { type, message_id });
   return variables;
 }

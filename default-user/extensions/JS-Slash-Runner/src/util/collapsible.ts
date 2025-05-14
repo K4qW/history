@@ -96,9 +96,53 @@ export class Collapsible {
    * 初始化事件
    */
   private initEvents(): void {
-    this.$header.on('click', () => {
+    this.$header.on('click', (event: JQuery.ClickEvent) => {
+      // 检查点击是否发生在控件上，如果是则不触发折叠
+      if (this.shouldIgnoreClick(event.target)) {
+        return;
+      }
       this.toggle();
     });
+  }
+
+  /**
+   * 判断点击是否应该被忽略（不触发折叠）
+   * @param target 点击的目标元素
+   * @returns 是否应该忽略点击
+   */
+  private shouldIgnoreClick(target: EventTarget): boolean {
+    const $target = $(target);
+
+    // 检查是否点击在开关或其子元素上
+    if (
+      $target.hasClass('toggle-switch') ||
+      $target.hasClass('toggle-input') ||
+      $target.hasClass('toggle-label') ||
+      $target.hasClass('toggle-handle') ||
+      $target.closest('.toggle-switch').length > 0
+    ) {
+      return true;
+    }
+
+    // 检查是否点击在按钮或其子元素上
+    if (
+      $target.hasClass('menu_button') ||
+      $target.closest('.menu_button').length > 0 ||
+      $target.hasClass('TavernHelper-button') ||
+      $target.closest('.TavernHelper-button').length > 0
+    ) {
+      return true;
+    }
+
+    // 检查是否点击在表单元素上
+    if (
+      $target.is('input, select, textarea, button, a') ||
+      $target.closest('input, select, textarea, button, a').length > 0
+    ) {
+      return true;
+    }
+
+    return false;
   }
 
   /**

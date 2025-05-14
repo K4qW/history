@@ -22,9 +22,13 @@ interface LorebookEntry {
   order: number;
   probability: number;
 
+  /** @deprecated 请使用 `keys` 代替 */
   key: string[];
+  keys: string[];
   logic: 'and_any' | 'and_all' | 'not_all' | 'not_any';
+  /** @deprecated 请使用 `filters` 代替 */
   filter: string[];
+  filters: string[];
 
   scan_depth: 'same_as_global' | number;
   case_sensitive: 'same_as_global' | boolean;
@@ -150,6 +154,7 @@ function toLorebookEntry(entry: _OriginalLorebookEntry): LorebookEntry {
     probability: entry.probability,
 
     key: entry.key,
+    keys: entry.key,
     logic: {
       0: 'and_any',
       1: 'and_all',
@@ -157,6 +162,7 @@ function toLorebookEntry(entry: _OriginalLorebookEntry): LorebookEntry {
       3: 'not_all',
     }[entry.selectiveLogic as number] as 'and_any' | 'and_all' | 'not_any' | 'not_all',
     filter: entry.keysecondary,
+    filters: entry.keysecondary,
 
     scan_depth: entry.scanDepth ?? 'same_as_global',
     case_sensitive: entry.caseSensitive ?? 'same_as_global',
@@ -216,6 +222,13 @@ export async function getLorebookEntries(
 function fromPartialLorebookEntry(
   entry: Pick<LorebookEntry, 'uid' | 'display_index'> & Partial<LorebookEntry>,
 ): Pick<_OriginalLorebookEntry, 'uid' | 'displayIndex'> & Partial<_OriginalLorebookEntry> {
+  if (_.has(entry, 'key') && !_.has(entry, 'keys')) {
+    _.set(entry, 'keys', entry.key);
+  }
+  if (_.has(entry, 'filter') && !_.has(entry, 'filters')) {
+    _.set(entry, 'filters', entry.filter);
+  }
+
   const transformers = {
     uid: (value: LorebookEntry['uid']) => ({ uid: value }),
     display_index: (value: LorebookEntry['display_index']) => ({ displayIndex: value }),
@@ -250,7 +263,7 @@ function fromPartialLorebookEntry(
     order: (value: LorebookEntry['order']) => ({ order: value }),
     probability: (value: LorebookEntry['probability']) => ({ probability: value }),
 
-    key: (value: LorebookEntry['key']) => ({ key: value }),
+    keys: (value: LorebookEntry['keys']) => ({ key: value }),
     logic: (value: LorebookEntry['logic']) => ({
       selectiveLogic: {
         and_any: 0,
@@ -259,7 +272,7 @@ function fromPartialLorebookEntry(
         not_all: 3,
       }[value],
     }),
-    filter: (value: LorebookEntry['filter']) => ({ keysecondary: value }),
+    filters: (value: LorebookEntry['filter']) => ({ keysecondary: value }),
 
     scan_depth: (value: LorebookEntry['scan_depth']) => ({ scanDepth: value === 'same_as_global' ? null : value }),
     case_sensitive: (value: LorebookEntry['case_sensitive']) => ({

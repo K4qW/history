@@ -9,7 +9,8 @@ import { characters, reloadCurrentChat, saveChatConditional, this_chid } from '@
 import { renderExtensionTemplateAsync } from '@sillytavern/scripts/extensions';
 
 import { io } from 'socket.io-client';
-import { ScriptRepository, ScriptType } from '../script_repository/script_repository';
+import { ScriptType } from '../script_repository/index';
+import { ScriptManager } from '../script_repository/script_controller';
 
 const templatePath = `${extensionFolderPath}/src/component/listener`;
 const default_settings = {
@@ -33,9 +34,12 @@ async function refresh_iframe(): Promise<void> {
   if (character) {
     await saveChatConditional();
   }
-  const script_repository = ScriptRepository.getInstance();
-  await script_repository.cancelRunScriptsByType(ScriptType.GLOBAL);
-  await script_repository.runScriptsByType(ScriptType.GLOBAL);
+
+  const scriptManager = ScriptManager.getInstance();
+  const globalScripts = scriptManager.getGlobalScripts();
+
+  await scriptManager.stopScriptsByType(globalScripts, ScriptType.GLOBAL);
+  await scriptManager.runScriptsByType(globalScripts, ScriptType.GLOBAL);
   await reloadCurrentChat();
 }
 
@@ -99,7 +103,7 @@ export async function initListener() {
 
   $listener_container
     .find('#iframe_update_listener_enabled')
-    .prop('checked', getOrSaveSettingValue('listener.enabled', default_settings.enabled))
+    .prop('checked', await getOrSaveSettingValue('listener.enabled', default_settings.enabled))
     .on('click', async function (this: HTMLInputElement) {
       saveSettingValue('listener.enabled', $(this).prop('checked'));
       connect_socket(getSettingValue('listener.url'));
@@ -107,14 +111,14 @@ export async function initListener() {
 
   $listener_container
     .find('#iframe_update_listener_enable_echo')
-    .prop('checked', getOrSaveSettingValue('listener.enable_echo', default_settings.enable_echo))
+    .prop('checked', await getOrSaveSettingValue('listener.enable_echo', default_settings.enable_echo))
     .on('click', function (this: HTMLInputElement) {
       saveSettingValue('listener.enable_echo', $(this).prop('checked'));
     });
 
   $listener_container
     .find('#iframe_update_listener_url')
-    .val(getOrSaveSettingValue('listener.url', default_settings.url))
+    .val(await getOrSaveSettingValue('listener.url', default_settings.url))
     .on('input', async function (this: HTMLInputElement) {
       const url = saveSettingValue('listener.url', String($(this).val()));
       connect_socket(url);
@@ -122,7 +126,7 @@ export async function initListener() {
 
   $listener_container
     .find('#iframe_update_listener_duration')
-    .val(getOrSaveSettingValue('listener.duration', default_settings.duration))
+    .val(await getOrSaveSettingValue('listener.duration', default_settings.duration))
     .on('input', async function (this: HTMLInputElement) {
       saveSettingValue('listener.duration', Number($(this).val()));
       reset_refresh_duration();

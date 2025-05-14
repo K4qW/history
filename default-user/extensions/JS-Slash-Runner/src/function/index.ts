@@ -5,17 +5,26 @@ import {
   getChatHistoryBrief,
   getChatHistoryDetail,
 } from '@/function/character';
-import { getChatMessages, setChatMessage, setChatMessages } from '@/function/chat_message';
+import {
+  createChatMessages,
+  deleteChatMessages,
+  getChatMessages,
+  rotateChatMessages,
+  setChatMessage,
+  setChatMessages,
+} from '@/function/chat_message';
 import { formatAsDisplayedMessage, retrieveDisplayedMessage } from '@/function/displayed_message';
 import { builtin_prompt_default_order, generate, generateRaw } from '@/function/generate';
 import {
   createLorebook,
   deleteLorebook,
   getCharLorebooks,
+  getChatLorebook,
   getCurrentCharPrimaryLorebook,
   getLorebooks,
   getLorebookSettings,
   getOrCreateChatLorebook,
+  setChatLorebook,
   setCurrentCharLorebooks,
   setLorebookSettings,
 } from '@/function/lorebook';
@@ -72,6 +81,9 @@ function getTavernHelper() {
     getChatMessages,
     setChatMessages,
     setChatMessage,
+    createChatMessages,
+    deleteChatMessages,
+    rotateChatMessages,
 
     // displayed_message
     formatAsDisplayedMessage,
@@ -101,6 +113,8 @@ function getTavernHelper() {
     deleteLorebook,
     createLorebook,
     getCurrentCharPrimaryLorebook,
+    getChatLorebook,
+    setChatLorebook,
     getOrCreateChatLorebook,
 
     // slash

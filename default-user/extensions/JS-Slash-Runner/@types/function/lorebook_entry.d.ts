@@ -23,9 +23,9 @@ interface LorebookEntry {
   order: number;
   probability: number;
 
-  key: string[];
+  keys: string[];
   logic: 'and_any' | 'and_all' | 'not_all' | 'not_any';
-  filter: string[];
+  filters: string[];
 
   scan_depth: 'same_as_global' | number;
   case_sensitive: 'same_as_global' | boolean;
@@ -63,10 +63,6 @@ interface GetLorebookEntriesOption {
  * @example
  * // 获取世界书中所有条目的所有信息
  * const entries = await getLorebookEntries("eramgt少女歌剧");
- *
- * @example
- * // 按内容筛选, content 中必须出现 `'神乐光'`
- * const entries = await getLorebookEntries("eramgt少女歌剧", {filter: {content: '神乐光'}});
  */
 async function getLorebookEntries(lorebook: string): Promise<LorebookEntry[]>;
 

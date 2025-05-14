@@ -108,8 +108,24 @@ function getCurrentCharPrimaryLorebook(): string | null;
 async function setCurrentCharLorebooks(lorebooks: Partial<CharLorebooks>): Promise<void>;
 
 /**
+ * 获取当前聊天绑定的世界书
+ *
+ * @returns 当前聊天绑定的世界书名称, 或 null 表示没有绑定世界书
+ */
+async function getChatLorebook(): Promise<string | null>;
+
+/**
+ * 设置当前聊天绑定的世界书
+ *
+ * @param lorebook 世界书名称, 或 null 表示移除世界书
+ */
+async function setChatLorebook(lorebook: string | null): Promise<void>;
+
+/**
  * 获取或创建当前聊天绑定的世界书
+ *
+ * @param lorebook 可选参数, 指定世界书名称; 如果未指定, 则根据聊天文件名自动生成一个世界书名称
  *
  * @returns 聊天世界书的名称
  */
-async function getOrCreateChatLorebook(): Promise<string>;
+async function getOrCreateChatLorebook(lorebook?: string): Promise<string>;

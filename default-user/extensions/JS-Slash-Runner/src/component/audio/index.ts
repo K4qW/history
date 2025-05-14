@@ -1,22 +1,11 @@
-import {
-  extensionFolderPath,
-  getSettingValue,
-  saveSettingValue,
-} from '@/util/extension_variables';
+import { Collapsible } from '@/util/collapsible';
+import { extensionFolderPath, getSettingValue, saveSettingValue } from '@/util/extension_variables';
 
-import {
-  chat_metadata,
-  eventSource,
-  event_types,
-  saveSettingsDebounced,
-} from '@sillytavern/script';
-import {
-  renderExtensionTemplateAsync,
-  saveMetadataDebounced,
-} from '@sillytavern/scripts/extensions';
+import { chat_metadata, eventSource, event_types, saveSettingsDebounced } from '@sillytavern/script';
+import { renderExtensionTemplateAsync, saveMetadataDebounced } from '@sillytavern/scripts/extensions';
 import { POPUP_TYPE, callGenericPopup } from '@sillytavern/scripts/popup';
 import { isMobile } from '@sillytavern/scripts/RossAscends-mods';
-import { getSortableDelay } from '@sillytavern/scripts/utils';
+import { getSortableDelay, loadFileToDocument } from '@sillytavern/scripts/utils';
 
 let isExtensionEnabled: boolean;
 let isAudioEnabled: boolean;
@@ -55,9 +44,7 @@ export async function updateAudio(type = 'bgm', isUserInput = false) {
   }
 
   const isTypeEnabled =
-    type === 'bgm'
-      ? getSettingValue('audio.bgm_enabled')
-      : getSettingValue('audio.ambient_enabled');
+    type === 'bgm' ? getSettingValue('audio.bgm_enabled') : getSettingValue('audio.ambient_enabled');
 
   if (!isTypeEnabled) {
     return;
@@ -78,15 +65,9 @@ export async function updateAudio(type = 'bgm', isUserInput = false) {
         ? getSettingValue('audio.bgm_selected') || playlist[0]
         : getSettingValue('audio.ambient_selected') || playlist[0];
   } else {
-    const mode =
-      type === 'bgm'
-        ? getSettingValue('audio.bgm_mode')
-        : getSettingValue('audio.ambient_mode');
+    const mode = type === 'bgm' ? getSettingValue('audio.bgm_mode') : getSettingValue('audio.ambient_mode');
 
-    const selected =
-      type === 'bgm'
-        ? getSettingValue('audio.bgm_selected')
-        : getSettingValue('audio.ambient_selected');
+    const selected = type === 'bgm' ? getSettingValue('audio.bgm_selected') : getSettingValue('audio.ambient_selected');
 
     audio_url = getNextFileByMode(mode, playlist, selected);
   }
@@ -101,16 +82,10 @@ export async function updateAudio(type = 'bgm', isUserInput = false) {
   if (type === 'ambient') {
     const cleanAudioSrc = audio.src.split('?')[0];
     const cleanAudioUrl = audio_url.split('?')[0];
-    if (
-      decodeURIComponent(cleanAudioSrc) === decodeURIComponent(cleanAudioUrl) &&
-      !audioEnded
-    ) {
+    if (decodeURIComponent(cleanAudioSrc) === decodeURIComponent(cleanAudioUrl) && !audioEnded) {
       return;
     }
-  } else if (
-    decodeURIComponent(audio.src) === decodeURIComponent(audio_url) &&
-    !audioEnded
-  ) {
+  } else if (decodeURIComponent(audio.src) === decodeURIComponent(audio_url) && !audioEnded) {
     return;
   }
 
@@ -197,16 +172,12 @@ export async function updateAudioSelect(type = 'bgm') {
 
   const audioList = type === 'bgm' ? list_BGMS : list_ambients;
   let selectedSetting =
-    type === 'bgm'
-      ? getSettingValue('audio.bgm_selected')
-      : getSettingValue('audio.ambient_selected');
+    type === 'bgm' ? getSettingValue('audio.bgm_selected') : getSettingValue('audio.ambient_selected');
 
   if (audioList && audioList.length > 0) {
     // 检查当前选择的音频是否在列表中，如果不在则选择第一个
     if (!audioList.includes(selectedSetting)) {
-      console.warn(
-        `[Audio] 当前选择的音频 ${selectedSetting} 不在列表中，自动选择列表第一个音频`,
-      );
+      console.warn(`[Audio] 当前选择的音频 ${selectedSetting} 不在列表中，自动选择列表第一个音频`);
       selectedSetting = audioList[0];
       if (type === 'bgm') {
         saveSettingValue('audio.bgm_selected', selectedSetting);
@@ -216,9 +187,7 @@ export async function updateAudioSelect(type = 'bgm') {
       saveSettingsDebounced();
     }
 
-    const audioFiles = Array.isArray(audioList)
-      ? audioList
-      : audioList.split(',').map(file => file.trim());
+    const audioFiles = Array.isArray(audioList) ? audioList : audioList.split(',').map(file => file.trim());
     audioFiles.forEach((file: string) => {
       const fileLabel = file.replace(/^.*[\\\/]/, '').replace(/\.[^/.]+$/, '');
       selectElement.append(new Option(fileLabel, file));
@@ -259,11 +228,7 @@ export function getAudioUrlWithCacheBusting(originalUrl: string) {
  * @param playlist 播放列表
  * @param currentFile 当前文件
  */
-export function getNextFileByMode(
-  mode: string,
-  playlist: string[],
-  currentFile: string,
-) {
+export function getNextFileByMode(mode: string, playlist: string[], currentFile: string) {
   if (!playlist || playlist.length === 0) {
     return '';
   }
@@ -293,10 +258,7 @@ export function getNextFileByMode(
  * @param type 音频类型 "bgm" 或 "ambient"
  * @param status 是否启用
  */
-export function toggleAudioControls(
-  type: 'bgm' | 'ambient',
-  status = 'enable',
-) {
+export function toggleAudioControls(type: 'bgm' | 'ambient', status = 'enable') {
   const isMainEnabled = $('#audio_enabled').prop('checked');
 
   const shouldEnable = isMainEnabled && status === 'enable';
@@ -488,9 +450,7 @@ export async function refreshAudioResources() {
  */
 
 async function openUrlManagerPopup(typeKey: 'bgmurl' | 'ambienturl') {
-  const urlManager = $(
-    await renderExtensionTemplateAsync(`${templatePath}`, 'audio_url_manager'),
-  );
+  const urlManager = $(await renderExtensionTemplateAsync(`${templatePath}`, 'audio_url_manager'));
   urlManager.prepend(`
     <style>
       #saved_audio_url.empty::after {
@@ -502,9 +462,7 @@ async function openUrlManagerPopup(typeKey: 'bgmurl' | 'ambienturl') {
     </style>
   `);
   const savedAudioUrl = urlManager.find('#saved_audio_url').empty();
-  const urlTemplate = $(
-    await renderExtensionTemplateAsync(`${templatePath}`, 'audio_url_template'),
-  );
+  const urlTemplate = $(await renderExtensionTemplateAsync(`${templatePath}`, 'audio_url_template'));
 
   if (!chat_metadata.variables) {
     chat_metadata.variables = {};
@@ -571,10 +529,7 @@ async function openUrlManagerPopup(typeKey: 'bgmurl' | 'ambienturl') {
     });
 
     urlHtml.find('.delete_url').on('click', async function () {
-      const confirmDelete = await callGenericPopup(
-        '确认要删除此链接?',
-        POPUP_TYPE.CONFIRM,
-      );
+      const confirmDelete = await callGenericPopup('确认要删除此链接?', POPUP_TYPE.CONFIRM);
 
       if (!confirmDelete) {
         return;
@@ -644,19 +599,11 @@ async function openUrlManagerPopup(typeKey: 'bgmurl' | 'ambienturl') {
     const currentAmbientUrl = getSettingValue('audio.ambient_selected');
 
     // 如果当前播放的音频不在新的列表中，停止播放
-    if (
-      typeKey === 'bgmurl' &&
-      currentBgmUrl &&
-      !newUrlList.includes(currentBgmUrl)
-    ) {
+    if (typeKey === 'bgmurl' && currentBgmUrl && !newUrlList.includes(currentBgmUrl)) {
       const bgmAudio = $('#audio_bgm')[0] as HTMLAudioElement;
       bgmAudio.pause();
       bgmEnded = true;
-    } else if (
-      typeKey === 'ambienturl' &&
-      currentAmbientUrl &&
-      !newUrlList.includes(currentAmbientUrl)
-    ) {
+    } else if (typeKey === 'ambienturl' && currentAmbientUrl && !newUrlList.includes(currentAmbientUrl)) {
       const ambientAudio = $('#audio_ambient')[0] as HTMLAudioElement;
       ambientAudio.pause();
       ambientEnded = true;
@@ -676,17 +623,14 @@ async function openUrlManagerPopup(typeKey: 'bgmurl' | 'ambienturl') {
 /**
  * 点击音频总开关时的处理函数
  */
-async function handleAudioToggle(
-  enable: boolean = true,
-  userInput: boolean = true,
-) {
+async function handleAudioToggle(enable: boolean = true, userInput: boolean = true) {
   if (userInput) {
     isAudioEnabled = enable;
     saveSettingValue('audio.audio_enabled', isAudioEnabled);
   }
 
   if (enable) {
-    $('#audio-player-content').css('opacity', '1');
+    $('#audio-player-content').removeClass('audio-disabled-mask');
     if (isExtensionEnabled === undefined) {
       isExtensionEnabled = getSettingValue('enabled_extension');
     }
@@ -714,7 +658,7 @@ async function handleAudioToggle(
       }
     }
   } else {
-    $('#audio-player-content').css('opacity', '0.5');
+    $('#audio-player-content').addClass('audio-disabled-mask');
     ($('#audio_bgm')[0] as HTMLAudioElement).pause();
     ($('#audio_ambient')[0] as HTMLAudioElement).pause();
     toggleAudioControls('bgm', 'disable');
@@ -739,9 +683,7 @@ export async function playAudio(type: 'bgm' | 'ambient') {
   const playPauseIcon = $(`#audio_${type}_play_pause_icon`);
 
   if (audioElement.error && audioElement.error.code === 4) {
-    console.warn(
-      `The ${type} element has no supported sources. Trying to reload selected audio from dropdown...`,
-    );
+    console.warn(`The ${type} element has no supported sources. Trying to reload selected audio from dropdown...`);
 
     const selectedAudio = $(`#audio_${type}_select`).val() as string;
     if (!selectedAudio) {
@@ -774,17 +716,13 @@ async function onAudioModeClick(type: 'bgm' | 'ambient') {
     { mode: 'stop', icon: 'fa-cancel' },
   ];
 
-  const currentModeIndex = modes.findIndex(
-    m => m.mode === getSettingValue(`audio.${type}_mode`),
-  );
+  const currentModeIndex = modes.findIndex(m => m.mode === getSettingValue(`audio.${type}_mode`));
 
   const nextModeIndex = (currentModeIndex + 1) % modes.length;
 
   saveSettingValue(`audio.${type}_mode`, modes[nextModeIndex].mode);
 
-  $(`#audio_${type}_mode_icon`).removeClass(
-    'fa-repeat fa-random fa-redo-alt fa-cancel',
-  );
+  $(`#audio_${type}_mode_icon`).removeClass('fa-repeat fa-random fa-redo-alt fa-cancel');
 
   $(`#audio_${type}_mode_icon`).addClass(modes[nextModeIndex].icon);
 }
@@ -803,10 +741,7 @@ async function onAudioSelectChange(type: 'bgm' | 'ambient') {
  * @param type 音频类型 "bgm" 或 "ambient"
  */
 async function onAudioCooldownInput() {
-  saveSettingValue(
-    'audio.audio_cooldown',
-    ~~($(`#audio_cooldown`).val() as string),
-  );
+  saveSettingValue('audio.audio_cooldown', ~~($(`#audio_cooldown`).val() as string));
 }
 
 /**
@@ -814,14 +749,8 @@ async function onAudioCooldownInput() {
  * @param type 音频类型 "bgm" 或 "ambient"
  */
 async function onAudioVolumeChange(type: 'bgm' | 'ambient') {
-  saveSettingValue(
-    `audio.${type}_volume`,
-    ~~($(`#audio_${type}_volume_slider`).val() as string),
-  );
-  $(`#audio_${type}`).prop(
-    'volume',
-    getSettingValue(`audio.${type}_volume`) * 0.01,
-  );
+  saveSettingValue(`audio.${type}_volume`, ~~($(`#audio_${type}_volume_slider`).val() as string));
+  $(`#audio_${type}`).prop('volume', getSettingValue(`audio.${type}_volume`) * 0.01);
   $(`#audio_${type}_volume`).text(getSettingValue(`audio.${type}_volume`));
 }
 
@@ -830,10 +759,7 @@ async function onAudioVolumeChange(type: 'bgm' | 'ambient') {
  * @param type 音频类型 "bgm" 或 "ambient"
  */
 async function onAudioMuteClick(type: 'bgm' | 'ambient') {
-  saveSettingValue(
-    `audio.${type}_muted`,
-    !getSettingValue(`audio.${type}_muted`),
-  );
+  saveSettingValue(`audio.${type}_muted`, !getSettingValue(`audio.${type}_muted`));
   $(`#audio_${type}_mute_icon`).toggleClass('fa-volume-high');
   $(`#audio_${type}_mute_icon`).toggleClass('fa-volume-mute');
   $(`#audio_${type}`).prop('muted', !$(`#audio_${type}`).prop('muted'));
@@ -866,11 +792,7 @@ export async function togglePlayPause(type: 'bgm' | 'ambient') {
  * @param type 音频类型
  */
 async function openUrlImportPopup(): Promise<string[] | null> {
-  const input = (await callGenericPopup(
-    '输入要导入的网络音频链接（每行一个）',
-    POPUP_TYPE.INPUT,
-    '',
-  )) as string | null;
+  const input = (await callGenericPopup('输入要导入的网络音频链接（每行一个）', POPUP_TYPE.INPUT, '')) as string | null;
 
   if (!input) {
     console.debug('[Audio] URL import cancelled');
@@ -921,10 +843,7 @@ function initAudioStyles(type: 'bgm' | 'ambient') {
     $(`#audio_${type}`).prop('muted', false);
   }
 
-  $(`#enable_${type}`).prop(
-    'checked',
-    getSettingValue(`audio.${type}_enabled`),
-  );
+  $(`#enable_${type}`).prop('checked', getSettingValue(`audio.${type}_enabled`));
 
   const audioElement = $(`#audio_${type}`)[0] as HTMLAudioElement;
   const playPauseIcon = $(`#audio_${type}_play_pause_icon`);
@@ -944,13 +863,25 @@ function initAudioStyles(type: 'bgm' | 'ambient') {
  * 初始化所有音频相关组件和事件监听器
  */
 export async function initAudioComponents() {
+  // 加载音频播放器样式
+  await loadFileToDocument(`/scripts/extensions/${extensionFolderPath}/src/component/audio/style.css`, 'css');
+
   isAudioEnabled = getSettingValue('audio.audio_enabled');
   handleAudioToggle(isAudioEnabled, false);
   $('#audio-enable-toggle')
     .prop('checked', isAudioEnabled)
-    .on('click', (event: JQuery.ClickEvent) =>
-      handleAudioToggle(event.target.checked, true),
-    );
+    .on('click', (event: JQuery.ClickEvent) => handleAudioToggle(event.target.checked, true));
+
+  // 初始化折叠控件
+  Collapsible.initAll('#audio-player-header', {
+    headerSelector: '#audio-player-header',
+    contentSelector: '#audio-player-content',
+    initiallyExpanded: true,
+    animationDuration: {
+      expand: 280,
+      collapse: 250,
+    },
+  });
 
   // 初始化音乐和音效样式
   initAudioStyles('bgm');
@@ -1008,9 +939,7 @@ export async function initAudioComponents() {
       },
     ]);
 
-    $('#audio_cooldown')
-      .on('input', onAudioCooldownInput)
-      .val(getSettingValue('audio.audio_cooldown'));
+    $('#audio_cooldown').on('input', onAudioCooldownInput).val(getSettingValue('audio.audio_cooldown'));
 
     // 监听音频结束事件
     initAudioEventListeners('bgm');
@@ -1046,17 +975,10 @@ export async function initAudioComponents() {
   const bgmAudio = $('#audio_bgm')[0] as HTMLAudioElement;
   const ambientAudio = $('#audio_ambient')[0] as HTMLAudioElement;
 
-  const togglePlayPauseIcon = (
-    audioElement: HTMLAudioElement,
-    iconSelector: string,
-  ) => {
+  const togglePlayPauseIcon = (audioElement: HTMLAudioElement, iconSelector: string) => {
     const icon = $(iconSelector);
-    audioElement.addEventListener('play', () =>
-      icon.removeClass('fa-play').addClass('fa-pause'),
-    );
-    audioElement.addEventListener('pause', () =>
-      icon.removeClass('fa-pause').addClass('fa-play'),
-    );
+    audioElement.addEventListener('play', () => icon.removeClass('fa-play').addClass('fa-pause'));
+    audioElement.addEventListener('pause', () => icon.removeClass('fa-pause').addClass('fa-play'));
   };
 
   togglePlayPauseIcon(bgmAudio, '#audio_bgm_play_pause_icon');

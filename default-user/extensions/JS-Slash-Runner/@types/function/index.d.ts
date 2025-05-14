@@ -23,7 +23,10 @@ interface Window {
 
     // chat_message
     readonly getChatMessages: typeof getChatMessages;
-    readonly setChatMessage: typeof setChatMessage;
+    readonly setChatMessages: typeof setChatMessages;
+    readonly deleteChatMessages: typeof deleteChatMessages;
+    readonly rotateChatMessages: typeof rotateChatMessages;
+    readonly createChatMessages: typeof createChatMessages;
 
     // displayed_message
     readonly formatAsDisplayedMessage: typeof formatAsDisplayedMessage;

@@ -16,33 +16,33 @@ type ScriptConfig = {
 export const DEFAULT_SCRIPT_CONFIGS: Record<string, ScriptConfig> = {
   标签化: {
     name: '标签化: 随世界书、预设或链接配置自动开关正则、提示词条目',
-    content: 'https://gcore.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/标签化/index.js',
-    info: 'https://gcore.jsdelivr.net/gh/StageDog/tavern_resource/src/酒馆助手/标签化/README.md',
+    content: 'https://fastly.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/标签化/index.js',
+    info: 'https://fastly.jsdelivr.net/gh/StageDog/tavern_resource/src/酒馆助手/标签化/README.md',
   },
   样式加载: {
     name: '样式加载: 像酒馆主题自定义 css 一样编写角色卡 css',
-    content: 'https://gcore.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/样式加载/index.js',
-    info: 'https://gcore.jsdelivr.net/gh/StageDog/tavern_resource/src/酒馆助手/样式加载/README.md',
+    content: 'https://fastly.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/样式加载/index.js',
+    info: 'https://fastly.jsdelivr.net/gh/StageDog/tavern_resource/src/酒馆助手/样式加载/README.md',
   },
   预设防误触: {
     name: '预设防误触',
-    content: 'https://gcore.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/预设防误触/index.js',
-    info: 'https://gcore.jsdelivr.net/gh/StageDog/tavern_resource/src/酒馆助手/预设防误触/README.md',
+    content: 'https://fastly.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/预设防误触/index.js',
+    info: 'https://fastly.jsdelivr.net/gh/StageDog/tavern_resource/src/酒馆助手/预设防误触/README.md',
   },
   资源预载: {
     name: '资源预载: 提前缓存角色卡的插图',
-    content: 'https://gcore.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/资源预载/index.js',
-    info: 'https://gcore.jsdelivr.net/gh/StageDog/tavern_resource/src/酒馆助手/资源预载/README.md',
+    content: 'https://fastly.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/资源预载/index.js',
+    info: 'https://fastly.jsdelivr.net/gh/StageDog/tavern_resource/src/酒馆助手/资源预载/README.md',
   },
   自动关闭前端卡不兼容选项: {
     name: '自动关闭前端卡不兼容选项',
-    content: 'https://gcore.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/自动关闭前端卡不兼容选项/index.js',
-    info: 'https://gcore.jsdelivr.net/gh/StageDog/tavern_resource/src/酒馆助手/自动关闭前端卡不兼容选项/README.md',
+    content: 'https://fastly.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/自动关闭前端卡不兼容选项/index.js',
+    info: 'https://fastly.jsdelivr.net/gh/StageDog/tavern_resource/src/酒馆助手/自动关闭前端卡不兼容选项/README.md',
   },
   自动开启角色卡局部正则: {
     name: '自动开启角色卡局部正则',
-    content: 'https://gcore.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/自动开启角色卡局部正则/index.js',
-    info: 'https://gcore.jsdelivr.net/gh/StageDog/tavern_resource/src/酒馆助手/自动开启角色卡局部正则/README.md',
+    content: 'https://fastly.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/自动开启角色卡局部正则/index.js',
+    info: 'https://fastly.jsdelivr.net/gh/StageDog/tavern_resource/src/酒馆助手/自动开启角色卡局部正则/README.md',
   },
 };
 

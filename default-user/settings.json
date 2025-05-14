@@ -2048,7 +2048,7 @@
                 "render_optimize": false
             },
             "script": {
-                "global_script_enabled": false,
+                "global_script_enabled": true,
                 "scriptsRepository": [
                     {
                         "id": "d1403fb5-a73f-45f5-b454-b3ba6899e9ac",
@@ -2060,7 +2060,6 @@
                     }
                 ],
                 "characters_with_scripts": [
-                    "The Hypnosis App.png",
                     "1"
                 ]
             },

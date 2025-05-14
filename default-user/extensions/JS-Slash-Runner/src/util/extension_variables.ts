@@ -2,11 +2,9 @@
 import { characters, getThumbnailUrl, saveSettingsDebounced, this_chid, user_avatar } from '@sillytavern/script';
 import { extension_settings } from '@sillytavern/scripts/extensions';
 
-export let app_ready = false;
-
 export const extensionName = 'JS-Slash-Runner';
 export const extensionSettingName = 'TavernHelper';
-//TODO: 修改名称
+
 export const extensionFolderPath = `third-party/${extensionName}`;
 
 // 获取头像原图
@@ -52,17 +50,10 @@ export function saveSettingValue<T>(path: string, value: T): T {
  * @param default_value 扩展没有该设置变量时应该设置并返回的默认值
  * @returns 设置变量的值
  */
-export function getOrSaveSettingValue<T>(path: string, default_value: T): T {
+export async function getOrSaveSettingValue<T>(path: string, default_value: T): Promise<T> {
   // @ts-ignore
   if (_.has(extension_settings[extensionSettingName], path)) {
     return getSettingValue(path);
   }
   return saveSettingValue(path, default_value);
-}
-
-/**
- * 初次加载时设置app_ready为true
- */
-export function setAppReady() {
-  app_ready = true;
 }

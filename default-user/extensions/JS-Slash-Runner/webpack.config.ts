@@ -110,6 +110,7 @@ const config = (_env: any, argv: any): webpack.Configuration => {
         },
       },
     },
+    externalsType: 'var',
     externals: [
       ({ context, request }, callback) => {
         if (!context || !request) {
@@ -119,7 +120,7 @@ const config = (_env: any, argv: any): webpack.Configuration => {
         const dir_basename = path.basename(__dirname);
         if (/^@sillytavern/.test(request)) {
           let script = `${relative_sillytavern_path}\\${request.replace('@sillytavern/', '')}`.replace(/\\/g, '/');
-          return callback(null, path.extname(script) === '.js' ? script : `${script}.js`);
+          return callback(null, 'module ' + (path.extname(script) === '.js' ? script : `${script}.js`));
         }
         if (!script_path.includes(dir_basename)) {
           let is_js = path.extname(script_path) === '.js';
@@ -129,13 +130,15 @@ const config = (_env: any, argv: any): webpack.Configuration => {
           }
           if (is_js) {
             const script = (relative_sillytavern_path + script_path.replace(sillytavern_path, '')).replace(/\\/g, '/');
-            return callback(null, script);
+            return callback(null, 'module ' + script);
           }
         }
         callback();
       },
+      /^hljs$/i,
       /^(jquery|\$)$/i,
-      /^_$/,
+      /^jqueryui$/i,
+      /^_$/i,
       /^toastr$/i,
     ],
   };

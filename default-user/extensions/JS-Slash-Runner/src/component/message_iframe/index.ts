@@ -9,6 +9,7 @@ let isExtensionEnabled: boolean;
 let tampermonkeyMessageListener: ((event: MessageEvent) => void) | null = null;
 let isRenderEnabled: boolean;
 let isRenderingOptimizeEnabled: boolean;
+let isRenderingHideStyleEnabled: boolean;
 let renderDepth: number;
 let isTampermonkeyEnabled: boolean;
 
@@ -256,7 +257,7 @@ async function renderMessagesInIframes(mode = RENDER_MODES.FULL, specificMesId: 
       );
       updateMessageBlock(messageId, message);
     }
-    if (isRenderingOptimizeEnabled) {
+    if (isRenderingHideStyleEnabled) {
       const $mesText = $(
         `.mes[mesid="${messageId}"] .mes_block .mes_reasoning_details, .mes[mesid="${messageId}"] .mes_block .mes_text`,
       );
@@ -284,7 +285,7 @@ async function renderMessagesInIframes(mode = RENDER_MODES.FULL, specificMesId: 
       const shouldHaveButton = shouldHaveCodeToggle(this);
       const shouldRenderAsIframe = !shouldHaveButton;
 
-      if (shouldHaveButton && isRenderingOptimizeEnabled) {
+      if (shouldHaveButton && isRenderingHideStyleEnabled) {
         const $pre = $(this);
         addToggleButtonToCodeBlock($pre);
       }
@@ -389,7 +390,7 @@ async function renderMessagesInIframes(mode = RENDER_MODES.FULL, specificMesId: 
 
           eventSource.emitAndWait('message_iframe_render_ended', this.id);
 
-          if (isRenderingOptimizeEnabled) {
+          if (isRenderingHideStyleEnabled) {
             removeCodeToggleButtonsByMesId(messageId);
           }
 
@@ -457,8 +458,6 @@ function observeIframeContent(iframe: HTMLIFrameElement) {
     window._observedElements?.set(docBody, { iframe });
     resizeObserver.observe(docBody);
 
-    console.log(`[Render] 观察 ${iframe.id || 'unnamed'} 的内容变化`);
-
     adjustIframeHeight(iframe);
   } catch (error) {
     console.error('[Render] 设置 iframe 内容观察时出错:', error);
@@ -517,7 +516,6 @@ export function destroyIframe(iframe: HTMLIFrameElement): Promise<void> {
         if (data.iframe === iframe) {
           window._sharedResizeObserver.unobserve(element);
           window._observedElements.delete(element);
-          console.log(`[Render] 停止观察 ${iframe.id || 'unnamed'} 的内容变化`);
           break;
         }
       }
@@ -1052,7 +1050,6 @@ function removeAllCodeToggleButtons() {
  * 添加前端卡渲染优化设置
  */
 export function addRenderingOptimizeSettings() {
-  injectCodeBlockHideStyles();
   hljs.highlightElement = function () {
     return;
   };
@@ -1063,8 +1060,6 @@ export function addRenderingOptimizeSettings() {
  */
 export function removeRenderingOptimizeSettings() {
   hljs.highlightElement = originalHighlightElement;
-  removeCodeBlockHideStyles();
-  removeAllCodeToggleButtons();
 }
 
 /**
@@ -1094,6 +1089,49 @@ async function handleRenderingOptimizationToggle(enable: boolean, userInput: boo
     }
   }
 }
+
+/**
+ * 添加代码块折叠设置
+ */
+export function addRenderingHideStyleSettings() {
+  injectCodeBlockHideStyles();
+}
+
+/**
+ * 移除代码块折叠设置
+ */
+export function removeRenderingHideStyleSettings() {
+  removeCodeBlockHideStyles();
+  removeAllCodeToggleButtons();
+}
+
+/**
+ * 处理代码块折叠设置改变
+ * @param enable 是否启用代码块折叠
+ * @param userInput 是否由用户手动触发
+ */
+async function handleRenderingHideStyleToggle(enable: boolean, userInput: boolean = true) {
+  if (userInput) {
+    saveSettingValue('render.render_hide_style', enable);
+    isRenderingHideStyleEnabled = enable;
+  }
+  if (!isRenderEnabled) {
+    return;
+  }
+
+  if (enable) {
+    addRenderingHideStyleSettings();
+    if (userInput) {
+      await clearAndRenderAllIframes();
+    }
+  } else {
+    removeRenderingHideStyleSettings();
+    if (userInput) {
+      await clearAndRenderAllIframes();
+    }
+  }
+}
+
 /**
  * 处理渲染器启用设置改变
  * @param enable 是否启用渲染器
@@ -1109,11 +1147,17 @@ async function handleRenderEnableToggle(enable: boolean, userInput: boolean = tr
     if (isRenderingOptimizeEnabled) {
       addRenderingOptimizeSettings();
     }
+    if (isRenderingHideStyleEnabled) {
+      addRenderingHideStyleSettings();
+    }
     await renderAllIframes();
   } else {
     $('#render-settings-content .extension-content-item').not(':first').css('opacity', 0.5);
     if (isRenderingOptimizeEnabled) {
       removeRenderingOptimizeSettings();
+    }
+    if (isRenderingHideStyleEnabled) {
+      removeRenderingHideStyleSettings();
     }
     await clearAllIframes();
     await reloadCurrentChat();
@@ -1125,14 +1169,14 @@ async function handleRenderEnableToggle(enable: boolean, userInput: boolean = tr
  */
 function addRenderQuickButton() {
   const buttonHtml = $(`
-  <div id="tavern-helper-container" class="list-group-item flex-container flexGap5 interactable">
+  <div id="tavern-helper-render-container" class="list-group-item flex-container flexGap5 interactable">
       <div class="fa-solid fa-puzzle-piece extensionsMenuExtensionButton" /></div>
-      <span id="tavern-helper-text">${isRenderEnabled ? '关闭前端渲染' : '开启前端渲染'}</span>
+      <span id="tavern-helper-render-text">${isRenderEnabled ? '关闭前端渲染' : '开启前端渲染'}</span>
   </div>`);
   buttonHtml.css('display', 'flex');
   $('#extensionsMenu').append(buttonHtml);
-  $('#tavern-helper-container').on('click', async function () {
-    $('#tavern-helper-text').text(!isRenderEnabled ? '关闭前端渲染' : '开启前端渲染');
+  $('#tavern-helper-render-container').on('click', async function () {
+    $('#tavern-helper-render-text').text(!isRenderEnabled ? '关闭前端渲染' : '开启前端渲染');
     await handleRenderEnableToggle(!isRenderEnabled, true);
     $('#render-enable-toggle').prop('checked', isRenderEnabled);
   });
@@ -1150,6 +1194,14 @@ export async function initIframePanel() {
   $('#render-optimize-toggle')
     .prop('checked', isRenderingOptimizeEnabled)
     .on('click', (event: JQuery.ClickEvent) => handleRenderingOptimizationToggle(event.target.checked, true));
+
+  isRenderingHideStyleEnabled = getSettingValue('render.render_hide_style');
+  if (isRenderingHideStyleEnabled) {
+    handleRenderingHideStyleToggle(true, false);
+  }
+  $('#render-hide-style-toggle')
+    .prop('checked', isRenderingHideStyleEnabled)
+    .on('click', (event: JQuery.ClickEvent) => handleRenderingHideStyleToggle(event.target.checked, true));
 
   // 处理处理深度设置
   renderDepth = getSettingValue('render.render_depth');

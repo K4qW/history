@@ -1,11 +1,13 @@
 import { findChar } from '@/compatibility';
-import { triggerSlash } from '@/function/slash';
 
 import {
   characters,
+  chat_metadata,
+  getCurrentChatId,
   getOneCharacter,
   getRequestHeaders,
   saveCharacterDebounced,
+  saveMetadata,
   saveSettings,
   saveSettingsDebounced,
   this_chid,
@@ -17,6 +19,7 @@ import {
   createNewWorldInfo,
   deleteWorldInfo,
   getWorldInfoSettings,
+  METADATA_KEY,
   selected_world_info,
   setWorldInfoButtonClass,
   world_info,
@@ -252,12 +255,10 @@ export function getCharLorebooks({
   if (selected_group && !name) {
     throw Error(`不要在群组中调用这个功能`);
   }
-  //@ts-ignore
-  const filename = name;
   // @ts-ignore
-  const character = findChar({ name: filename });
+  const character = findChar({ name });
   if (!character) {
-    throw Error(`未找到名为 '${filename}' 的角色卡`);
+    throw Error(`未找到名为 '${name}' 的角色卡`);
   }
 
   const books: CharLorebooks = { primary: null, additional: [] };
@@ -266,8 +267,10 @@ export function getCharLorebooks({
     books.primary = character.data?.extensions?.world;
   }
 
-  // @ts-ignore
-  const extraCharLore = world_info.charLore?.find(e => e.name === filename);
+  const filename = getCharaFilename(characters.indexOf(character)) as string;
+  const extraCharLore = (world_info as { charLore: { name: string; extraBooks: string[] }[] }).charLore?.find(
+    e => e.name === filename,
+  );
   if (extraCharLore && Array.isArray(extraCharLore.extraBooks)) {
     books.additional = extraCharLore.extraBooks;
   }
@@ -370,6 +373,56 @@ export async function setCurrentCharLorebooks(lorebooks: Partial<CharLorebooks>)
   );
 }
 
-export async function getOrCreateChatLorebook(): Promise<string> {
-  return triggerSlash('/getchatbook') as Promise<string>;
+export async function getChatLorebook(): Promise<string | null> {
+  const chat_id = getCurrentChatId();
+  if (!chat_id) {
+    throw Error(`未打开任何聊天, 不可获取聊天世界书`);
+  }
+
+  const existing_lorebook = _.get(chat_metadata, METADATA_KEY, '') as string;
+  if (world_names.includes(existing_lorebook)) {
+    return existing_lorebook;
+  }
+  _.unset(chat_metadata, METADATA_KEY);
+  return null;
+}
+
+export async function setChatLorebook(lorebook: string | null): Promise<void> {
+  if (lorebook === null) {
+    _.unset(chat_metadata, METADATA_KEY);
+    $('.chat_lorebook_button').removeClass('world_set');
+  } else {
+    if (!world_names.includes(lorebook)) {
+      throw new Error(`尝试为角色卡绑定聊天世界书, 当该世界书 '${lorebook}' 不存在`);
+    }
+
+    _.set(chat_metadata, METADATA_KEY, lorebook);
+    $('.chat_lorebook_button').addClass('world_set');
+  }
+  await saveMetadata();
+}
+
+export async function getOrCreateChatLorebook(lorebook?: string): Promise<string> {
+  const existing_lorebook = await getChatLorebook();
+  if (existing_lorebook !== null) {
+    return existing_lorebook;
+  }
+
+  const new_lorebook = (() => {
+    if (lorebook) {
+      if (world_names.includes(lorebook)) {
+        throw new Error(`尝试创建聊天世界书, 但该名称 '${lorebook}' 已存在`);
+      }
+      return lorebook;
+    }
+
+    return `Chat Book ${getCurrentChatId()}`
+      .replace(/[^a-z0-9]/gi, '_')
+      .replace(/_{2,}/g, '_')
+      .substring(0, 64);
+  })();
+  await createNewWorldInfo(new_lorebook);
+
+  await setChatLorebook(new_lorebook);
+  return new_lorebook;
 }
