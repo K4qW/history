@@ -21,7 +21,7 @@
     },
     "currentVersion": "1.12.14",
     "username": "小伟",
-    "active_character": "The Hypnosis App.png",
+    "active_character": "Makio Kodai.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "kemini 4.0 正式版 3",
@@ -1999,63 +1999,6 @@
                 "maxDepth": null,
                 "markdownOnly": true,
                 "promptOnly": true
-            },
-            {
-                "id": "94871529-b793-4320-bf0d-de1f25928b0d",
-                "scriptName": "上下文视觉屏蔽[20]",
-                "findRegex": "/[\\s\\S]*/gm",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    1,
-                    2,
-                    6
-                ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": false,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": 20,
-                "maxDepth": null
-            },
-            {
-                "id": "3715f0db-14ac-4103-82f2-3bf81abdf7bd",
-                "scriptName": "上下文限制[5]",
-                "findRegex": "/[\\s\\S]*/gm",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    1,
-                    2,
-                    6
-                ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": 5,
-                "maxDepth": null
-            },
-            {
-                "id": "9429477e-4566-40f9-b5a4-d4d1f39d3eb1",
-                "scriptName": "上下文限制[10]",
-                "findRegex": "/[\\s\\S]*/gm",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    1,
-                    2,
-                    6
-                ],
-                "disabled": true,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": 10,
-                "maxDepth": null
             }
         ],
         "character_allowed_regex": [
@@ -4456,7 +4399,7 @@
         "zerooneai_model": "",
         "deepseek_model": "deepseek-chat",
         "xai_model": "grok-3-beta",
-        "custom_model": "gemini-2.5-flash-preview-04-17",
+        "custom_model": "gemini-2.5-pro-exp-03-25-search",
         "custom_url": "https://iai.iisbo.com/v1",
         "custom_include_body": "",
         "custom_exclude_body": "",
