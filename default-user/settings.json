@@ -21,10 +21,7 @@
         "AlertWI_《Sinful Pleasure, Sinless Love》.png": "true",
         "AlertRegex_《Sinful Pleasure, Sinless Love》.png": "true",
         "AlertWI_亲妈竟是我的专属ED治疗师.png": "true",
-        "AlertWI_母亲被邻居雌小鬼妹妹催眠了？.png": "true",
-        "mediaWarningShown:御姐林雅.png": "true",
-        "AlertWI_御姐林雅.png": "true",
-        "AlertRegex_御姐林雅.png": "true"
+        "AlertWI_母亲被邻居雌小鬼妹妹催眠了？.png": "true"
     },
     "currentVersion": "1.12.14",
     "username": "小伟",
@@ -3747,8 +3744,7 @@
         ],
         "character_allowed_regex": [
             "关于正太弟弟上大学后成为滥交男这件事.png",
-            "《Sinful Pleasure, Sinless Love》.png",
-            "御姐林雅.png"
+            "《Sinful Pleasure, Sinless Love》.png"
         ],
         "tts": {
             "voiceMap": "",
@@ -4197,8 +4193,7 @@
         "The Hypnosis App.png": [],
         "《Sinful Pleasure, Sinless Love》.png": [],
         "亲妈竟是我的专属ED治疗师.png": [],
-        "母亲被邻居雌小鬼妹妹催眠了？.png": [],
-        "御姐林雅.png": []
+        "母亲被邻居雌小鬼妹妹催眠了？.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
