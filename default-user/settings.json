@@ -17,11 +17,13 @@
         "Personas_GridView": "false",
         "AlertWI_关于正太弟弟上大学后成为滥交男这件事.png": "true",
         "AlertRegex_关于正太弟弟上大学后成为滥交男这件事.png": "true",
-        "mediaWarningShown:The Hypnosis App.png": "true"
+        "mediaWarningShown:The Hypnosis App.png": "true",
+        "AlertWI_《Sinful Pleasure, Sinless Love》.png": "true",
+        "AlertRegex_《Sinful Pleasure, Sinless Love》.png": "true"
     },
     "currentVersion": "1.12.14",
     "username": "小伟",
-    "active_character": "The Hypnosis App.png",
+    "active_character": "《Sinful Pleasure, Sinless Love》.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "kemini 4.0 正式版 3",
@@ -345,14 +347,21 @@
         "persona_descriptions": {
             "user-default.png": {
                 "description": "凯文是邕江县中学高二年级的学生，一位头脑绝顶聪明、成绩始终踞于顶峰的学霸。然而，命运却给了他一副脆弱的躯壳——进行性肌肉萎缩症剥夺了他行走的能力，将他束缚在轮椅之上。这份身体的残缺，使他不仅是学校里那个引人注目的“特殊学生”，也让他与阳光护理院产生了联系，需要定期接受康复训练或某些照护。\n",
-                "position": 0
+                "position": 0,
+                "connections": []
             },
             "1746946888571-.png": {
                 "description": "小伟是一个十岁的四年级学生\n",
                 "position": 0,
                 "depth": 2,
                 "role": 0,
-                "lorebook": ""
+                "lorebook": "",
+                "connections": [
+                    {
+                        "type": "character",
+                        "id": "《Sinful Pleasure, Sinless Love》.png"
+                    }
+                ]
             }
         },
         "persona_description": "小伟是一个十岁的四年级学生\n",
@@ -3730,7 +3739,8 @@
             }
         ],
         "character_allowed_regex": [
-            "关于正太弟弟上大学后成为滥交男这件事.png"
+            "关于正太弟弟上大学后成为滥交男这件事.png",
+            "《Sinful Pleasure, Sinless Love》.png"
         ],
         "tts": {
             "voiceMap": "",
@@ -4176,7 +4186,8 @@
         "时间啊停止吧！.png": [],
         "Makio Kodai.png": [],
         "关于正太弟弟上大学后成为滥交男这件事.png": [],
-        "The Hypnosis App.png": []
+        "The Hypnosis App.png": [],
+        "《Sinful Pleasure, Sinless Love》.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
