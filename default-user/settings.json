@@ -2702,7 +2702,7 @@
                 "marker": false,
                 "name": "🎉字数控制",
                 "role": "system",
-                "content": "<number_of_words>\nApex will provide content no less than 700 words in Chinese \n</number_of_words>\n",
+                "content": "<number_of_words>\nApex will provide content no more than 700 words in Chinese \n</number_of_words>\n",
                 "injection_position": 1,
                 "injection_depth": 1,
                 "forbid_overrides": false
@@ -3911,11 +3911,11 @@
                     },
                     {
                         "identifier": "c24cfb6a-3f4b-4db8-b780-2104a16099bc",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "5142c149-ff51-45be-8344-7342bd103d3c",
-                        "enabled": false
+                        "enabled": true
                     },
                     {
                         "identifier": "03f0df65-8635-470a-b03e-74d5080b70e1",
@@ -3996,7 +3996,7 @@
         "claude_use_sysprompt": false,
         "use_makersuite_sysprompt": false,
         "use_alt_scale": false,
-        "squash_system_messages": false,
+        "squash_system_messages": true,
         "image_inlining": false,
         "inline_image_quality": "low",
         "bypass_status_check": false,
