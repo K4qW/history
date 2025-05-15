@@ -16,7 +16,7 @@
     "perplexity_model": "llama-3.1-70b-instruct",
     "groq_model": "llama-3.1-70b-versatile",
     "zerooneai_model": "yi-large",
-    "custom_model": "gemini-2.5-flash-preview-04-17",
+    "custom_model": "[bo+]gemini-2.5-flash-preview-04-17",
     "custom_url": "https://iai.iisbo.com/v1",
     "custom_include_body": "",
     "custom_exclude_body": "",
@@ -49,7 +49,7 @@
     "scenario_format": "{{scenario}}",
     "personality_format": "{{personality}}",
     "group_nudge_prompt": "[Write the next reply only as {{char}}.]",
-    "stream_openai": true,
+    "stream_openai": false,
     "prompts": [
         {
             "name": "反绝望：治愈向",
@@ -949,11 +949,11 @@
                 },
                 {
                     "identifier": "5de009e2-9861-4df1-bb6c-e30f53958516",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "93f804e1-3ef5-4b66-9ac5-ec78e946e59b",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "23f755cb-dd84-4510-b104-22cc97a16712",
@@ -1073,7 +1073,7 @@
                 },
                 {
                     "identifier": "ad40f5d3-0909-4191-a48a-aa1c4e0eefb7",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "d9e6eb68-cd1f-405f-89f1-e0f56071ec2c",
@@ -1081,7 +1081,7 @@
                 },
                 {
                     "identifier": "51e5fe9a-2c44-4d91-acca-f18f63fe77eb",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "76543445-065f-4d19-8fbc-b13ec39c3a38",
