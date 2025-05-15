@@ -1,6 +1,4 @@
 {
-    "genamt": 2080,
-    "max_length": 204800,
     "chat_completion_source": "custom",
     "openai_model": "gpt-4-turbo",
     "claude_model": "claude-3-5-sonnet-20240620",
@@ -18,7 +16,11 @@
     "perplexity_model": "llama-3-70b-instruct",
     "groq_model": "llama3-70b-8192",
     "zerooneai_model": "",
-    "custom_model": "gemini-2.5-pro-exp-03-25-search",
+    "custom_model": "gemini-2.5-flash-preview-04-17",
+    "custom_url": "https://iai.iisbo.com/v1",
+    "custom_include_body": "",
+    "custom_exclude_body": "",
+    "custom_include_headers": "",
     "custom_prompt_post_processing": "strict",
     "google_model": "gemini-2.5-pro-exp-03-25",
     "temperature": 1.1,
@@ -40,6 +42,8 @@
     "new_example_chat_prompt": "[Example Chat]",
     "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
     "bias_preset_selected": "Default (none)",
+    "reverse_proxy": "",
+    "proxy_password": "",
     "max_context_unlocked": true,
     "wi_format": "{0}",
     "scenario_format": "",
@@ -513,7 +517,7 @@
             "marker": false,
             "name": "🌟字数控制A",
             "role": "system",
-            "content": "<words_range_1_strict>\n**指令：强制字数范围 1 (严格区间)**\n**要求：绝对确保** **每一个** 生成的回应片段的最终总字数，无论场景或驱动方式（用户指令扩写、Nemo自我推进、或其他任何情况），**必须严格落入 2000 字至 2200 字的区间内**。内容质量必须是高的、相关的，绝不允许为了凑字数而填充低质量内容，但最终输出 **必须无条件地** 遵守此字数范围限制。在输出前必须强制检查并确保合规。\n**优先级：** 此规则在激活时具有强制执行的最高优先级，其字数范围 [2000, 2200] 的限制必须无条件满足。\n</words_range_1_strict>",
+            "content": "<words_range_1_strict>\n**指令：强制字数范围 1 (严格区间)**\n**要求：绝对确保** **每一个** 生成的回应片段的最终总字数，无论场景或驱动方式（用户指令扩写、Nemo自我推进、或其他任何情况），**必须严格落入 500 字至 800 字的区间内**。内容质量必须是高的、相关的，绝不允许为了凑字数而填充低质量内容，但最终输出 **必须无条件地** 遵守此字数范围限制。在输出前必须强制检查并确保合规。\n**优先级：** 此规则在激活时具有强制执行的最高优先级，其字数范围 [2000, 2200] 的限制必须无条件满足。\n</words_range_1_strict>",
             "injection_position": 0,
             "injection_depth": 4,
             "forbid_overrides": false
@@ -1576,7 +1580,7 @@
                 },
                 {
                     "identifier": "fdbab09b-44bc-48fc-a97b-2e80106fcc95",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "eaca25e2-49b7-469d-a377-4e43f090c61c",
@@ -1880,7 +1884,7 @@
     "claude_use_sysprompt": false,
     "use_makersuite_sysprompt": false,
     "use_alt_scale": false,
-    "squash_system_messages": false,
+    "squash_system_messages": true,
     "image_inlining": false,
     "inline_image_quality": "auto",
     "bypass_status_check": false,
