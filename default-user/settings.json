@@ -2056,7 +2056,7 @@
                         "content": "",
                         "info": "",
                         "buttons": [],
-                        "enabled": false
+                        "enabled": true
                     }
                 ],
                 "characters_with_scripts": [
