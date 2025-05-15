@@ -4271,7 +4271,7 @@
         "top_a_openai": 0,
         "repetition_penalty_openai": 1,
         "stream_openai": false,
-        "openai_max_context": 501565,
+        "openai_max_context": 2000000,
         "openai_max_tokens": 65535,
         "wrap_in_quotes": false,
         "prompts": [
@@ -6183,7 +6183,7 @@
         "continue_postfix": " ",
         "custom_prompt_post_processing": "strict",
         "show_thoughts": false,
-        "reasoning_effort": "medium",
+        "reasoning_effort": "high",
         "enable_web_search": false,
         "request_images": false,
         "seed": -1,
