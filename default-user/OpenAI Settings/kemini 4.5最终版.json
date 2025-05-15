@@ -1,7 +1,5 @@
 {
-    "genamt": 350,
-    "max_length": 8192,
-    "chat_completion_source": "makersuite",
+    "chat_completion_source": "custom",
     "openai_model": "gpt-4-turbo",
     "claude_model": "claude-3-5-sonnet-20240620",
     "windowai_model": "",
@@ -18,9 +16,13 @@
     "perplexity_model": "llama-3.1-70b-instruct",
     "groq_model": "llama-3.1-70b-versatile",
     "zerooneai_model": "yi-large",
-    "custom_model": "gemini-2.5-pro-exp-03-25",
+    "custom_model": "gemini-2.5-flash-preview-04-17",
+    "custom_url": "https://iai.iisbo.com/v1",
+    "custom_include_body": "",
+    "custom_exclude_body": "",
+    "custom_include_headers": "",
     "custom_prompt_post_processing": "semi",
-    "google_model": "gemini-2.5-pro-exp-03-25",
+    "google_model": "gemini-2.5-flash-preview-04-17",
     "temperature": 1.15,
     "frequency_penalty": 0,
     "presence_penalty": 0,
@@ -40,6 +42,8 @@
     "new_example_chat_prompt": "[Example Chat]",
     "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
     "bias_preset_selected": "Default (none)",
+    "reverse_proxy": "",
+    "proxy_password": "",
     "max_context_unlocked": true,
     "wi_format": "{0}",
     "scenario_format": "{{scenario}}",
@@ -413,7 +417,7 @@
             "marker": false,
             "name": "🎉字数控制",
             "role": "system",
-            "content": "<number_of_words>\nApex will provide content no less than 700 words in Chinese \n</number_of_words>\n",
+            "content": "<number_of_words>\nApex will provide content no more than 700 words in Chinese \n</number_of_words>\n",
             "injection_position": 1,
             "injection_depth": 1,
             "forbid_overrides": false
@@ -1622,11 +1626,11 @@
                 },
                 {
                     "identifier": "c24cfb6a-3f4b-4db8-b780-2104a16099bc",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "5142c149-ff51-45be-8344-7342bd103d3c",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "03f0df65-8635-470a-b03e-74d5080b70e1",
@@ -1642,7 +1646,7 @@
     "claude_use_sysprompt": false,
     "use_makersuite_sysprompt": false,
     "use_alt_scale": false,
-    "squash_system_messages": false,
+    "squash_system_messages": true,
     "image_inlining": false,
     "inline_image_quality": "low",
     "bypass_status_check": false,
