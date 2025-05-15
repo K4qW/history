@@ -1684,7 +1684,7 @@
                 "placement": [
                     2
                 ],
-                "disabled": false,
+                "disabled": true,
                 "markdownOnly": true,
                 "promptOnly": true,
                 "runOnEdit": true,
@@ -2145,8 +2145,7 @@
                     }
                 ],
                 "characters_with_scripts": [
-                    "1",
-                    "The Hypnosis App.png"
+                    "1"
                 ]
             },
             "audio": {
