@@ -3625,7 +3625,7 @@
                 "placement": [
                     2
                 ],
-                "disabled": false,
+                "disabled": true,
                 "markdownOnly": true,
                 "promptOnly": true,
                 "runOnEdit": true,
@@ -3740,6 +3740,23 @@
                 "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": 10,
+                "maxDepth": null
+            },
+            {
+                "id": "c8d540a6-c599-4888-98ff-27abc7ade570",
+                "scriptName": "删除省略号",
+                "findRegex": "/([\\u4e00-\\u9fa5])(?:…|……)(\\1)|(?:…|……)/g",
+                "replaceString": "$1",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 1,
+                "minDepth": null,
                 "maxDepth": null
             }
         ],
@@ -5885,7 +5902,7 @@
                     },
                     {
                         "identifier": "c0c63a42-bcef-49f4-bf97-5ae7b2e83b73",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "b55c76e8-67eb-4d96-813b-3808261845e2",
