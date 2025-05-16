@@ -3,7 +3,7 @@
     "accountStorage": {
         "__migrated": "1",
         "LNavOpened": "true",
-        "NavOpened": "false",
+        "NavOpened": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}",
         "SelectedNavTab": "rm_button_characters",
         "NavLockOn": "false",
@@ -4345,7 +4345,7 @@
         "zerooneai_model": "yi-large",
         "deepseek_model": "deepseek-chat",
         "xai_model": "grok-3-beta",
-        "custom_model": "gemini-2.5-flash-preview-04-17",
+        "custom_model": "gemini-2.5-pro-exp-03-25-openai",
         "custom_url": "https://iai.iisbo.com/v1",
         "custom_include_body": "",
         "custom_exclude_body": "",
