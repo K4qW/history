@@ -3625,7 +3625,7 @@
                 "placement": [
                     2
                 ],
-                "disabled": false,
+                "disabled": true,
                 "markdownOnly": true,
                 "promptOnly": true,
                 "runOnEdit": true,
@@ -5889,7 +5889,7 @@
                     },
                     {
                         "identifier": "b55c76e8-67eb-4d96-813b-3808261845e2",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "fb21ae70-ed93-4b91-ab47-4f5525772441",
@@ -6170,7 +6170,7 @@
         "claude_use_sysprompt": false,
         "use_makersuite_sysprompt": false,
         "use_alt_scale": false,
-        "squash_system_messages": false,
+        "squash_system_messages": true,
         "image_inlining": false,
         "inline_image_quality": "auto",
         "bypass_status_check": false,
