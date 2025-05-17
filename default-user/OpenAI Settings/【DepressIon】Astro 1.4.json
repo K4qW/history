@@ -16,7 +16,11 @@
     "perplexity_model": "llama-3.1-70b-instruct",
     "groq_model": "llama-3.1-70b-versatile",
     "zerooneai_model": "yi-large",
-    "custom_model": "gemini-2.5-pro-exp-03-25-openai",
+    "custom_model": "gemini-2.5-flash-preview-04-17",
+    "custom_url": "https://iai.iisbo.com/v1",
+    "custom_include_body": "",
+    "custom_exclude_body": "",
+    "custom_include_headers": "",
     "custom_prompt_post_processing": "merge",
     "google_model": "gemini-2.5-flash-preview-04-17",
     "temperature": 1.17,
@@ -38,6 +42,8 @@
     "new_example_chat_prompt": "[Example Chat]",
     "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
     "bias_preset_selected": "Default (none)",
+    "reverse_proxy": "",
+    "proxy_password": "",
     "max_context_unlocked": true,
     "wi_format": "{0}",
     "scenario_format": "{{scenario}}",
@@ -1275,7 +1281,7 @@
                 },
                 {
                     "identifier": "51e5fe9a-2c44-4d91-acca-f18f63fe77eb",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "76543445-065f-4d19-8fbc-b13ec39c3a38",
