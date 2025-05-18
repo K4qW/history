@@ -28,7 +28,7 @@
     },
     "currentVersion": "1.12.14",
     "username": "小伟",
-    "active_character": "《Sinful Pleasure, Sinless Love》.png",
+    "active_character": "我的剑宗仙子清冷美母.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "kemini 4.0 正式版 3",
@@ -40,7 +40,8 @@
         "world_info": {
             "globalSelect": [
                 "-XP大全 v0.3",
-                "！！Table_v1.3.15"
+                "！！Table_v1.3.15",
+                "清歌仙子"
             ]
         },
         "world_info_depth": 2,
@@ -2934,7 +2935,6 @@
         "母亲被邻居雌小鬼妹妹催眠了？.png": [],
         "定身术v1.png": [],
         "乡村狂操曲.png": [],
-        "陈蓉.png": [],
         "我的剑宗仙子清冷美母.png": []
     },
     "nai_settings": {
@@ -3002,7 +3002,7 @@
         "temp_openai": 1.17,
         "freq_pen_openai": 0,
         "pres_pen_openai": 0,
-        "top_p_openai": 0.97,
+        "top_p_openai": 0.98,
         "top_k_openai": 40,
         "min_p_openai": 0,
         "top_a_openai": 0,
