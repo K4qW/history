@@ -2706,12 +2706,7 @@
             "isPopout": false,
             "showPopoutButton": true,
             "config": {
-                "setList": [
-                    {
-                        "set": "📱新版",
-                        "isVisible": true
-                    }
-                ]
+                "setList": []
             }
         },
         "TavernHelper": {
@@ -4072,7 +4067,7 @@
                     },
                     {
                         "identifier": "5de009e2-9861-4df1-bb6c-e30f53958516",
-                        "enabled": false
+                        "enabled": true
                     },
                     {
                         "identifier": "93f804e1-3ef5-4b66-9ac5-ec78e946e59b",
