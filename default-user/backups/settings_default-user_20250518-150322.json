@@ -28,7 +28,7 @@
     },
     "currentVersion": "1.12.14",
     "username": "小伟",
-    "active_character": "《Sinful Pleasure, Sinless Love》.png",
+    "active_character": "斗破苍穹瑟瑟版.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "kemini 4.0 正式版 3",
@@ -40,7 +40,8 @@
         "world_info": {
             "globalSelect": [
                 "-XP大全 v0.3",
-                "！！Table_v1.3.15"
+                "！！Table_v1.3.15",
+                "斗破苍穹瑟瑟版V2"
             ]
         },
         "world_info_depth": 2,
