@@ -23,11 +23,13 @@
         "AlertWI_亲妈竟是我的专属ED治疗师.png": "true",
         "AlertWI_母亲被邻居雌小鬼妹妹催眠了？.png": "true",
         "AlertWI_乡村狂操曲.png": "true",
-        "AlertRegex_乡村狂操曲.png": "true"
+        "AlertRegex_乡村狂操曲.png": "true",
+        "AlertWI_陈蓉.png": "true",
+        "AlertRegex_陈蓉.png": "true"
     },
     "currentVersion": "1.12.14",
     "username": "小伟",
-    "active_character": "乡村狂操曲.png",
+    "active_character": "陈蓉.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "kemini 4.0 正式版 3",
@@ -38,7 +40,8 @@
     "world_info_settings": {
         "world_info": {
             "globalSelect": [
-                "-XP大全 v0.3"
+                "-XP大全 v0.3",
+                "陈蓉2.1"
             ]
         },
         "world_info_depth": 2,
@@ -2485,7 +2488,8 @@
         "character_allowed_regex": [
             "关于正太弟弟上大学后成为滥交男这件事.png",
             "《Sinful Pleasure, Sinless Love》.png",
-            "乡村狂操曲.png"
+            "乡村狂操曲.png",
+            "陈蓉.png"
         ],
         "tts": {
             "voiceMap": "",
@@ -2698,14 +2702,14 @@
             "chara": []
         },
         "quickReplyV2": {
-            "isEnabled": false,
+            "isEnabled": true,
             "isCombined": false,
             "isPopout": false,
             "showPopoutButton": true,
             "config": {
                 "setList": [
                     {
-                        "set": "Default",
+                        "set": "📱新版",
                         "isVisible": true
                     }
                 ]
@@ -2728,7 +2732,7 @@
                         "content": "",
                         "info": "",
                         "buttons": [],
-                        "enabled": true
+                        "enabled": false
                     }
                 ],
                 "characters_with_scripts": [
@@ -2936,7 +2940,8 @@
         "亲妈竟是我的专属ED治疗师.png": [],
         "母亲被邻居雌小鬼妹妹催眠了？.png": [],
         "定身术v1.png": [],
-        "乡村狂操曲.png": []
+        "乡村狂操曲.png": [],
+        "陈蓉.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
