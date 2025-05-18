@@ -3161,7 +3161,7 @@
                 "marker": false,
                 "name": "🎉|字数控制",
                 "role": "system",
-                "content": "{{setvar::length_min::800}}{{setvar::length_max::1200}}// 以中文字符数计算，正文长度需要在此之间{{// 这不用我教了吧，改左边两个数字就行，第一个是最小字数，第二个是最大字数}}\nnarrator.output_length\n  .min({{getvar::length_min}})\n  .max({{getvar::length_max}})",
+                "content": "{{setvar::length_min::500}}{{setvar::length_max::1000}}// 以中文字符数计算，正文长度需要在此之间{{// 这不用我教了吧，改左边两个数字就行，第一个是最小字数，第二个是最大字数}}\nnarrator.output_length\n  .min({{getvar::length_min}})\n  .max({{getvar::length_max}})",
                 "injection_position": 0,
                 "injection_depth": 1,
                 "forbid_overrides": false
