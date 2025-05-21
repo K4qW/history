@@ -2068,23 +2068,6 @@
         "dice": {},
         "regex": [
             {
-                "id": "0989b4d0-8e89-4878-844e-4d3c27830e23",
-                "scriptName": "【DepressIon】cot隐藏 v2.5",
-                "findRegex": "/[\\s\\S]*(<\\/analysis>)/",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null
-            },
-            {
                 "id": "f66fc6b6-c206-40b7-bbc1-4967ebd2d205",
                 "scriptName": "【Kemini】添加tag",
                 "findRegex": "^([\\s\\S]*)$",
@@ -2100,6 +2083,23 @@
                 "substituteRegex": 0,
                 "minDepth": null,
                 "maxDepth": 1
+            },
+            {
+                "id": "0989b4d0-8e89-4878-844e-4d3c27830e23",
+                "scriptName": "【DepressIon】cot隐藏 v2.5",
+                "findRegex": "/[\\s\\S]*(<\\/analysis>)/",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
             },
             {
                 "id": "a03f54a3-4a15-4955-8211-e5074c6fd22a",
