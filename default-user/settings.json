@@ -40,7 +40,8 @@
         "world_info": {
             "globalSelect": [
                 "-XP大全 v0.3",
-                "医生妈妈"
+                "医生妈妈",
+                "完整输出"
             ]
         },
         "world_info_depth": 2,
