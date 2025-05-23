@@ -29,7 +29,7 @@
     },
     "currentVersion": "1.12.14",
     "username": "小亮",
-    "active_character": "黑丝合缝学园.png",
+    "active_character": "黑丝合缝学园1.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "kemini 4.0 正式版 3",
@@ -41,7 +41,8 @@
         "world_info": {
             "globalSelect": [
                 "-XP大全 v0.3",
-                "完整输出"
+                "完整输出",
+                "黑丝合缝学园II"
             ]
         },
         "world_info_depth": 2,
@@ -2948,7 +2949,8 @@
         "定身术v1.png": [],
         "乡村狂操曲.png": [],
         "我的剑宗仙子清冷美母.png": [],
-        "黑丝合缝学园.png": []
+        "黑丝合缝学园.png": [],
+        "黑丝合缝学园1.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
