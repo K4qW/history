@@ -25,7 +25,6 @@
         "AlertWI_乡村狂操曲.png": "true",
         "AlertRegex_乡村狂操曲.png": "true",
         "AlertWI_我的剑宗仙子清冷美母.png": "true",
-        "AlertWI_黑丝合缝学园.png": "true",
         "AlertWI_娘.png": "true"
     },
     "currentVersion": "1.12.14",
@@ -2497,6 +2496,25 @@
                 "substituteRegex": 0,
                 "minDepth": null,
                 "maxDepth": null
+            },
+            {
+                "id": "a8ff1bc7-15f2-4122-b43b-ded692560538",
+                "scriptName": "​a8ff1bc7-15f2-4122-b43b-ded692560538",
+                "findRegex": "/<%(?![%])([\\s\\S]*?)(?<!%)%>/g",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    1,
+                    2,
+                    6
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": true,
+                "runOnEdit": false,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
             }
         ],
         "character_allowed_regex": [
@@ -2697,7 +2715,9 @@
                 "tableConfigEventRows": "1-3",
                 "tableConfigEventLength": "30字以内",
                 "tableConfigGrandSummaryRows": "5",
-                "tableConfigGrandSummaryLength": "200字以内"
+                "tableConfigGrandSummaryLength": "200字以内",
+                "LAST_RECEIVE_TOKENS": 19,
+                "LAST_RECEIVE_CHARS": 22
             }
         },
         "attachments": [],
@@ -2948,9 +2968,6 @@
     ],
     "tag_map": {
         "null": [],
-        "娜娜.png": [],
-        "卡莲.png": [],
-        "约书娅.png": [],
         "1746455179287": [],
         "斗破苍穹瑟瑟版.png": [],
         "我的美艳数学老师是手天使.png": [],
@@ -2966,7 +2983,6 @@
         "定身术v1.png": [],
         "乡村狂操曲.png": [],
         "我的剑宗仙子清冷美母.png": [],
-        "黑丝合缝学园.png": [],
         "黑丝合缝学园1.png": [],
         "娘.png": []
     },
