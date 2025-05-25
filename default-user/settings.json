@@ -2698,8 +2698,8 @@
                 "tableConfigEventLength": "30字以内",
                 "tableConfigGrandSummaryRows": "5",
                 "tableConfigGrandSummaryLength": "200字以内",
-                "LAST_RECEIVE_TOKENS": 24,
-                "LAST_RECEIVE_CHARS": 35,
+                "LAST_RECEIVE_TOKENS": 1325,
+                "LAST_RECEIVE_CHARS": 1889,
                 "LAST_SEND_TOKENS": 23201,
                 "LAST_SEND_CHARS": 68773
             }
@@ -4920,7 +4920,7 @@
         "zerooneai_model": "",
         "deepseek_model": "deepseek-chat",
         "xai_model": "grok-3-beta",
-        "custom_model": "gemini-2.5-flash-preview-04-17",
+        "custom_model": "[bo+]gemini-2.5-flash-preview-04-17",
         "custom_url": "https://iai.iisbo.com/v1",
         "custom_include_body": "",
         "custom_exclude_body": "",
