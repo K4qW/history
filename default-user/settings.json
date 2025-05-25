@@ -2698,8 +2698,8 @@
                 "tableConfigEventLength": "30字以内",
                 "tableConfigGrandSummaryRows": "5",
                 "tableConfigGrandSummaryLength": "200字以内",
-                "LAST_RECEIVE_TOKENS": 3,
-                "LAST_RECEIVE_CHARS": 4,
+                "LAST_RECEIVE_TOKENS": 5722,
+                "LAST_RECEIVE_CHARS": 24095,
                 "LAST_SEND_TOKENS": 22304,
                 "LAST_SEND_CHARS": 67428
             }
