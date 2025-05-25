@@ -2497,25 +2497,6 @@
                 "substituteRegex": 0,
                 "minDepth": null,
                 "maxDepth": null
-            },
-            {
-                "id": "a8ff1bc7-15f2-4122-b43b-ded692560538",
-                "scriptName": "​a8ff1bc7-15f2-4122-b43b-ded692560538",
-                "findRegex": "/<%(?![%])([\\s\\S]*?)(?<!%)%>/g",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    1,
-                    2,
-                    6
-                ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": false,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null
             }
         ],
         "character_allowed_regex": [
@@ -2717,10 +2698,10 @@
                 "tableConfigEventLength": "30字以内",
                 "tableConfigGrandSummaryRows": "5",
                 "tableConfigGrandSummaryLength": "200字以内",
-                "LAST_RECEIVE_TOKENS": 9,
-                "LAST_RECEIVE_CHARS": 14,
-                "LAST_SEND_TOKENS": 21859,
-                "LAST_SEND_CHARS": 66888
+                "LAST_RECEIVE_TOKENS": 24,
+                "LAST_RECEIVE_CHARS": 35,
+                "LAST_SEND_TOKENS": 23201,
+                "LAST_SEND_CHARS": 68773
             }
         },
         "attachments": [],
