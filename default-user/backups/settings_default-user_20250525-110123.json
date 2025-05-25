@@ -21,15 +21,20 @@
         "AlertWI_《Sinful Pleasure, Sinless Love》.png": "true",
         "AlertRegex_《Sinful Pleasure, Sinless Love》.png": "true",
         "AlertWI_亲妈竟是我的专属ED治疗师.png": "true",
-        "AlertWI_母亲被邻居雌小鬼妹妹催眠了？.png": "true"
+        "AlertWI_母亲被邻居雌小鬼妹妹催眠了？.png": "true",
+        "AlertWI_乡村狂操曲.png": "true",
+        "AlertRegex_乡村狂操曲.png": "true",
+        "AlertWI_我的剑宗仙子清冷美母.png": "true",
+        "AlertWI_娘.png": "true",
+        "AlertWI_系统创造者.png": "true"
     },
     "currentVersion": "1.12.14",
-    "username": "小伟",
-    "active_character": "亲妈竟是我的专属ED治疗师.png",
+    "username": "小亮",
+    "active_character": "系统创造者.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "kemini 4.0 正式版 3",
-    "user_avatar": "1746946888571-.png",
+    "user_avatar": "1748006307720-.png",
     "amount_gen": 350,
     "max_context": 8192,
     "main_api": "openai",
@@ -37,7 +42,8 @@
         "world_info": {
             "globalSelect": [
                 "-XP大全 v0.3",
-                "医生妈妈"
+                "完整输出",
+                "系统创造者"
             ]
         },
         "world_info_depth": 2,
@@ -346,7 +352,8 @@
         },
         "personas": {
             "user-default.png": "凯文",
-            "1746946888571-.png": "小伟"
+            "1746946888571-.png": "小伟",
+            "1748006307720-.png": "小亮"
         },
         "default_persona": null,
         "persona_descriptions": {
@@ -365,11 +372,22 @@
                     {
                         "type": "character",
                         "id": "《Sinful Pleasure, Sinless Love》.png"
+                    },
+                    {
+                        "type": "character",
+                        "id": "The Hypnosis App.png"
                     }
                 ]
+            },
+            "1748006307720-.png": {
+                "description": "",
+                "position": 0,
+                "depth": 2,
+                "role": 0,
+                "lorebook": ""
             }
         },
-        "persona_description": "小伟是一个十岁的四年级学生\n",
+        "persona_description": "",
         "persona_description_position": 0,
         "persona_description_role": 0,
         "persona_description_depth": 2,
@@ -2065,23 +2083,6 @@
         "dice": {},
         "regex": [
             {
-                "id": "0989b4d0-8e89-4878-844e-4d3c27830e23",
-                "scriptName": "【DepressIon】cot隐藏 v2.5",
-                "findRegex": "/[\\s\\S]*(<\\/analysis>)/",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "disabled": true,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null
-            },
-            {
                 "id": "f66fc6b6-c206-40b7-bbc1-4967ebd2d205",
                 "scriptName": "【Kemini】添加tag",
                 "findRegex": "^([\\s\\S]*)$",
@@ -2097,6 +2098,23 @@
                 "substituteRegex": 0,
                 "minDepth": null,
                 "maxDepth": 1
+            },
+            {
+                "id": "0989b4d0-8e89-4878-844e-4d3c27830e23",
+                "scriptName": "【DepressIon】cot隐藏 v2.5",
+                "findRegex": "/[\\s\\S]*(<\\/analysis>)/",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": true,
+                "markdownOnly": true,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
             },
             {
                 "id": "a03f54a3-4a15-4955-8211-e5074c6fd22a",
@@ -2329,7 +2347,7 @@
                 "placement": [
                     2
                 ],
-                "disabled": true,
+                "disabled": false,
                 "markdownOnly": true,
                 "promptOnly": true,
                 "runOnEdit": true,
@@ -2462,11 +2480,29 @@
                 "substituteRegex": 1,
                 "minDepth": null,
                 "maxDepth": null
+            },
+            {
+                "id": "591f1d79-d535-4deb-8edc-1e8b1018c6bc",
+                "scriptName": "【DepressIon】通用必备正则 v1.3",
+                "findRegex": "/((<(guifan|safety_check)>(?:(?!<(guifan|safety_check)>)[\\s\\S])*?<\\/(guifan|safety_check)>)|(<reminder>(?:[\\s\\S])*?<\\/reminder>)|([\\s\\S]*<\\/(analysis|thinking|think)>)|([\\s\\S]*(?=<game>)))/g",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
             }
         ],
         "character_allowed_regex": [
             "关于正太弟弟上大学后成为滥交男这件事.png",
-            "《Sinful Pleasure, Sinless Love》.png"
+            "《Sinful Pleasure, Sinless Love》.png",
+            "乡村狂操曲.png"
         ],
         "tts": {
             "voiceMap": "",
@@ -2661,7 +2697,11 @@
                 "tableConfigEventRows": "1-3",
                 "tableConfigEventLength": "30字以内",
                 "tableConfigGrandSummaryRows": "5",
-                "tableConfigGrandSummaryLength": "200字以内"
+                "tableConfigGrandSummaryLength": "200字以内",
+                "LAST_RECEIVE_TOKENS": 799,
+                "LAST_RECEIVE_CHARS": 1056,
+                "LAST_SEND_TOKENS": 22648,
+                "LAST_SEND_CHARS": 67788
             }
         },
         "attachments": [],
@@ -2679,17 +2719,12 @@
             "chara": []
         },
         "quickReplyV2": {
-            "isEnabled": false,
+            "isEnabled": true,
             "isCombined": false,
             "isPopout": false,
             "showPopoutButton": true,
             "config": {
-                "setList": [
-                    {
-                        "set": "Default",
-                        "isVisible": true
-                    }
-                ]
+                "setList": []
             }
         },
         "TavernHelper": {
@@ -2709,7 +2744,7 @@
                         "content": "",
                         "info": "",
                         "buttons": [],
-                        "enabled": true
+                        "enabled": false
                     }
                 ],
                 "characters_with_scripts": [
@@ -2739,6 +2774,22 @@
                 "url": "http://localhost:6621",
                 "duration": 1000
             }
+        },
+        "EjsTemplate": {
+            "enabled": true,
+            "generate_enabled": true,
+            "generate_loader_enabled": true,
+            "render_enabled": true,
+            "render_loader_enabled": true,
+            "strict_enabled": false,
+            "debug_enabled": false,
+            "autosave_enabled": true,
+            "preload_worldinfo_enabled": true,
+            "code_blocks_enabled": false,
+            "world_active_enabled": true,
+            "raw_message_evaluation_enabled": false,
+            "filter_message_enabled": true,
+            "cache_enabled": false
         }
     },
     "tags": [
@@ -2901,9 +2952,6 @@
     ],
     "tag_map": {
         "null": [],
-        "娜娜.png": [],
-        "卡莲.png": [],
-        "约书娅.png": [],
         "1746455179287": [],
         "斗破苍穹瑟瑟版.png": [],
         "我的美艳数学老师是手天使.png": [],
@@ -2916,7 +2964,12 @@
         "《Sinful Pleasure, Sinless Love》.png": [],
         "亲妈竟是我的专属ED治疗师.png": [],
         "母亲被邻居雌小鬼妹妹催眠了？.png": [],
-        "定身术v1.png": []
+        "定身术v1.png": [],
+        "乡村狂操曲.png": [],
+        "我的剑宗仙子清冷美母.png": [],
+        "黑丝合缝学园1.png": [],
+        "娘.png": [],
+        "系统创造者.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
@@ -4606,11 +4659,11 @@
                     },
                     {
                         "identifier": "c0c63a42-bcef-49f4-bf97-5ae7b2e83b73",
-                        "enabled": false
+                        "enabled": true
                     },
                     {
                         "identifier": "b55c76e8-67eb-4d96-813b-3808261845e2",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "fb21ae70-ed93-4b91-ab47-4f5525772441",
@@ -4867,7 +4920,7 @@
         "zerooneai_model": "",
         "deepseek_model": "deepseek-chat",
         "xai_model": "grok-3-beta",
-        "custom_model": "gemini-2.5-flash-preview-04-17",
+        "custom_model": "[bo+]gemini-2.5-flash-preview-04-17",
         "custom_url": "https://iai.iisbo.com/v1",
         "custom_include_body": "",
         "custom_exclude_body": "",
@@ -4891,7 +4944,7 @@
         "claude_use_sysprompt": false,
         "use_makersuite_sysprompt": false,
         "use_alt_scale": false,
-        "squash_system_messages": false,
+        "squash_system_messages": true,
         "image_inlining": false,
         "inline_image_quality": "auto",
         "bypass_status_check": false,
