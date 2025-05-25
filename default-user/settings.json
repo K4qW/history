@@ -25,11 +25,12 @@
         "AlertWI_乡村狂操曲.png": "true",
         "AlertRegex_乡村狂操曲.png": "true",
         "AlertWI_我的剑宗仙子清冷美母.png": "true",
-        "AlertWI_娘.png": "true"
+        "AlertWI_娘.png": "true",
+        "AlertWI_系统创造者.png": "true"
     },
     "currentVersion": "1.12.14",
     "username": "小亮",
-    "active_character": "定身术v1.png",
+    "active_character": "系统创造者.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "kemini 4.0 正式版 3",
@@ -41,7 +42,8 @@
         "world_info": {
             "globalSelect": [
                 "-XP大全 v0.3",
-                "完整输出"
+                "完整输出",
+                "系统创造者"
             ]
         },
         "world_info_depth": 2,
@@ -2696,10 +2698,10 @@
                 "tableConfigEventLength": "30字以内",
                 "tableConfigGrandSummaryRows": "5",
                 "tableConfigGrandSummaryLength": "200字以内",
-                "LAST_RECEIVE_TOKENS": 11,
-                "LAST_RECEIVE_CHARS": 14,
-                "LAST_SEND_TOKENS": 19047,
-                "LAST_SEND_CHARS": 54025
+                "LAST_RECEIVE_TOKENS": 2560,
+                "LAST_RECEIVE_CHARS": 9728,
+                "LAST_SEND_TOKENS": 21857,
+                "LAST_SEND_CHARS": 66886
             }
         },
         "attachments": [],
@@ -2966,7 +2968,8 @@
         "乡村狂操曲.png": [],
         "我的剑宗仙子清冷美母.png": [],
         "黑丝合缝学园1.png": [],
-        "娘.png": []
+        "娘.png": [],
+        "系统创造者.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
