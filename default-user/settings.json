@@ -25,8 +25,7 @@
         "AlertWI_乡村狂操曲.png": "true",
         "AlertRegex_乡村狂操曲.png": "true",
         "AlertWI_我的剑宗仙子清冷美母.png": "true",
-        "AlertWI_娘.png": "true",
-        "AlertWI_系统创造者.png": "true"
+        "AlertWI_娘.png": "true"
     },
     "currentVersion": "1.12.14",
     "username": "小亮",
@@ -2497,25 +2496,6 @@
                 "substituteRegex": 0,
                 "minDepth": null,
                 "maxDepth": null
-            },
-            {
-                "id": "a8ff1bc7-15f2-4122-b43b-ded692560538",
-                "scriptName": "​a8ff1bc7-15f2-4122-b43b-ded692560538",
-                "findRegex": "/<%(?![%])([\\s\\S]*?)(?<!%)%>/g",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    1,
-                    2,
-                    6
-                ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": false,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null
             }
         ],
         "character_allowed_regex": [
@@ -2717,10 +2697,10 @@
                 "tableConfigEventLength": "30字以内",
                 "tableConfigGrandSummaryRows": "5",
                 "tableConfigGrandSummaryLength": "200字以内",
-                "LAST_RECEIVE_TOKENS": 9,
-                "LAST_RECEIVE_CHARS": 13,
-                "LAST_SEND_TOKENS": 23233,
-                "LAST_SEND_CHARS": 69062
+                "LAST_RECEIVE_TOKENS": 1574,
+                "LAST_RECEIVE_CHARS": 2480,
+                "LAST_SEND_TOKENS": 22415,
+                "LAST_SEND_CHARS": 67757
             }
         },
         "attachments": [],
@@ -2987,8 +2967,7 @@
         "乡村狂操曲.png": [],
         "我的剑宗仙子清冷美母.png": [],
         "黑丝合缝学园1.png": [],
-        "娘.png": [],
-        "系统创造者.png": []
+        "娘.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
