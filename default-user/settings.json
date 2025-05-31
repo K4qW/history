@@ -29,7 +29,7 @@
     },
     "currentVersion": "1.12.14",
     "username": "小亮",
-    "active_character": "系统创造者.png",
+    "active_character": "回答问题的ai.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "kemini 4.0 正式版 3",
@@ -2966,7 +2966,8 @@
         "乡村狂操曲.png": [],
         "我的剑宗仙子清冷美母.png": [],
         "黑丝合缝学园1.png": [],
-        "娘.png": []
+        "娘.png": [],
+        "系统创造者.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
@@ -4917,7 +4918,7 @@
         "zerooneai_model": "",
         "deepseek_model": "deepseek-chat",
         "xai_model": "grok-3-beta",
-        "custom_model": "[bo+]gemini-2.5-flash-preview-04-17",
+        "custom_model": "gemini-2.5-flash-preview-04-17",
         "custom_url": "https://iai.iisbo.com/v1",
         "custom_include_body": "",
         "custom_exclude_body": "",
