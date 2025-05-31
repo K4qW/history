@@ -2,7 +2,7 @@
     "firstRun": false,
     "accountStorage": {
         "__migrated": "1",
-        "LNavOpened": "false",
+        "LNavOpened": "true",
         "NavOpened": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}",
         "SelectedNavTab": "rm_button_characters",
@@ -3514,7 +3514,7 @@
                 "marker": false,
                 "name": "🌟字数控制A",
                 "role": "system",
-                "content": "<words_range_1_strict>\n**指令：强制字数范围 1 (严格区间)**\n**要求：绝对确保** **每一个** 生成的回应片段的最终总字数，无论场景或驱动方式（用户指令扩写、Nemo自我推进、或其他任何情况），**必须严格落入 500 字至 800 字的区间内**。内容质量必须是高的、相关的，绝不允许为了凑字数而填充低质量内容，但最终输出 **必须无条件地** 遵守此字数范围限制。在输出前必须强制检查并确保合规。\n**优先级：** 此规则在激活时具有强制执行的最高优先级，其字数范围 [2000, 2200] 的限制必须无条件满足。\n</words_range_1_strict>",
+                "content": "<words_range_1_strict>\n**指令：强制字数范围 1 (严格区间)**\n**要求：绝对确保** **每一个** 生成的回应片段的最终总字数，无论场景或驱动方式（用户指令扩写、Nemo自我推进、或其他任何情况），**必须严格落入 1000 字至 1500 字的区间内**。内容质量必须是高的、相关的，绝不允许为了凑字数而填充低质量内容，但最终输出 **必须无条件地** 遵守此字数范围限制。在输出前必须强制检查并确保合规。\n**优先级：** 此规则在激活时具有强制执行的最高优先级，其字数范围 [1000, 1500] 的限制必须无条件满足。\n</words_range_1_strict>",
                 "injection_position": 0,
                 "injection_depth": 4,
                 "forbid_overrides": false
