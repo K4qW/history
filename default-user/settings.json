@@ -25,15 +25,16 @@
         "AlertWI_乡村狂操曲.png": "true",
         "AlertRegex_乡村狂操曲.png": "true",
         "AlertWI_我的剑宗仙子清冷美母.png": "true",
-        "AlertWI_娘.png": "true"
+        "AlertWI_娘.png": "true",
+        "AlertRegex_回答问题的ai.png": "true"
     },
     "currentVersion": "1.12.14",
-    "username": "小亮",
+    "username": "小伟",
     "active_character": "回答问题的ai.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "kemini 4.0 正式版 3",
-    "user_avatar": "1748006307720-.png",
+    "user_avatar": "1746946888571-.png",
     "amount_gen": 350,
     "max_context": 8192,
     "main_api": "openai",
@@ -353,7 +354,7 @@
             "1746946888571-.png": "小伟",
             "1748006307720-.png": "小亮"
         },
-        "default_persona": null,
+        "default_persona": "1746946888571-.png",
         "persona_descriptions": {
             "user-default.png": {
                 "description": "凯文是邕江县中学高二年级的学生，一位头脑绝顶聪明、成绩始终踞于顶峰的学霸。然而，命运却给了他一副脆弱的躯壳——进行性肌肉萎缩症剥夺了他行走的能力，将他束缚在轮椅之上。这份身体的残缺，使他不仅是学校里那个引人注目的“特殊学生”，也让他与阳光护理院产生了联系，需要定期接受康复训练或某些照护。\n",
@@ -385,7 +386,7 @@
                 "lorebook": ""
             }
         },
-        "persona_description": "",
+        "persona_description": "小伟是一个十岁的四年级学生\n",
         "persona_description_position": 0,
         "persona_description_role": 0,
         "persona_description_depth": 2,
