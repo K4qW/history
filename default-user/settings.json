@@ -2,7 +2,7 @@
     "firstRun": false,
     "accountStorage": {
         "__migrated": "1",
-        "LNavOpened": "true",
+        "LNavOpened": "false",
         "NavOpened": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}",
         "SelectedNavTab": "rm_button_characters",
@@ -43,7 +43,6 @@
         "world_info": {
             "globalSelect": [
                 "-XP大全 v0.3",
-                "催眠超能力",
                 "完整输出"
             ]
         },
