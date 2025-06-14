@@ -4944,7 +4944,7 @@
         "max_context_unlocked": true,
         "api_url_scale": "",
         "show_external_models": false,
-        "proxy_password": "",
+        "proxy_password": "wjh123...",
         "assistant_prefill": "",
         "assistant_impersonation": "",
         "claude_use_sysprompt": false,
