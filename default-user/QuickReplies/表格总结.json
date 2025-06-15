@@ -57,7 +57,25 @@
             "executeOnGroupMemberDraft": false,
             "executeOnNewChat": false,
             "automationId": ""
+        },
+        {
+            "id": 10,
+            "icon": "fa-file-archive",
+            "showLabel": false,
+            "label": "添加执行大总结",
+            "title": "添加执行大总结",
+            "message": "/setinput {{input}} {执行大总结}",
+            "contextList": [],
+            "preventAutoExecute": true,
+            "isHidden": false,
+            "executeOnStartup": false,
+            "executeOnUser": false,
+            "executeOnAi": false,
+            "executeOnChatChange": false,
+            "executeOnGroupMemberDraft": false,
+            "executeOnNewChat": false,
+            "automationId": ""
         }
     ],
-    "idIndex": 8
+    "idIndex": 10
 }
