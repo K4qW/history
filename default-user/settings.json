@@ -34,7 +34,7 @@
     },
     "currentVersion": "1.12.14",
     "username": "小伟",
-    "active_character": "定身术v1.png",
+    "active_character": "时间啊停止吧！.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "kemini 4.0 正式版 3",
@@ -2105,7 +2105,7 @@
             {
                 "id": "0989b4d0-8e89-4878-844e-4d3c27830e23",
                 "scriptName": "【DepressIon】cot隐藏 v2.5",
-                "disabled": true,
+                "disabled": false,
                 "runOnEdit": true,
                 "findRegex": "/[\\s\\S]*(<\\/analysis>)/",
                 "replaceString": "",
@@ -2139,7 +2139,7 @@
             {
                 "id": "601be60a-d41c-4e23-b445-f0a3bbe91aae",
                 "scriptName": "【DepressIon】防截断 v2.5",
-                "disabled": true,
+                "disabled": false,
                 "runOnEdit": true,
                 "findRegex": "/<(guifan|safety_check)>(?:(?!<(guifan|safety_check)>)[\\s\\S])*?<\\/(guifan|safety_check)>/g",
                 "replaceString": "",
@@ -2173,7 +2173,7 @@
             {
                 "id": "1137a118-cbf9-4c59-9868-a288600832ec",
                 "scriptName": "【DepressIon】修改AI回复 1.2",
-                "disabled": true,
+                "disabled": false,
                 "runOnEdit": true,
                 "findRegex": "/([\\s\\S]*)/",
                 "replaceString": "$1\n<system>\n存档加载完毕。\n</system>",
@@ -2224,7 +2224,7 @@
             {
                 "id": "1422d8ca-bbb7-4603-8183-44d12f997067",
                 "scriptName": "【DepressIon】cot隐藏 v2.5",
-                "disabled": true,
+                "disabled": false,
                 "runOnEdit": true,
                 "findRegex": "/[\\s\\S]*(<\\/analysis>)/",
                 "replaceString": "",
@@ -2241,7 +2241,7 @@
             {
                 "id": "f3149b77-74dd-4978-bff2-745f17b563cf",
                 "scriptName": "【DepressIon】正文思考v2.5",
-                "disabled": true,
+                "disabled": false,
                 "runOnEdit": true,
                 "findRegex": "/<reminder>(?:[\\s\\S])*?<\\/reminder>/g",
                 "replaceString": "",
@@ -2258,7 +2258,7 @@
             {
                 "id": "477de4a1-8e70-436e-9c6a-ccbc9ea8bfa6",
                 "scriptName": "【DepressIon】修改用户输入 1.2",
-                "disabled": true,
+                "disabled": false,
                 "runOnEdit": true,
                 "findRegex": "/([\\s\\S]*)/",
                 "replaceString": "// $1\n\ngame.loadAll(`",
@@ -2275,7 +2275,7 @@
             {
                 "id": "ffc79d93-65f9-4b55-9a26-b47980f20096",
                 "scriptName": "【DepressIon】小总结1 v2.5",
-                "disabled": true,
+                "disabled": false,
                 "runOnEdit": true,
                 "findRegex": "/[\\s\\S]*?(?<!<details>\\s*)<summary>([\\s\\S]*)<\\/summary>[\\s\\S]*/g",
                 "replaceString": "<summary>\n$1\n</summary>",
@@ -2292,7 +2292,7 @@
             {
                 "id": "0a757920-0981-4899-87ba-e64036efee3a",
                 "scriptName": "【DepressIon】小总结2 v2.5",
-                "disabled": true,
+                "disabled": false,
                 "runOnEdit": true,
                 "findRegex": "/(?<!<details>\\s*)<summary>(((?!<summary>)[\\s\\S])*?)<\\/summary>/g",
                 "replaceString": "<details>\n<summary>摘要</summary>\n$1\n</details>",
@@ -2309,7 +2309,7 @@
             {
                 "id": "a15edd34-a91d-4070-9a42-a4eb192f8992",
                 "scriptName": "【小晴天Nemo】[5]_置空table(辅助表格)",
-                "disabled": false,
+                "disabled": true,
                 "runOnEdit": true,
                 "findRegex": "(<tableThink>)[\\s\\S]*?(</tableEdit>)",
                 "replaceString": "$1$2",
@@ -2326,7 +2326,7 @@
             {
                 "id": "0602d531-5051-43ad-9767-141808c99fca",
                 "scriptName": "【小晴天Nemo】[4]_上下文限制[2]",
-                "disabled": false,
+                "disabled": true,
                 "runOnEdit": true,
                 "findRegex": "/[\\s\\S]*/gm",
                 "replaceString": "",
@@ -2343,7 +2343,7 @@
             {
                 "id": "65bb5765-fbdd-483b-bcce-482554d07ac6",
                 "scriptName": "【小晴天Nemo】[3]_隐藏思维链<internal_process>",
-                "disabled": false,
+                "disabled": true,
                 "runOnEdit": true,
                 "findRegex": "/^[\\s\\S]*</internal_process>/",
                 "replaceString": "",
@@ -2377,7 +2377,7 @@
             {
                 "id": "ea93f715-5045-41a8-9e4a-1d1ab5b4b7e9",
                 "scriptName": "【小晴天Nemo】[2]_置空用户消息",
-                "disabled": false,
+                "disabled": true,
                 "runOnEdit": true,
                 "findRegex": "^([\\s\\S]*)$",
                 "replaceString": "<command_input>\n$1\n</command_input>",
@@ -2394,7 +2394,7 @@
             {
                 "id": "a5bf0dba-92e1-4ef6-8e64-eb2b8cf93837",
                 "scriptName": "【小晴天Nemo】[1]_隐藏乱码",
-                "disabled": false,
+                "disabled": true,
                 "runOnEdit": true,
                 "findRegex": "/<chaos_task>.*?<\\/chaos_task>/gs",
                 "replaceString": "",
@@ -2483,7 +2483,7 @@
             {
                 "id": "591f1d79-d535-4deb-8edc-1e8b1018c6bc",
                 "scriptName": "【DepressIon】通用必备正则 v1.3",
-                "disabled": true,
+                "disabled": false,
                 "runOnEdit": true,
                 "findRegex": "/((<(guifan|safety_check)>(?:(?!<(guifan|safety_check)>)[\\s\\S])*?<\\/(guifan|safety_check)>)|(<reminder>(?:[\\s\\S])*?<\\/reminder>)|([\\s\\S]*<\\/(analysis|thinking|think)>)|([\\s\\S]*(?=<game>)))/g",
                 "replaceString": "",
@@ -4587,7 +4587,7 @@
                     },
                     {
                         "identifier": "801feeb1-5546-4bd7-b4e4-c92fe4ccfd58",
-                        "enabled": false
+                        "enabled": true
                     },
                     {
                         "identifier": "707efeba-0e59-4174-b537-811a22572560",
@@ -4643,7 +4643,7 @@
                     },
                     {
                         "identifier": "51e5fe9a-2c44-4d91-acca-f18f63fe77eb",
-                        "enabled": false
+                        "enabled": true
                     },
                     {
                         "identifier": "73b2d414-5d72-4b7c-92c5-e12e76949a41",
@@ -4752,7 +4752,7 @@
         "zerooneai_model": "yi-large",
         "deepseek_model": "deepseek-chat",
         "xai_model": "grok-3-beta",
-        "custom_model": "gemini-2.5-pro-exp-03-25",
+        "custom_model": "gemini-2.5-pro-preview-06-05",
         "custom_url": "https://newapi.ashesb.com/v1",
         "custom_include_body": "",
         "custom_exclude_body": "",
@@ -4766,7 +4766,7 @@
         "openrouter_allow_fallbacks": true,
         "openrouter_middleout": "on",
         "reverse_proxy": "",
-        "chat_completion_source": "makersuite",
+        "chat_completion_source": "custom",
         "max_context_unlocked": true,
         "api_url_scale": "",
         "show_external_models": false,
