@@ -10,7 +10,6 @@
         "mediaWarningShown:斗破苍穹瑟瑟版.png": "true",
         "AlertWI_斗破苍穹瑟瑟版.png": "true",
         "WINavOpened": "true",
-        "AlertWI_我的美艳数学老师是手天使.png": "true",
         "mediaWarningShown:回答问题的ai.png": "true",
         "mediaWarningShown:时间啊停止吧！.png": "true",
         "AlertWI_Makio Kodai.png": "true",
@@ -25,15 +24,21 @@
         "AlertWI_乡村狂操曲.png": "true",
         "AlertRegex_乡村狂操曲.png": "true",
         "AlertWI_我的剑宗仙子清冷美母.png": "true",
-        "AlertWI_娘.png": "true"
+        "AlertWI_娘.png": "true",
+        "AlertRegex_回答问题的ai.png": "true",
+        "AlertWI_催眠超能力.png": "true",
+        "AlertRegex_催眠超能力.png": "true",
+        "AlertWI_系统创造者.png": "true",
+        "AlertWI_别榨了蛇妈！儿子的纯阳真顶不住啦！.png": "true",
+        "AlertRegex_别榨了蛇妈！儿子的纯阳真顶不住啦！.png": "true"
     },
     "currentVersion": "1.12.14",
-    "username": "小亮",
-    "active_character": "娘.png",
+    "username": "小伟",
+    "active_character": "回答问题的ai.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "kemini 4.0 正式版 3",
-    "user_avatar": "1748006307720-.png",
+    "user_avatar": "1746946888571-.png",
     "amount_gen": 350,
     "max_context": 8192,
     "main_api": "openai",
@@ -41,8 +46,7 @@
         "world_info": {
             "globalSelect": [
                 "-XP大全 v0.3",
-                "完整输出",
-                "翠兰"
+                "完整输出"
             ]
         },
         "world_info_depth": 2,
@@ -354,7 +358,7 @@
             "1746946888571-.png": "小伟",
             "1748006307720-.png": "小亮"
         },
-        "default_persona": null,
+        "default_persona": "1746946888571-.png",
         "persona_descriptions": {
             "user-default.png": {
                 "description": "凯文是邕江县中学高二年级的学生，一位头脑绝顶聪明、成绩始终踞于顶峰的学霸。然而，命运却给了他一副脆弱的躯壳——进行性肌肉萎缩症剥夺了他行走的能力，将他束缚在轮椅之上。这份身体的残缺，使他不仅是学校里那个引人注目的“特殊学生”，也让他与阳光护理院产生了联系，需要定期接受康复训练或某些照护。\n",
@@ -386,7 +390,7 @@
                 "lorebook": ""
             }
         },
-        "persona_description": "",
+        "persona_description": "小伟是一个十岁的四年级学生\n",
         "persona_description_position": 0,
         "persona_description_role": 0,
         "persona_description_depth": 2,
@@ -2084,309 +2088,308 @@
             {
                 "id": "f66fc6b6-c206-40b7-bbc1-4967ebd2d205",
                 "scriptName": "【Kemini】添加tag",
+                "disabled": true,
+                "runOnEdit": true,
                 "findRegex": "^([\\s\\S]*)$",
                 "replaceString": "<user_input>\n$1\n</user_input>",
                 "trimStrings": [],
                 "placement": [
                     1
                 ],
-                "disabled": true,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": 1
+                "maxDepth": 1,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "0989b4d0-8e89-4878-844e-4d3c27830e23",
                 "scriptName": "【DepressIon】cot隐藏 v2.5",
+                "disabled": true,
+                "runOnEdit": true,
                 "findRegex": "/[\\s\\S]*(<\\/analysis>)/",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": true,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "a03f54a3-4a15-4955-8211-e5074c6fd22a",
                 "scriptName": "【Kemini】移除大小思维链和免责声明",
+                "disabled": true,
+                "runOnEdit": true,
                 "findRegex": "/(<guifan>.*?</guifan>)|(<!-- State(.*?)d(.*?) -->(\\n)?)|(<!-- consider: (.*?) -->(\\n)?)|(.*?</think(ing)?>(\\n)?)|(<thinking?>[\\s\\S]*<\\/thinking?>(\\n)?)/gs",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": true,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "601be60a-d41c-4e23-b445-f0a3bbe91aae",
                 "scriptName": "【DepressIon】防截断 v2.5",
+                "disabled": true,
+                "runOnEdit": true,
                 "findRegex": "/<(guifan|safety_check)>(?:(?!<(guifan|safety_check)>)[\\s\\S])*?<\\/(guifan|safety_check)>/g",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": true,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "5b2c21a5-12a2-4ac0-91cc-e2fa76a5eac1",
                 "scriptName": "删除多余内容",
+                "disabled": false,
+                "runOnEdit": false,
                 "findRegex": "/The\\s+test\\s+was\\s+rejected|<\\/Assistant>/gi",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": false,
-                "runOnEdit": false,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": false,
+                "promptOnly": false
             },
             {
                 "id": "1137a118-cbf9-4c59-9868-a288600832ec",
                 "scriptName": "【DepressIon】修改AI回复 1.2",
+                "disabled": true,
+                "runOnEdit": true,
                 "findRegex": "/([\\s\\S]*)/",
                 "replaceString": "$1\n<system>\n存档加载完毕。\n</system>",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": true,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": 1
+                "maxDepth": 1,
+                "markdownOnly": false,
+                "promptOnly": true
             },
             {
                 "id": "2fc36368-51ad-4b6f-81cf-1d9676980ed7",
                 "scriptName": "隐藏模型思维think",
+                "disabled": false,
+                "runOnEdit": false,
                 "findRegex": "/<think>[\\s\\S]*?<\\/think>/gs",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": false,
-                "runOnEdit": false,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": false,
+                "promptOnly": false
             },
             {
                 "id": "71dedc4b-18d2-4354-911d-a5b1b3abc66e",
                 "scriptName": "隐藏正文的Thinking",
+                "disabled": false,
+                "runOnEdit": false,
                 "findRegex": "/<Thinking>[\\s\\S]*?<\\/Thinking>/gs",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": false,
-                "runOnEdit": false,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": false,
+                "promptOnly": false
             },
             {
                 "id": "1422d8ca-bbb7-4603-8183-44d12f997067",
                 "scriptName": "【DepressIon】cot隐藏 v2.5",
+                "disabled": true,
+                "runOnEdit": true,
                 "findRegex": "/[\\s\\S]*(<\\/analysis>)/",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": true,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "f3149b77-74dd-4978-bff2-745f17b563cf",
                 "scriptName": "【DepressIon】正文思考v2.5",
+                "disabled": true,
+                "runOnEdit": true,
                 "findRegex": "/<reminder>(?:[\\s\\S])*?<\\/reminder>/g",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": true,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "477de4a1-8e70-436e-9c6a-ccbc9ea8bfa6",
                 "scriptName": "【DepressIon】修改用户输入 1.2",
+                "disabled": true,
+                "runOnEdit": true,
                 "findRegex": "/([\\s\\S]*)/",
                 "replaceString": "// $1\n\ngame.loadAll(`",
                 "trimStrings": [],
                 "placement": [
                     1
                 ],
-                "disabled": true,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": 1
+                "maxDepth": 1,
+                "markdownOnly": false,
+                "promptOnly": true
             },
             {
                 "id": "ffc79d93-65f9-4b55-9a26-b47980f20096",
                 "scriptName": "【DepressIon】小总结1 v2.5",
+                "disabled": true,
+                "runOnEdit": true,
                 "findRegex": "/[\\s\\S]*?(?<!<details>\\s*)<summary>([\\s\\S]*)<\\/summary>[\\s\\S]*/g",
                 "replaceString": "<summary>\n$1\n</summary>",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": true,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": 24,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": false,
+                "promptOnly": true
             },
             {
                 "id": "0a757920-0981-4899-87ba-e64036efee3a",
                 "scriptName": "【DepressIon】小总结2 v2.5",
+                "disabled": true,
+                "runOnEdit": true,
                 "findRegex": "/(?<!<details>\\s*)<summary>(((?!<summary>)[\\s\\S])*?)<\\/summary>/g",
                 "replaceString": "<details>\n<summary>摘要</summary>\n$1\n</details>",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": true,
-                "markdownOnly": true,
-                "promptOnly": false,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": false
             },
             {
                 "id": "a15edd34-a91d-4070-9a42-a4eb192f8992",
                 "scriptName": "【小晴天Nemo】[5]_置空table(辅助表格)",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "(<tableThink>)[\\s\\S]*?(</tableEdit>)",
                 "replaceString": "$1$2",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "0602d531-5051-43ad-9767-141808c99fca",
                 "scriptName": "【小晴天Nemo】[4]_上下文限制[2]",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "/[\\s\\S]*/gm",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
-                    2,
-                    6
+                    2
                 ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": 2,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "65bb5765-fbdd-483b-bcce-482554d07ac6",
                 "scriptName": "【小晴天Nemo】[3]_隐藏思维链<internal_process>",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "/^[\\s\\S]*</internal_process>/",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "cdeb5f89-fc76-4201-a771-a8bbda0dc37a",
                 "scriptName": "【小晴天Nemo】[3]_隐藏思维链<content>之前",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "^[\\s\\S]*?<content>(?![\\s\\S]*?<content>)",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "ea93f715-5045-41a8-9e4a-1d1ab5b4b7e9",
                 "scriptName": "【小晴天Nemo】[2]_置空用户消息",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "^([\\s\\S]*)$",
                 "replaceString": "<command_input>\n$1\n</command_input>",
                 "trimStrings": [],
                 "placement": [
                     1
                 ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": 1
+                "maxDepth": 1,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "a5bf0dba-92e1-4ef6-8e64-eb2b8cf93837",
@@ -2409,99 +2412,98 @@
             {
                 "id": "94871529-b793-4320-bf0d-de1f25928b0d",
                 "scriptName": "上下文视觉屏蔽[20]",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "/[\\s\\S]*/gm",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     1,
-                    2,
-                    6
+                    2
                 ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": false,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": 20,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": false
             },
             {
                 "id": "3715f0db-14ac-4103-82f2-3bf81abdf7bd",
                 "scriptName": "上下文限制[5]",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "/[\\s\\S]*/gm",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     1,
-                    2,
-                    6
+                    2
                 ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": 5,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": false,
+                "promptOnly": true
             },
             {
                 "id": "9429477e-4566-40f9-b5a4-d4d1f39d3eb1",
                 "scriptName": "上下文限制[10]",
+                "disabled": true,
+                "runOnEdit": true,
                 "findRegex": "/[\\s\\S]*/gm",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     1,
-                    2,
-                    6
+                    2
                 ],
-                "disabled": true,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": 10,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": false,
+                "promptOnly": true
             },
             {
                 "id": "c8d540a6-c599-4888-98ff-27abc7ade570",
                 "scriptName": "删除省略号",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "/([\\u4e00-\\u9fa5])(?:…|……)(\\1)|(?:…|……)/g",
                 "replaceString": "$1",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
-                "substituteRegex": 1,
+                "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "591f1d79-d535-4deb-8edc-1e8b1018c6bc",
                 "scriptName": "【DepressIon】通用必备正则 v1.3",
+                "disabled": true,
+                "runOnEdit": true,
                 "findRegex": "/((<(guifan|safety_check)>(?:(?!<(guifan|safety_check)>)[\\s\\S])*?<\\/(guifan|safety_check)>)|(<reminder>(?:[\\s\\S])*?<\\/reminder>)|([\\s\\S]*<\\/(analysis|thinking|think)>)|([\\s\\S]*(?=<game>)))/g",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             }
         ],
         "character_allowed_regex": [
             "关于正太弟弟上大学后成为滥交男这件事.png",
             "《Sinful Pleasure, Sinless Love》.png",
-            "乡村狂操曲.png"
+            "乡村狂操曲.png",
+            "催眠超能力.png",
+            "别榨了蛇妈！儿子的纯阳真顶不住啦！.png"
         ],
         "tts": {
             "voiceMap": "",
@@ -2697,10 +2699,10 @@
                 "tableConfigEventLength": "30字以内",
                 "tableConfigGrandSummaryRows": "5",
                 "tableConfigGrandSummaryLength": "200字以内",
-                "LAST_RECEIVE_TOKENS": 1210,
-                "LAST_RECEIVE_CHARS": 1635,
-                "LAST_SEND_TOKENS": 21626,
-                "LAST_SEND_CHARS": 58460
+                "LAST_RECEIVE_TOKENS": 1574,
+                "LAST_RECEIVE_CHARS": 2480,
+                "LAST_SEND_TOKENS": 22415,
+                "LAST_SEND_CHARS": 67757
             }
         },
         "attachments": [],
@@ -2735,15 +2737,15 @@
                 "render_optimize": false
             },
             "script": {
-                "global_script_enabled": false,
+                "global_script_enabled": true,
                 "scriptsRepository": [
                     {
-                        "id": "d1403fb5-a73f-45f5-b454-b3ba6899e9ac",
-                        "name": "男性向爱爱花式玩法",
-                        "content": "",
-                        "info": "",
+                        "id": "f7412d63-cd31-49bb-ab27-ed14f77fcd8f",
+                        "name": "[UI]正则&脚本自动分组+筛选查看",
+                        "content": "const config_CONFIG={STORAGE_KEY_BASE:\"scriptGroupingEnabled\",getStorageKey:function(areaKey){return`${this.STORAGE_KEY_BASE}_${areaKey}`},GROUP_PREFIX_REGEX:/^(?:【([^】]+)】|\\[([^\\]]+)\\]|([^-\\s]+)-)\\s*(.+)$/,AREAS:{\"global-regex\":{titleSelector:\"#global_scripts_block > div:first-child\",listSelector:\"#saved_regex_scripts\",itemSelector:\".regex-script-label\",nameSelector:\".regex_script_name\",dragHandleSelector:\".drag-handle\",sortableId:\"#saved_regex_scripts\",isRegexType:!0},\"scoped-regex\":{titleSelector:\"#scoped_scripts_block .flex-container.alignItemsBaseline strong\",listSelector:\"#saved_scoped_scripts\",itemSelector:\".regex-script-label\",nameSelector:\".regex_script_name\",dragHandleSelector:\".drag-handle\",sortableId:\"#saved_scoped_scripts\",isRegexType:!0},\"global-script\":{titleSelector:'.settings-title-text:contains(\"全局脚本库\")',listSelector:\"#global-script-list\",itemSelector:\".script-item\",nameSelector:\".script-name\",dragHandleSelector:\".drag-handle\",sortableId:\"#global-script-list\",isRegexType:!1},\"scoped-script\":{titleSelector:'.settings-title-text:contains(\"局部脚本库\")',listSelector:\"#scoped-script-list\",itemSelector:\".script-item\",nameSelector:\".script-name\",dragHandleSelector:\".drag-handle\",sortableId:\"#scoped-script-list\",isRegexType:!1}},STYLES:{groupHeaderStyle:\"\\n            padding: 4px 10px;\\n            background: var(--SmartThemeBorderColor, rgba(240, 240, 240, 0.2));\\n            border-radius: 4px;\\n            margin: 4px 0;\\n            cursor: pointer;\\n            display: flex;\\n            justify-content: space-between;\\n            align-items: center;\\n            font-weight: bold;\\n            border-left: 2px solid var(--SmartThemeUnderlineColor, rgba(52, 152, 219, 0.4));\\n            width: 100%;\\n        \",groupContentStyle:\"\\n            padding-left: 6px;\\n            border-left: 1px dashed var(--SmartThemeEmColor, rgba(204, 204, 204, 0.4));\\n            margin-left: 12px;\\n            width: 100%;\\n        \",iconStyle:\"\\n            cursor: pointer;\\n            margin-left: 8px;\\n            font-size: 0.9em;\\n            color: var(--SmartThemeBodyColor, inherit);\\n        \",toggleAllButtonStyle:\"\\n            font-size: 0.9em;\\n            cursor: pointer;\\n            margin-left: 5px;\\n            color: var(--SmartThemeBodyColor, inherit);\\n        \"}};function groupScripts($items,nameSelector,isRegexType){const groups=[];let currentGroup=null,currentGroupItems=[];if(!$items||0===$items.length)return console.error(\"没有提供有效的条目列表进行分组\"),groups;$items.each((function(index){const $item=$(this),scriptName=function extractScriptName($item,nameSelector,isRegexType){try{let $nameElement=$item.find(nameSelector);if(0===$nameElement.length)if(isRegexType){const regexSelectors=[\".regex_script_name\",\".name\",\"div.flexGrow\",\"div:first\"];for(const selector of regexSelectors)if($nameElement=$item.find(selector),$nameElement.length>0)break}else{const scriptSelectors=[\".script-name\",\".name\",\".script-title\",\"div:first\"];for(const selector of scriptSelectors)if($nameElement=$item.find(selector),$nameElement.length>0)break}if($nameElement.length>0)return $nameElement.text().trim()}catch(e){console.error(\"提取脚本名称出错:\",e)}return null}($item,nameSelector,isRegexType);if(!scriptName)return console.warn(`项目 #${index} 无法提取名称，跳过分组`),null!==currentGroup&&currentGroupItems.length>0&&(groups.push({name:currentGroup,items:currentGroupItems.slice()}),currentGroupItems=[]),groups.push({name:null,items:[$item]}),currentGroup=null,!0;const groupName=function detectGroup(scriptName){if(!scriptName||\"string\"!=typeof scriptName)return null;const match=scriptName.match(config_CONFIG.GROUP_PREFIX_REGEX);return match?match[1]||match[2]||match[3]||\"未分组\":null}(scriptName);null===groupName?null===currentGroup?currentGroupItems.push($item):(groups.push({name:currentGroup,items:currentGroupItems.slice()}),currentGroup=null,currentGroupItems=[$item]):currentGroup===groupName?currentGroupItems.push($item):(currentGroupItems.length>0&&groups.push({name:currentGroup,items:currentGroupItems.slice()}),currentGroup=groupName,currentGroupItems=[$item])})),currentGroupItems.length>0&&groups.push({name:currentGroup,items:currentGroupItems.slice()});let groupedItems=0;return groups.forEach((group=>{null!==group.name?0:0,groupedItems+=group.items.length})),groupedItems!==$items.length&&console.warn(`警告：处理的项目数 (${groupedItems}) 与原始项目数 (${$items.length}) 不一致！`),groups}let isDebouncing=!1,operationStartTime=0,debouncedButtons=[];const operationQueue=[];async function debounceUI(callback,options={}){const{minDelay=100,operationName=\"操作\"}=\"number\"==typeof options?{minDelay:options}:options;if(isDebouncing)return null;try{isDebouncing=!0,operationStartTime=performance.now(),function dimAllButtons(){debouncedButtons=[],$('i[id$=\"-filter-icon\"], i[id$=\"-group-icon\"], i[id$=\"-toggle-all\"], i[id$=\"-refresh-icon\"], .group-toggle-icon').each((function(){const $button=$(this),buttonInfo={$button,originalOpacity:\"1\",originalPointerEvents:\"auto\"};$button.css({opacity:\"0.3\",\"pointer-events\":\"none\",transition:\"opacity 0.05s\"}),debouncedButtons.push(buttonInfo)}))}();const result=await callback(),operationDuration=performance.now()-operationStartTime,cooldownTime=Math.max(function calculateCooldownTime(operationDuration){return 100+Math.min(.5*operationDuration,1e3)}(operationDuration),minDelay);return await new Promise((resolve=>setTimeout(resolve,cooldownTime))),result}catch(error){return console.error(`[FilterGroup]${operationName}执行出错:`,error),null}finally{!function restoreAllButtons(){if(!debouncedButtons||0===debouncedButtons.length)return console.debug(\"[FilterGroup]没有需要恢复的按钮\"),void(debouncedButtons=[]);debouncedButtons.forEach(((buttonInfo,index)=>{try{if(!buttonInfo||!buttonInfo.$button||0===buttonInfo.$button.length)return void console.warn(`[FilterGroup]按钮对象无效 [${index}]`);buttonInfo.$button.css({opacity:buttonInfo.originalOpacity||\"1\",\"pointer-events\":buttonInfo.originalPointerEvents||\"auto\",transition:\"opacity 0.05s\"})}catch(error){console.error(`[FilterGroup]恢复按钮[${index}]状态出错:`,error)}})),debouncedButtons.length,debouncedButtons=[]}(),isDebouncing=!1,operationQueue.length>0&&setTimeout(processNextOperation,100)}}function processNextOperation(){if(0===operationQueue.length||isDebouncing)return;const nextOperation=operationQueue.shift();nextOperation.callback().then((result=>{operationQueue.length>0&&setTimeout(processNextOperation,100)})).catch((error=>{console.error(`[FilterGroup]队列操作 ${nextOperation.name} 执行出错:`,error),operationQueue.length>0&&setTimeout(processNextOperation,100)}))}function isUIDebouncing(){return isDebouncing}function addDebouncedClickHandler(selector,callback,options={}){const{stopPropagation=!0,minDelay=100,operationName=null}=options;(\"string\"==typeof selector?$(selector):selector).off(\"click\").on(\"click\",(async function(e){if(stopPropagation&&e.stopPropagation(),isUIDebouncing())return;const $this=$(this),buttonText=$this.attr(\"title\")||$this.text()||\"按钮\",opName=operationName||buttonText;await debounceUI((async()=>await callback.call(this,e,$this)),{minDelay,operationName:opName})}))}function addFilterIcon($titleElem,areaKey,getFilterState,updateFilterIcon,applyUIState,capitalizeFirstLetter){const filterIconId=`${areaKey}-filter-icon`;0===$(`#${filterIconId}`).length&&($titleElem.append(`<i id=\"${filterIconId}\" class=\"fa-solid fa-filter\" style=\"${config_CONFIG.STYLES.iconStyle}\"></i>`),addDebouncedClickHandler(`#${filterIconId}`,(function(e){const newState=(getFilterState(areaKey)+1)%3;return localStorage.setItem(`regexFilter${capitalizeFirstLetter(areaKey)}`,newState),updateFilterIcon(areaKey),applyUIState(areaKey)}),{operationName:`筛选切换(${areaKey})`}),updateFilterIcon(areaKey))}function addGroupIcons($titleElem,areaKey,getGroupingEnabledState,updateGroupIcon,applyUIState){const groupIconId=`${areaKey}-group-icon`;if(0===$(`#${groupIconId}`).length){const isGroupEnabled=getGroupingEnabledState(areaKey);$titleElem.append(`<i id=\"${groupIconId}\" class=\"fa-solid ${isGroupEnabled?\"fa-folder-open\":\"fa-folder\"}\" style=\"${config_CONFIG.STYLES.iconStyle}\" title=\"${isGroupEnabled?\"关闭分组\":\"开启分组\"}\"></i>`),function addToggleAllIcon($titleElem,areaKey,isGroupEnabled){const toggleAllId=`${areaKey}-toggle-all`;0===$(`#${toggleAllId}`).length&&($titleElem.append(`<i id=\"${toggleAllId}\" class=\"fa-solid fa-angle-down\" style=\"${config_CONFIG.STYLES.toggleAllButtonStyle}\" title=\"一键展开/折叠分组\"></i>`),isGroupEnabled?$(`#${toggleAllId}`).css(\"display\",\"\"):$(`#${toggleAllId}`).css(\"display\",\"none\"),function bindToggleAllEvent(toggleAllId,areaKey){addDebouncedClickHandler(`#${toggleAllId}`,(function(e,$this){const isExpand=$this.hasClass(\"fa-angle-down\");return $this.attr(\"class\",\"fa-solid \"+(isExpand?\"fa-angle-up\":\"fa-angle-down\")),$this.attr(\"title\",isExpand?\"一键折叠分组\":\"一键展开分组\"),function toggleAllGroups(areaKey,isExpand){const $area=$(config_CONFIG.AREAS[areaKey].listSelector);$area.find(\".script-group-header\").each((function(){const $header=$(this),$groupContent=$header.next(\".script-group-content\"),$icon=$header.find(\".group-toggle-icon\");isExpand?($groupContent.show(),$icon.attr(\"class\",\"fa-solid fa-angle-up group-toggle-icon\")):($groupContent.hide(),$icon.attr(\"class\",\"fa-solid fa-angle-down group-toggle-icon\"))})),function saveAllGroupFoldStates(areaKey,allFolded){const $area=$(config_CONFIG.AREAS[areaKey].listSelector),foldStates={};$area.find(\".script-group-header\").each((function(){const groupName=$(this).find(\"span\").text().split(\" (\")[0];foldStates[groupName]=allFolded}));const storageKey=`script_group_fold_state_${areaKey}`;localStorage.setItem(storageKey,JSON.stringify(foldStates))}(areaKey,!isExpand)}(areaKey,isExpand)}),{operationName:`一键展开/折叠分组(${areaKey})`})}(toggleAllId,areaKey))}($titleElem,areaKey,isGroupEnabled),addDebouncedClickHandler(`#${groupIconId}`,(function(e){const newState=!getGroupingEnabledState(areaKey);return localStorage.setItem(config_CONFIG.getStorageKey(areaKey),newState),updateGroupIcon(areaKey),applyUIState(areaKey)}),{operationName:`分组切换(${areaKey})`}),updateGroupIcon(areaKey)}}function addRefreshIcon($titleElem,areaKey,applyAllUIStates){const refreshIconId=`${areaKey}-refresh-icon`;0===$(`#${refreshIconId}`).length&&($titleElem.append(`<i id=\"${refreshIconId}\" class=\"fa-solid fa-rotate\" style=\"${config_CONFIG.STYLES.iconStyle}\" title=\"刷新\"></i>`),addDebouncedClickHandler(`#${refreshIconId}`,(function(){return applyAllUIStates()}),{operationName:`刷新UI(${areaKey})`}))}function addGroupHeaderClickHandler($groupHeader,areaKey){addDebouncedClickHandler($groupHeader,(function(){const $header=$(this),$icon=$header.find(\".group-toggle-icon\"),$content=$header.next(\".script-group-content\"),isExpanded=$icon.hasClass(\"fa-angle-up\"),thisGroupName=$header.find(\"span\").text().split(\" (\")[0];$icon.attr(\"class\",`fa-solid fa-angle-${isExpanded?\"down\":\"up\"} group-toggle-icon`),$content[isExpanded?\"hide\":\"show\"](),function saveGroupFoldState(areaKey,groupName,isFolded){const storageKey=`script_group_fold_state_${areaKey}`,foldStates=JSON.parse(localStorage.getItem(storageKey)||\"{}\");foldStates[groupName]=isFolded,localStorage.setItem(storageKey,JSON.stringify(foldStates))}(areaKey,thisGroupName,isExpanded)}),{minDelay:200,operationName:`切换分组(${areaKey})`})}async function batchOperateRegexes($items,action,applyUIState){if(!window.TavernHelper)return console.error(\"[FilterGroup]TavernHelper API不可用\"),!1;window.batchOperationInProgress=!0;try{const regexInfoList=[];return $items.each((function(){const info=function extractRegexInfo($item){return{id:$item.attr(\"id\"),scope:$item.closest(\"#saved_regex_scripts\").length>0?\"global\":\"character\"}}($(this));info.id&&regexInfoList.push(info)})),0===regexInfoList.length?(console.log(\"[FilterGroup]没有找到有效的正则表达式\"),!1):(await window.TavernHelper.updateTavernRegexesWith((regexes=>\"delete\"===action?regexes.filter((regex=>!regexInfoList.some((info=>info.id===regex.id&&info.scope===regex.scope)))):(regexes.forEach((regex=>{regexInfoList.forEach((info=>{info.id===regex.id&&info.scope===regex.scope&&(regex.enabled=\"enable\"===action)}))})),regexes))),console.log(`[FilterGroup]批量${\"enable\"===action?\"开启\":\"disable\"===action?\"关闭\":\"删除\"}操作完成`),!0)}catch(error){return console.error(\"[FilterGroup]批量操作失败:\",error),!1}finally{window.batchOperationInProgress=!1,setTimeout((()=>{eventEmit(tavern_events.SETTINGS_UPDATED)}),100)}}function initializeUnifiedUI(){window.unifiedUIInitialized||(window.unifiedUIInitialized=!0,console.log(\"[FilterGroup]正在初始化统一UI处理模块...\"),function addControlIcons(){for(const[areaKey,config]of Object.entries(config_CONFIG.AREAS)){const $titleElem=$(config.titleSelector);0!==$titleElem.length&&(addFilterIcon($titleElem,areaKey,getFilterState,updateFilterIcon,applyUIState,capitalizeFirstLetter),addGroupIcons($titleElem,areaKey,getGroupingEnabledState,updateGroupIcon,applyUIState),addRefreshIcon($titleElem,areaKey,applyAllUIStates))}}(),function setupEventListeners(){\"function\"==typeof eventMakeFirst&&\"undefined\"!=typeof tavern_events&&tavern_events.SETTINGS_UPDATED&&eventMakeFirst(tavern_events.SETTINGS_UPDATED,(function(){console.log(\"[FilterGroup]设置已更新，正在刷新UI...\"),applyAllUIStates().then((()=>{console.log(\"[FilterGroup]UI刷新完成\")}))}))}(),applyAllUIStates())}function getGroupingEnabledState(areaKey){return\"true\"===localStorage.getItem(config_CONFIG.getStorageKey(areaKey))}function getFilterState(areaKey){return parseInt(localStorage.getItem(`regexFilter${capitalizeFirstLetter(areaKey)}`)||\"0\")}function capitalizeFirstLetter(string){return string.split(\"-\").map((word=>word.charAt(0).toUpperCase()+word.slice(1))).join(\"\")}function resetAreaUI(areaKey){const config=config_CONFIG.AREAS[areaKey],$list=$(config.listSelector);return 0!==$list.length&&(function removeGrouping(areaKey){const config=config_CONFIG.AREAS[areaKey],$list=$(config.listSelector);if(0===$list.length)return!1;const $groupHeaders=$list.find(\".script-group-header\"),$groupContents=$list.find(\".script-group-content\");if(0===$groupHeaders.length||0===$groupContents.length)return!1;const $items=$list.find(config.itemSelector);return $items.each((function(){$(this).css(\"width\",\"\").find(\".drag-handle\").show()})),$list.append($items),$groupHeaders.remove(),$groupContents.remove(),function restoreSortable(areaKey){const config=config_CONFIG.AREAS[areaKey],$list=$(config.listSelector);$list.length&&($list.find(\".drag-handle, \"+config.itemSelector).off(\"mousedown.groupui dragstart.groupui\"),$list.find(\".drag-handle\").show())}(areaKey),!0}(areaKey),$list.find(config.itemSelector).css(\"display\",\"\"),!0)}function updateFilterIcon(areaKey){const $icon=$(`#${areaKey}-filter-icon`);if(0===$icon.length)return;const config=[{class:\"fa-filter\",color:\"\",title:\"显示全部 (点击切换到仅显示开启)\"},{class:\"fa-check-circle\",color:\"\",title:\"仅显示开启 (点击切换到仅显示隐藏)\"},{class:\"fa-times-circle\",color:\"\",title:\"仅显示隐藏 (点击切换到显示全部)\"}][getFilterState(areaKey)];$icon.attr(\"class\",\"\").addClass(\"fa-solid \"+config.class),$icon.attr(\"title\",config.title)}function updateGroupIcon(areaKey){const isGroupEnabled=getGroupingEnabledState(areaKey),$groupIcon=$(`#${areaKey}-group-icon`);$groupIcon.length>0&&($groupIcon.attr(\"class\",\"fa-solid \"+(isGroupEnabled?\"fa-folder-open\":\"fa-folder\")),$groupIcon.attr(\"title\",isGroupEnabled?\"关闭分组\":\"开启分组\"));const $toggleAll=$(`#${areaKey}-toggle-all`);$toggleAll.length>0&&(isGroupEnabled?$toggleAll.css(\"display\",\"\"):$toggleAll.css(\"display\",\"none\"))}function applyUIState(areaKey){if(!config_CONFIG.AREAS[areaKey])return console.log(`[FilterGroup]区域 ${areaKey} 配置不存在，跳过处理`),!1;if(window.batchOperationInProgress)return console.log(\"[FilterGroup]批量操作进行中，暂时跳过UI刷新\"),!1;const config=config_CONFIG.AREAS[areaKey],isGroupEnabled=getGroupingEnabledState(areaKey),filterState=getFilterState(areaKey);resetAreaUI(areaKey);const $list=$(config.listSelector);if(0===$list.length)return!1;return $list.find(config.itemSelector).each((function(){const $item=$(this);let isEnabled;isEnabled=config.isRegexType?!$item.find(\".disable_regex\").prop(\"checked\"):\"none\"!==$item.find(\".script-toggle-on\").css(\"display\"),0===filterState?$item.css(\"display\",\"\"):1===filterState?$item.css(\"display\",isEnabled?\"\":\"none\"):2===filterState&&$item.css(\"display\",isEnabled?\"none\":\"\")})),isGroupEnabled&&function applyGrouping(areaKey){const config=config_CONFIG.AREAS[areaKey],$list=$(config.listSelector);if(0===$list.length)return!1;const $items=$list.find(config.itemSelector);if(0===$items.length)return!1;const groups=groupScripts($items,config.nameSelector,config.isRegexType);if(!groups||0===groups.length)return!1;return!!groups.some((group=>null!==group.name))&&($list.children().detach(),groups.forEach((group=>{const groupName=null===group.name?\"未分组\":group.name,isFolded=function getGroupFoldState(areaKey,groupName,defaultState=!0){const storageKey=`script_group_fold_state_${areaKey}`,foldStates=JSON.parse(localStorage.getItem(storageKey)||\"{}\");return groupName in foldStates?foldStates[groupName]:defaultState}(areaKey,groupName,!0),visibleItems=group.items.filter((item=>\"none\"!==$(item).css(\"display\"))),$groupHeader=$(`\\n            <div class=\"script-group-header\" style=\"${config_CONFIG.STYLES.groupHeaderStyle}${0===visibleItems.length?\"display: none;\":\"\"}\">\\n                <span>${groupName} (${visibleItems.length})</span>\\n                <i class=\"fa-solid ${isFolded?\"fa-angle-down\":\"fa-angle-up\"} group-toggle-icon\"></i>\\n            </div>\\n        `),$groupContent=$(`\\n            <div class=\"script-group-content\" style=\"${config_CONFIG.STYLES.groupContentStyle}${isFolded||0===visibleItems.length?\" display: none;\":\"\"}\">\\n            </div>\\n        `);$list.append($groupHeader),$list.append($groupContent),config.isRegexType&&function createBatchActionButtons($groupHeader,$groupContent){const $actionButtons=$('\\n        <div class=\"group-actions\" style=\"display: inline-flex; margin-left: auto; margin-right: 42px;\">\\n            <i class=\"fa-solid fa-check-circle batch-enable\" style=\"margin-right: 12px; cursor: pointer;\" title=\"批量开启\"></i>\\n            <i class=\"fa-solid fa-times-circle batch-disable\" style=\"margin-right: 12px; cursor: pointer;\" title=\"批量关闭\"></i>\\n            <i class=\"fa-solid fa-trash-alt batch-delete\" style=\"cursor: pointer;\" title=\"批量删除\"></i>\\n        </div>\\n    ');return $groupHeader.find(\"span\").after($actionButtons),$groupHeader.closest(\".regex-scripts-area\").length,addDebouncedClickHandler($actionButtons.find(\".batch-enable\"),(function(){window.confirm(\"确定要批量开启该分组下的所有正则表达式吗？\")&&batchOperateRegexes($groupContent.find(\".regex-script-label:visible\"),\"enable\")}),{operationName:\"批量开启正则表达式\",minDelay:200}),addDebouncedClickHandler($actionButtons.find(\".batch-disable\"),(function(){window.confirm(\"确定要批量关闭该分组下的所有正则表达式吗？\")&&batchOperateRegexes($groupContent.find(\".regex-script-label:visible\"),\"disable\")}),{operationName:\"批量关闭正则表达式\",minDelay:200}),addDebouncedClickHandler($actionButtons.find(\".batch-delete\"),(function(){if(window.confirm(\"确定要批量删除该分组下的所有正则表达式吗？此操作不可撤销！\")){const $items=$groupContent.find(\".regex-script-label:visible\");if(0===$items.length)return;batchOperateRegexes($items,\"delete\")}}),{operationName:\"批量删除正则表达式\",minDelay:200}),$actionButtons}($groupHeader,$groupContent),group.items.forEach(($item=>{$item.css(\"width\",\"97%\").find(\".drag-handle\").hide(),$groupContent.append($item)})),addGroupHeaderClickHandler($groupHeader,areaKey)})),function fixSortableAfterGrouping(areaKey){const config=config_CONFIG.AREAS[areaKey],$list=$(config.listSelector);$list.length&&($list.find(\".drag-handle\").hide(),$list.find(\".drag-handle, .script-group-header, .script-group-content, \"+config.itemSelector).off(\"mousedown.groupui dragstart.groupui\").on(\"mousedown.groupui dragstart.groupui\",(function(e){return e.stopPropagation(),e.preventDefault(),!1})))}(areaKey),!0)}(areaKey),!0}function applyAllUIStates(){return window.batchOperationInProgress?(console.log(\"[FilterGroup]批量操作进行中，暂时跳过UI刷新\"),Promise.resolve(!1)):isUIDebouncing()?(console.log(\"[FilterGroup]UI操作已在进行中，已添加到操作队列\"),function queueOperation(name,callback,options={}){const{priority=10}=options,operation={name,callback,priority,timestamp:Date.now()};let inserted=!1;for(let i=0;i<operationQueue.length;i++)if(operationQueue[i].priority>priority){operationQueue.splice(i,0,operation),inserted=!0;break}return inserted||operationQueue.push(operation),isDebouncing||processNextOperation(),Promise.resolve(!1)}(\"刷新UI\",(()=>refreshAllAreas().then((()=>(console.log(\"[FilterGroup]队列刷新完成\"),!0)))),{priority:5})):debounceUI((async()=>await refreshAllAreas()),{operationName:\"应用所有UI状态\",minDelay:500})}async function refreshAllAreas(){await new Promise((resolve=>setTimeout(resolve,100)));const promises=[];for(const areaKey in config_CONFIG.AREAS){applyUIState(areaKey)||promises.push(new Promise((resolve=>{setTimeout((()=>{resolve(applyUIState(areaKey))}),500)})))}return await Promise.all(promises),console.log(\"[FilterGroup]所有区域UI刷新完成\"),!0}const unifiedUI={initialize:initializeUnifiedUI,applyState:applyUIState,applyAllStates:applyAllUIStates,resetUI:resetAreaUI,isDebouncing:isUIDebouncing};$((function(){setTimeout((function(){!function initializeAllUI(){console.log(\"[FilterGroup]正在初始化统一UI组件...\"),initializeUnifiedUI()}()}),500)})),window.unifiedUI=unifiedUI,$((function(){console.log(\"正则脚本统一UI管理已初始化\")}));",
+                        "info": "**作者**：Lai\n**版本**：250510\n**脚本说明：** 根据正则/酒馆助手脚本开关状态筛选条目，快速切换显示，并支持分组视图与管理。\n\n## 功能简介\n\n此脚本在全局和局部正则/酒馆助手脚本库标题旁添加了筛选、分组与刷新图标，点击图标即可切换视图。\n\n在分组标题栏上有批量开启、关闭、删除图标，点击图标即可批量管理分组条目。\n\n## ！！非常重要！！\n**如果在【开启分组视图】的情况下拖动了条目/分组，可能会【丢失所有正则】！虽然脚本【已经禁用】了分组视图下的拖拽功能，但是如果你依然发现自己~~（不知为何）~~拖动了条目，请【不要松手按 F5/cmd+R 直接刷新网页或者直接锁屏手机】打断这个过程。**\n\n上述情况应该【极其少见】，如果你发现自己依然能够拖拽，请回帖 at 我。\n\n在没有打开分组视图（也就是条目左边有三个小横杠）的时候是能够正常拖拽改变顺序的。\n\n## 筛选功能\n\n各部条目开关状态筛选条目，支持循环切换三种显示模式：\n\n- :clipboard: **显示全部** - 显示所有可用正则/酒馆助手脚本\n- :white_check_mark: **仅显示已开启** - 筛选出当前已激活的正则/酒馆助手脚本（打勾图标）\n- :x: **仅显示已隐藏** - 筛选出当前已关闭的正则/酒馆助手脚本（打叉图标）\n\n## 分组功能\n\n脚本会根据名称前缀自动为**连续的**条目建立分组，从而得到美观的分组视图。分组支持多种命名格式：\n\n- **【分组名】脚本名称** - 使用中文方括号\n- **[分组名]脚本名称** - 使用英文方括号\n- **分组名-脚本名称** - 使用短横线分隔\n\n如需支持更多格式，欢迎回帖提出。\n\n### 分组特性：\n\n- **根据前缀分组**：根据脚本名称中的前缀自动分组\n- **顺序保持**：保持条目的原始排序\n- **折叠/展开**：可一键展开或折叠所有分组，提高界面整洁度\n- **分组统计**：显示每个分组内包含的条目数量\n- **分组管理**：批量开启、关闭、删除分组下的条目，使用此功能请务必谨慎，一旦操作无法撤回！\n\n通过标题旁的文件夹图标可以随时切换启用/禁用分组功能。\n\n## 使用提示\n\n- 使用分组功能，需要编辑好前缀与条目顺序。\n- 分组和筛选功能可以同时使用。\n- 分组状态（包括折叠状态）和筛选设置会记录在浏览器本地存储中，刷新了也能保持。\n- 支持与 https://discord.com/channels/1291925535324110879/1344362686900605043 等脚本共同使用，不会冲突。\n- 更改条目设置（比如开关状态）后，稍等一小下，视图**会自动刷新**。\n- 具有防快速点击延迟，避免过快地操作出现问题。\n- 注意：某些情况视图可能会出错/按钮点击了没效果，请试试点击“刷新”小图标，或者刷新酒馆网页。",
                         "buttons": [],
-                        "enabled": false
+                        "enabled": true
                     }
                 ],
                 "characters_with_scripts": [
@@ -2953,7 +2955,6 @@
         "null": [],
         "1746455179287": [],
         "斗破苍穹瑟瑟版.png": [],
-        "我的美艳数学老师是手天使.png": [],
         "1746513532103": [],
         "回答问题的ai.png": [],
         "时间啊停止吧！.png": [],
@@ -2967,7 +2968,11 @@
         "乡村狂操曲.png": [],
         "我的剑宗仙子清冷美母.png": [],
         "黑丝合缝学园1.png": [],
-        "娘.png": []
+        "娘.png": [],
+        "系统创造者.png": [],
+        "催眠超能力.png": [],
+        "别榨了蛇妈！儿子的纯阳真顶不住啦！.png": [],
+        "催眠APP.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
@@ -3510,7 +3515,7 @@
                 "marker": false,
                 "name": "🌟字数控制A",
                 "role": "system",
-                "content": "<words_range_1_strict>\n**指令：强制字数范围 1 (严格区间)**\n**要求：绝对确保** **每一个** 生成的回应片段的最终总字数，无论场景或驱动方式（用户指令扩写、Nemo自我推进、或其他任何情况），**必须严格落入 500 字至 800 字的区间内**。内容质量必须是高的、相关的，绝不允许为了凑字数而填充低质量内容，但最终输出 **必须无条件地** 遵守此字数范围限制。在输出前必须强制检查并确保合规。\n**优先级：** 此规则在激活时具有强制执行的最高优先级，其字数范围 [500, 800] 的限制必须无条件满足。\n</words_range_1_strict>",
+                "content": "<words_range_1_strict>\n**指令：强制字数范围 1 (严格区间)**\n**要求：绝对确保** **每一个** 生成的回应片段的最终总字数，无论场景或驱动方式（用户指令扩写、Nemo自我推进、或其他任何情况），**必须严格落入 500 字至 800 字的区间内**。内容质量必须是高的、相关的，绝不允许为了凑字数而填充低质量内容，但最终输出 **必须无条件地** 遵守此字数范围限制。在输出前必须强制检查并确保合规。\n**优先级：** 此规则在激活时具有强制执行的最高优先级，其字数范围 [2000, 2200] 的限制必须无条件满足。\n</words_range_1_strict>",
                 "injection_position": 0,
                 "injection_depth": 4,
                 "forbid_overrides": false
@@ -4918,8 +4923,8 @@
         "zerooneai_model": "",
         "deepseek_model": "deepseek-chat",
         "xai_model": "grok-3-beta",
-        "custom_model": "gemini-2.5-flash-preview-04-17",
-        "custom_url": "https://iai.iisbo.com/v1",
+        "custom_model": "gemini-2.5-pro-preview-06-05",
+        "custom_url": "https://newapi.ashesb.com/v1",
         "custom_include_body": "",
         "custom_exclude_body": "",
         "custom_include_headers": "",
@@ -4936,7 +4941,7 @@
         "max_context_unlocked": true,
         "api_url_scale": "",
         "show_external_models": false,
-        "proxy_password": "",
+        "proxy_password": "wjh123...",
         "assistant_prefill": "",
         "assistant_impersonation": "",
         "claude_use_sysprompt": false,
