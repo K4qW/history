@@ -1,5 +1,5 @@
 {
-    "chat_completion_source": "makersuite",
+    "chat_completion_source": "custom",
     "openai_model": "gpt-4-turbo",
     "claude_model": "claude-3-5-sonnet-20240620",
     "windowai_model": "",
@@ -16,8 +16,11 @@
     "perplexity_model": "llama-3.1-70b-instruct",
     "groq_model": "llama-3.1-70b-versatile",
     "zerooneai_model": "yi-large",
-    "blockentropy_model": "be-70b-base-llama3.1",
-    "custom_model": "gemini-2.5-pro-exp-03-25",
+    "custom_model": "gemini-2.5-pro-preview-06-05",
+    "custom_url": "https://newapi.ashesb.com/v1",
+    "custom_include_body": "",
+    "custom_exclude_body": "",
+    "custom_include_headers": "",
     "custom_prompt_post_processing": "merge",
     "google_model": "gemini-2.0-pro-exp-02-05",
     "temperature": 1.2,
@@ -33,13 +36,14 @@
     "wrap_in_quotes": false,
     "names_behavior": 0,
     "send_if_empty": "",
-    "jailbreak_system": false,
     "impersonation_prompt": "[Write your next reply from the point of view of {{user}}, using the chat history so far as a guideline for the writing style of {{user}}. Write 1 reply only in internet RP style. Don't write as {{char}} or system. Don't describe actions of {{char}}.]",
     "new_chat_prompt": "[Start a new Chat]",
     "new_group_chat_prompt": "[Start a new group chat. Group members: {{group}}]",
     "new_example_chat_prompt": "[Example Chat]",
     "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
     "bias_preset_selected": "Default (none)",
+    "reverse_proxy": "",
+    "proxy_password": "wjh123...",
     "max_context_unlocked": true,
     "wi_format": "{0}",
     "scenario_format": "{{scenario}}",
@@ -1585,7 +1589,7 @@
                 },
                 {
                     "identifier": "801feeb1-5546-4bd7-b4e4-c92fe4ccfd58",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "707efeba-0e59-4174-b537-811a22572560",
@@ -1641,7 +1645,7 @@
                 },
                 {
                     "identifier": "51e5fe9a-2c44-4d91-acca-f18f63fe77eb",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "73b2d414-5d72-4b7c-92c5-e12e76949a41",
@@ -1718,6 +1722,8 @@
     "function_calling": false,
     "show_thoughts": false,
     "reasoning_effort": "medium",
+    "enable_web_search": false,
+    "request_images": false,
     "seed": -1,
     "n": 1
 }
