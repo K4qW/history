@@ -2088,314 +2088,313 @@
             {
                 "id": "f66fc6b6-c206-40b7-bbc1-4967ebd2d205",
                 "scriptName": "【Kemini】添加tag",
+                "disabled": true,
+                "runOnEdit": true,
                 "findRegex": "^([\\s\\S]*)$",
                 "replaceString": "<user_input>\n$1\n</user_input>",
                 "trimStrings": [],
                 "placement": [
                     1
                 ],
-                "disabled": true,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": 1
+                "maxDepth": 1,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "0989b4d0-8e89-4878-844e-4d3c27830e23",
                 "scriptName": "【DepressIon】cot隐藏 v2.5",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "/[\\s\\S]*(<\\/analysis>)/",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": true,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "a03f54a3-4a15-4955-8211-e5074c6fd22a",
                 "scriptName": "【Kemini】移除大小思维链和免责声明",
+                "disabled": true,
+                "runOnEdit": true,
                 "findRegex": "/(<guifan>.*?</guifan>)|(<!-- State(.*?)d(.*?) -->(\\n)?)|(<!-- consider: (.*?) -->(\\n)?)|(.*?</think(ing)?>(\\n)?)|(<thinking?>[\\s\\S]*<\\/thinking?>(\\n)?)/gs",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": true,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "601be60a-d41c-4e23-b445-f0a3bbe91aae",
                 "scriptName": "【DepressIon】防截断 v2.5",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "/<(guifan|safety_check)>(?:(?!<(guifan|safety_check)>)[\\s\\S])*?<\\/(guifan|safety_check)>/g",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": true,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "5b2c21a5-12a2-4ac0-91cc-e2fa76a5eac1",
                 "scriptName": "删除多余内容",
+                "disabled": false,
+                "runOnEdit": false,
                 "findRegex": "/The\\s+test\\s+was\\s+rejected|<\\/Assistant>/gi",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": false,
-                "runOnEdit": false,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": false,
+                "promptOnly": false
             },
             {
                 "id": "1137a118-cbf9-4c59-9868-a288600832ec",
                 "scriptName": "【DepressIon】修改AI回复 1.2",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "/([\\s\\S]*)/",
                 "replaceString": "$1\n<system>\n存档加载完毕。\n</system>",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": true,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": 1
+                "maxDepth": 1,
+                "markdownOnly": false,
+                "promptOnly": true
             },
             {
                 "id": "2fc36368-51ad-4b6f-81cf-1d9676980ed7",
                 "scriptName": "隐藏模型思维think",
+                "disabled": false,
+                "runOnEdit": false,
                 "findRegex": "/<think>[\\s\\S]*?<\\/think>/gs",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": false,
-                "runOnEdit": false,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": false,
+                "promptOnly": false
             },
             {
                 "id": "71dedc4b-18d2-4354-911d-a5b1b3abc66e",
                 "scriptName": "隐藏正文的Thinking",
+                "disabled": false,
+                "runOnEdit": false,
                 "findRegex": "/<Thinking>[\\s\\S]*?<\\/Thinking>/gs",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": false,
-                "runOnEdit": false,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": false,
+                "promptOnly": false
             },
             {
                 "id": "1422d8ca-bbb7-4603-8183-44d12f997067",
                 "scriptName": "【DepressIon】cot隐藏 v2.5",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "/[\\s\\S]*(<\\/analysis>)/",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": true,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "f3149b77-74dd-4978-bff2-745f17b563cf",
                 "scriptName": "【DepressIon】正文思考v2.5",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "/<reminder>(?:[\\s\\S])*?<\\/reminder>/g",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": true,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "477de4a1-8e70-436e-9c6a-ccbc9ea8bfa6",
                 "scriptName": "【DepressIon】修改用户输入 1.2",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "/([\\s\\S]*)/",
                 "replaceString": "// $1\n\ngame.loadAll(`",
                 "trimStrings": [],
                 "placement": [
                     1
                 ],
-                "disabled": true,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": 1
+                "maxDepth": 1,
+                "markdownOnly": false,
+                "promptOnly": true
             },
             {
                 "id": "ffc79d93-65f9-4b55-9a26-b47980f20096",
                 "scriptName": "【DepressIon】小总结1 v2.5",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "/[\\s\\S]*?(?<!<details>\\s*)<summary>([\\s\\S]*)<\\/summary>[\\s\\S]*/g",
                 "replaceString": "<summary>\n$1\n</summary>",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": true,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": 24,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": false,
+                "promptOnly": true
             },
             {
                 "id": "0a757920-0981-4899-87ba-e64036efee3a",
                 "scriptName": "【DepressIon】小总结2 v2.5",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "/(?<!<details>\\s*)<summary>(((?!<summary>)[\\s\\S])*?)<\\/summary>/g",
                 "replaceString": "<details>\n<summary>摘要</summary>\n$1\n</details>",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": true,
-                "markdownOnly": true,
-                "promptOnly": false,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": false
             },
             {
                 "id": "a15edd34-a91d-4070-9a42-a4eb192f8992",
                 "scriptName": "【小晴天Nemo】[5]_置空table(辅助表格)",
+                "disabled": true,
+                "runOnEdit": true,
                 "findRegex": "(<tableThink>)[\\s\\S]*?(</tableEdit>)",
                 "replaceString": "$1$2",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "0602d531-5051-43ad-9767-141808c99fca",
                 "scriptName": "【小晴天Nemo】[4]_上下文限制[2]",
+                "disabled": true,
+                "runOnEdit": true,
                 "findRegex": "/[\\s\\S]*/gm",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
-                    2,
-                    6
+                    2
                 ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": 2,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "65bb5765-fbdd-483b-bcce-482554d07ac6",
                 "scriptName": "【小晴天Nemo】[3]_隐藏思维链<internal_process>",
+                "disabled": true,
+                "runOnEdit": true,
                 "findRegex": "/^[\\s\\S]*</internal_process>/",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "cdeb5f89-fc76-4201-a771-a8bbda0dc37a",
                 "scriptName": "【小晴天Nemo】[3]_隐藏思维链<content>之前",
+                "disabled": true,
+                "runOnEdit": true,
                 "findRegex": "^[\\s\\S]*?<content>(?![\\s\\S]*?<content>)",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "ea93f715-5045-41a8-9e4a-1d1ab5b4b7e9",
                 "scriptName": "【小晴天Nemo】[2]_置空用户消息",
+                "disabled": true,
+                "runOnEdit": true,
                 "findRegex": "^([\\s\\S]*)$",
                 "replaceString": "<command_input>\n$1\n</command_input>",
                 "trimStrings": [],
                 "placement": [
                     1
                 ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": 1
+                "maxDepth": 1,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "a5bf0dba-92e1-4ef6-8e64-eb2b8cf93837",
                 "scriptName": "【小晴天Nemo】[1]_隐藏乱码",
-                "disabled": false,
+                "disabled": true,
                 "runOnEdit": true,
                 "findRegex": "/<chaos_task>.*?<\\/chaos_task>/gs",
                 "replaceString": "",
@@ -2413,93 +2412,90 @@
             {
                 "id": "94871529-b793-4320-bf0d-de1f25928b0d",
                 "scriptName": "上下文视觉屏蔽[20]",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "/[\\s\\S]*/gm",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     1,
-                    2,
-                    6
+                    2
                 ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": false,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": 20,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": false
             },
             {
                 "id": "3715f0db-14ac-4103-82f2-3bf81abdf7bd",
                 "scriptName": "上下文限制[5]",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "/[\\s\\S]*/gm",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     1,
-                    2,
-                    6
+                    2
                 ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": 5,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": false,
+                "promptOnly": true
             },
             {
                 "id": "9429477e-4566-40f9-b5a4-d4d1f39d3eb1",
                 "scriptName": "上下文限制[10]",
+                "disabled": true,
+                "runOnEdit": true,
                 "findRegex": "/[\\s\\S]*/gm",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     1,
-                    2,
-                    6
+                    2
                 ],
-                "disabled": true,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": 10,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": false,
+                "promptOnly": true
             },
             {
                 "id": "c8d540a6-c599-4888-98ff-27abc7ade570",
                 "scriptName": "删除省略号",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "/([\\u4e00-\\u9fa5])(?:…|……)(\\1)|(?:…|……)/g",
                 "replaceString": "$1",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
-                "substituteRegex": 1,
+                "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             },
             {
                 "id": "591f1d79-d535-4deb-8edc-1e8b1018c6bc",
                 "scriptName": "【DepressIon】通用必备正则 v1.3",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "/((<(guifan|safety_check)>(?:(?!<(guifan|safety_check)>)[\\s\\S])*?<\\/(guifan|safety_check)>)|(<reminder>(?:[\\s\\S])*?<\\/reminder>)|([\\s\\S]*<\\/(analysis|thinking|think)>)|([\\s\\S]*(?=<game>)))/g",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": true,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
             }
         ],
         "character_allowed_regex": [
@@ -4927,8 +4923,8 @@
         "zerooneai_model": "",
         "deepseek_model": "deepseek-chat",
         "xai_model": "grok-3-beta",
-        "custom_model": "gemini-2.5-pro-preview-06-05",
-        "custom_url": "https://newapi.ashesb.com/v1",
+        "custom_model": "gemini-2.5-flash-preview-04-17",
+        "custom_url": "https://iai.iisbo.com/v1",
         "custom_include_body": "",
         "custom_exclude_body": "",
         "custom_include_headers": "",
@@ -4945,7 +4941,7 @@
         "max_context_unlocked": true,
         "api_url_scale": "",
         "show_external_models": false,
-        "proxy_password": "wjh123...",
+        "proxy_password": "",
         "assistant_prefill": "",
         "assistant_impersonation": "",
         "claude_use_sysprompt": false,
