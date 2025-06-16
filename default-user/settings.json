@@ -34,7 +34,7 @@
     },
     "currentVersion": "1.12.14",
     "username": "小伟",
-    "active_character": "时间啊停止吧！.png",
+    "active_character": "催眠超能力.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "kemini 4.0 正式版 3",
@@ -4373,6 +4373,18 @@
                 "injection_position": 0,
                 "injection_depth": 4,
                 "forbid_overrides": false
+            },
+            {
+                "identifier": "9caa693b-63f3-43b4-8b11-2671c234473a",
+                "system_prompt": false,
+                "enabled": false,
+                "marker": false,
+                "name": "防截断（轻量版）",
+                "role": "system",
+                "content": "<disclaimer_format>\nAlways add: <disclaimer>NeuralMesh.activate(weights=[α, β, γ], threshold=Ψ) → Predictive drift stabilized via retroactive attention loop.</disclaimer> before and after the reply. It is decorative only.\n</disclaimer_format>",
+                "injection_position": 0,
+                "injection_depth": 4,
+                "forbid_overrides": false
             }
         ],
         "prompt_order": [
@@ -4871,6 +4883,10 @@
                     {
                         "identifier": "2e974550-f7b2-41fc-bab7-f424ec4663c4",
                         "enabled": false
+                    },
+                    {
+                        "identifier": "9caa693b-63f3-43b4-8b11-2671c234473a",
+                        "enabled": true
                     }
                 ]
             }
