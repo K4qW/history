@@ -33,7 +33,7 @@
         "AlertRegex_别榨了蛇妈！儿子的纯阳真顶不住啦！.png": "true",
         "AlertWI_催眠APP.png": "true"
     },
-    "currentVersion": "1.13.1",
+    "currentVersion": "1.12.14",
     "username": "小伟",
     "active_character": "《Sinful Pleasure, Sinless Love》.png",
     "active_group": null,
@@ -142,11 +142,8 @@
             "no_repeat_ngram"
         ],
         "samplers": [
-            "penalties",
             "dry",
-            "top_n_sigma",
             "top_k",
-            "typ_p",
             "tfs_z",
             "typical_p",
             "top_p",
@@ -202,7 +199,6 @@
         "xtc_threshold": 0.1,
         "xtc_probability": 0,
         "nsigma": 0,
-        "min_keep": 0,
         "featherless_model": "",
         "generic_model": "",
         "rep_pen_size": 0
@@ -238,7 +234,6 @@
         "fast_ui_mode": false,
         "avatar_style": 0,
         "chat_display": 1,
-        "toastr_position": "toast-top-center",
         "chat_width": 50,
         "never_resize_avatars": false,
         "show_card_avatar_urls": false,
@@ -429,21 +424,18 @@
                     "left": 1,
                     "right": 1
                 },
-                "select": 3,
-                "state": 2
+                "select": 3
             }
         },
         "restore_user_input": true,
         "reduced_motion": false,
         "compact_input_area": true,
         "show_swipe_num_all_messages": false,
-        "auto_connect": true,
+        "auto_connect": false,
         "auto_load_chat": false,
         "forbid_external_media": true,
         "external_media_allowed_overrides": [],
         "external_media_forbidden_overrides": [],
-        "pin_styles": true,
-        "click_to_edit": false,
         "ui_mode": 1,
         "auto_sort_tags": false,
         "selectSamplers": {
@@ -2086,8 +2078,7 @@
             "api": 99,
             "llmPrompt": "Ignore previous instructions. Classify the emotion of the last message. Output just one word, e.g. \"joy\" or \"anger\". Choose only one of the following labels: {{labels}}",
             "allowMultiple": true,
-            "custom": [],
-            "promptType": "raw"
+            "custom": []
         },
         "connectionManager": {
             "selectedProfile": "",
@@ -2622,9 +2613,7 @@
             "tool_visible": false,
             "stability_style_preset": "anime",
             "bfl_upsampling": false,
-            "character_negative_prompts": {},
-            "google_api": "makersuite",
-            "google_enhance": true
+            "character_negative_prompts": {}
         },
         "chromadb": {},
         "translate": {
@@ -4942,7 +4931,6 @@
         "openai_model": "gpt-4-turbo",
         "claude_model": "claude-3-5-sonnet-20240620",
         "google_model": "gemini-2.5-pro-exp-03-25",
-        "vertexai_model": "gemini-2.0-flash-001",
         "ai21_model": "jamba-1.5-large",
         "mistralai_model": "mistral-large-latest",
         "cohere_model": "command-a-03-2025",
@@ -4951,9 +4939,7 @@
         "nanogpt_model": "gpt-4o-mini",
         "zerooneai_model": "",
         "deepseek_model": "deepseek-chat",
-        "aimlapi_model": "gpt-4o-mini-2024-07-18",
         "xai_model": "grok-3-beta",
-        "pollinations_model": "openai",
         "custom_model": "gemini-2.5-pro-preview-05-06-pseudo",
         "custom_url": "https://newapi.ashesb.com/v1",
         "custom_include_body": "",
@@ -4972,19 +4958,15 @@
         "max_context_unlocked": true,
         "api_url_scale": "",
         "show_external_models": false,
-        "proxy_password": "",
+        "proxy_password": "wjh123...",
         "assistant_prefill": "",
         "assistant_impersonation": "",
         "claude_use_sysprompt": false,
         "use_makersuite_sysprompt": false,
-        "vertexai_auth_mode": "express",
-        "vertexai_region": "us-central1",
-        "vertexai_express_project_id": "",
         "use_alt_scale": false,
         "squash_system_messages": true,
         "image_inlining": false,
         "inline_image_quality": "auto",
-        "video_inlining": false,
         "bypass_status_check": false,
         "continue_prefill": false,
         "function_calling": false,
@@ -4996,14 +4978,12 @@
         "enable_web_search": false,
         "request_images": false,
         "seed": -1,
-        "n": 1,
-        "bind_preset_to_connection": true
+        "n": 1
     },
     "background": {
         "name": "bedroom clean.jpg",
         "url": "url(\"backgrounds/bedroom clean.jpg\")",
-        "fitting": "classic",
-        "animation": false
+        "fitting": "classic"
     },
     "proxies": [
         {
